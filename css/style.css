@@ -11,12 +11,11 @@
   font-display: swap;
 }
 
-/* Content font: replace the src path below with your actual font file
-   once it's added to assets/fonts/. Falls back to a clean system sans
-   until then, so the site still works without it. */
+/* Content font: site_font_Avant_Garde_Regular — used for all body content
+   (everything except the "OFFSIDE" wordmark, which uses Barcade above). */
 @font-face {
   font-family: 'OffsideBody';
-  src: url('../assets/fonts/content-font.ttf') format('truetype');
+  src: url('../assets/fonts/site_font_Avant_Garde_Regular.ttf') format('truetype');
   font-display: swap;
 }
 

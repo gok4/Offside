@@ -1,3 +1,292 @@
 {
-  "icons": []
+  "icons": [
+    {
+      "name": "Bale",
+      "image": "Bale.webp"
+    },
+    {
+      "name": "Beckenbauer",
+      "image": "Beckenbauer.webp"
+    },
+    {
+      "name": "Beckham",
+      "image": "Beckham.webp"
+    },
+    {
+      "name": "Bergkamp",
+      "image": "Bergkamp.webp"
+    },
+    {
+      "name": "Buffon",
+      "image": "Buffon.webp"
+    },
+    {
+      "name": "Cafu",
+      "image": "Cafu.webp"
+    },
+    {
+      "name": "Campbell",
+      "image": "Campbell.webp"
+    },
+    {
+      "name": "Cannavaro",
+      "image": "Cannavaro.webp"
+    },
+    {
+      "name": "Cantona",
+      "image": "Cantona.webp"
+    },
+    {
+      "name": "Carles Puyol",
+      "image": "Carles Puyol.webp"
+    },
+    {
+      "name": "Casillas",
+      "image": "Casillas.webp"
+    },
+    {
+      "name": "Cech",
+      "image": "Cech.webp"
+    },
+    {
+      "name": "Charlton",
+      "image": "Charlton.webp"
+    },
+    {
+      "name": "Chiellini",
+      "image": "Chiellini.webp"
+    },
+    {
+      "name": "Cole",
+      "image": "Cole.webp"
+    },
+    {
+      "name": "Crespo",
+      "image": "Crespo.webp"
+    },
+    {
+      "name": "Cruyff",
+      "image": "Cruyff.webp"
+    },
+    {
+      "name": "Dalglish",
+      "image": "Dalglish.webp"
+    },
+    {
+      "name": "Del Piero",
+      "image": "Del Piero.webp"
+    },
+    {
+      "name": "Drogba",
+      "image": "Drogba.webp"
+    },
+    {
+      "name": "Essien",
+      "image": "Essien.webp"
+    },
+    {
+      "name": "Eto'o",
+      "image": "Eto'o.webp"
+    },
+    {
+      "name": "Ferdinand",
+      "image": "Ferdinand.webp"
+    },
+    {
+      "name": "Fernando Torres",
+      "image": "Fernando Torres.webp"
+    },
+    {
+      "name": "Gerrard",
+      "image": "Gerrard.webp"
+    },
+    {
+      "name": "Gullit",
+      "image": "Gullit.webp"
+    },
+    {
+      "name": "Henry",
+      "image": "Henry.webp"
+    },
+    {
+      "name": "Ibrahimović",
+      "image": "Ibrahimović.webp"
+    },
+    {
+      "name": "Iniesta",
+      "image": "Iniesta.webp"
+    },
+    {
+      "name": "Kahn",
+      "image": "Kahn.webp"
+    },
+    {
+      "name": "Kaká",
+      "image": "Kaká.webp"
+    },
+    {
+      "name": "Keane",
+      "image": "Keane.webp"
+    },
+    {
+      "name": "Kluivert",
+      "image": "Kluivert.webp"
+    },
+    {
+      "name": "Koeman",
+      "image": "Koeman.webp"
+    },
+    {
+      "name": "Kroos",
+      "image": "Kroos.webp"
+    },
+    {
+      "name": "Lahm",
+      "image": "Lahm.webp"
+    },
+    {
+      "name": "Lampard",
+      "image": "Lampard.webp"
+    },
+    {
+      "name": "Luís Figo",
+      "image": "Luís Figo.webp"
+    },
+    {
+      "name": "Makélélé",
+      "image": "Makélélé.webp"
+    },
+    {
+      "name": "Maldini",
+      "image": "Maldini.webp"
+    },
+    {
+      "name": "Maradona",
+      "image": "Maradona.webp"
+    },
+    {
+      "name": "Marcelo",
+      "image": "Marcelo.webp"
+    },
+    {
+      "name": "Morgan",
+      "image": "Morgan.webp"
+    },
+    {
+      "name": "Müller",
+      "image": "Müller.webp"
+    },
+    {
+      "name": "Nesta",
+      "image": "Nesta.webp"
+    },
+    {
+      "name": "Okocha",
+      "image": "Okocha.webp"
+    },
+    {
+      "name": "Owen",
+      "image": "Owen.webp"
+    },
+    {
+      "name": "Pelé",
+      "image": "Pelé.webp"
+    },
+    {
+      "name": "Pirlo",
+      "image": "Pirlo.webp"
+    },
+    {
+      "name": "Pirès",
+      "image": "Pirès.webp"
+    },
+    {
+      "name": "Puskás",
+      "image": "Puskás.webp"
+    },
+    {
+      "name": "Ribéry",
+      "image": "Ribéry.webp"
+    },
+    {
+      "name": "Rijkaard",
+      "image": "Rijkaard.webp"
+    },
+    {
+      "name": "Rivaldo",
+      "image": "Rivaldo.webp"
+    },
+    {
+      "name": "Roberto Carlos",
+      "image": "Roberto Carlos.webp"
+    },
+    {
+      "name": "Ronaldinho",
+      "image": "Ronaldinho.webp"
+    },
+    {
+      "name": "Ronaldo",
+      "image": "Ronaldo.webp"
+    },
+    {
+      "name": "Rooney",
+      "image": "Rooney.webp"
+    },
+    {
+      "name": "Schmeichel",
+      "image": "Schmeichel.webp"
+    },
+    {
+      "name": "Scholes",
+      "image": "Scholes.webp"
+    },
+    {
+      "name": "Schweinsteiger",
+      "image": "Schweinsteiger.webp"
+    },
+    {
+      "name": "Shearer",
+      "image": "Shearer.webp"
+    },
+    {
+      "name": "Shevchenko",
+      "image": "Shevchenko.webp"
+    },
+    {
+      "name": "Totti",
+      "image": "Totti.webp"
+    },
+    {
+      "name": "Van Basten",
+      "image": "van Basten.webp"
+    },
+    {
+      "name": "Van Persie",
+      "image": "van Persie.webp"
+    },
+    {
+      "name": "Vidic",
+      "image": "Vidic.webp"
+    },
+    {
+      "name": "Vieira",
+      "image": "Vieira.webp"
+    },
+    {
+      "name": "Wright",
+      "image": "Wright.webp"
+    },
+    {
+      "name": "Xavi",
+      "image": "Xavi.webp"
+    },
+    {
+      "name": "Zanetti",
+      "image": "Zanetti.webp"
+    },
+    {
+      "name": "Zidane",
+      "image": "Zidane.webp"
+    }
+  ]
 }
