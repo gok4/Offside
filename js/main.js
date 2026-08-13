@@ -188,6 +188,17 @@ async function renderIcons() {
   `;
 }
 
+async function loadVersion() {
+  const tag = document.getElementById('version-tag');
+  try {
+    const res = await fetch('data/version.json');
+    const json = await res.json();
+    if (json.version) tag.textContent = `· v${json.version}`;
+  } catch (e) {
+    // no version.json yet — footer just omits the version, that's fine
+  }
+}
+
 /* ---------- Router ---------- */
 
 function setActiveNav(route) {
@@ -218,4 +229,5 @@ window.addEventListener('hashchange', router);
 window.addEventListener('DOMContentLoaded', () => {
   router();
   loadSponsors();
+  loadVersion();
 });
