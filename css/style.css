@@ -1,0 +1,378 @@
+/* ============================================
+   OFFSIDE — Global Football League
+   Design: matchday-at-night. Deep pitch backgrounds,
+   floodlight gold accent, turf green secondary.
+   Barcade font is reserved for the wordmark only.
+   ============================================ */
+
+@font-face {
+  font-family: 'Barcade';
+  src: url('../assets/fonts/logo_font_barcade.ttf') format('truetype');
+  font-display: swap;
+}
+
+/* Content font: replace the src path below with your actual font file
+   once it's added to assets/fonts/. Falls back to a clean system sans
+   until then, so the site still works without it. */
+@font-face {
+  font-family: 'OffsideBody';
+  src: url('../assets/fonts/content-font.ttf') format('truetype');
+  font-display: swap;
+}
+
+:root {
+  /* Color */
+  --color-bg: #0b1220;
+  --color-bg-elevated: #131d30;
+  --color-bg-card: #172440;
+  --color-turf: #1f8f5f;
+  --color-gold: #f0c05a;
+  --color-gold-soft: rgba(240, 192, 90, 0.16);
+  --color-chalk: #f4f4f0;
+  --color-mist: #8a93a6;
+  --color-line: rgba(244, 244, 240, 0.09);
+
+  /* Type */
+  --font-display: 'Barcade', 'Courier New', monospace;
+  --font-body: 'OffsideBody', 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Layout */
+  --max-width: 1180px;
+  --radius: 10px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  background-image:
+    radial-gradient(circle at 15% 0%, rgba(240, 192, 90, 0.06), transparent 45%),
+    radial-gradient(circle at 85% 10%, rgba(31, 143, 95, 0.08), transparent 40%);
+  color: var(--color-chalk);
+  font-family: var(--font-body);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+a { color: inherit; text-decoration: none; }
+
+img { max-width: 100%; display: block; }
+
+/* ---------- Header ---------- */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 32px;
+  background: rgba(11, 18, 32, 0.85);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--color-line);
+}
+
+.wordmark {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  letter-spacing: 0.08em;
+  color: var(--color-gold);
+}
+
+.main-nav {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-link {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-mist);
+  padding: 6px 2px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--color-chalk);
+  border-bottom-color: var(--color-gold);
+}
+
+/* ---------- App / layout ---------- */
+
+.app {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 32px 80px;
+}
+
+/* ---------- Home hero ---------- */
+
+.hero {
+  padding: 72px 0 48px;
+  text-align: left;
+}
+
+.hero-eyebrow {
+  display: inline-block;
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-turf);
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.hero-title {
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  margin: 0 0 16px;
+  max-width: 14ch;
+}
+
+.hero-sub {
+  color: var(--color-mist);
+  font-size: 1.05rem;
+  max-width: 52ch;
+  margin: 0;
+}
+
+/* ---------- Section labels ---------- */
+
+.section-label {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  font-weight: 700;
+  margin: 0 0 18px;
+}
+
+/* ---------- Badge wall (team grid) ---------- */
+
+.badge-wall {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px;
+  margin-bottom: 56px;
+}
+
+.badge-tile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 22px 12px;
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.badge-tile::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 20%, var(--color-gold-soft), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.badge-tile:hover {
+  transform: translateY(-4px);
+  border-color: rgba(240, 192, 90, 0.35);
+}
+
+.badge-tile:hover::before {
+  opacity: 1;
+}
+
+.badge-tile img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  position: relative;
+  z-index: 1;
+}
+
+.badge-tile span {
+  position: relative;
+  z-index: 1;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--color-chalk);
+}
+
+/* ---------- Team page ---------- */
+
+.team-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 56px 0 32px;
+  border-bottom: 1px solid var(--color-line);
+  margin-bottom: 40px;
+}
+
+.team-header img {
+  width: 84px;
+  height: 84px;
+  object-fit: contain;
+}
+
+.team-header h1 {
+  font-size: 2rem;
+  margin: 0 0 6px;
+}
+
+.team-header .manager {
+  color: var(--color-mist);
+  font-size: 0.95rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin: 32px 0 0;
+  font-size: 0.85rem;
+  color: var(--color-mist);
+}
+
+.back-link:hover { color: var(--color-gold); }
+
+.position-group {
+  margin-bottom: 44px;
+}
+
+.player-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 18px;
+}
+
+.player-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.player-card:hover {
+  transform: translateY(-3px);
+}
+
+.player-card .player-img-wrap {
+  aspect-ratio: 1288 / 1800;
+  background: var(--color-bg-elevated);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.player-meta {
+  padding: 10px 12px 14px;
+}
+
+.player-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+
+.player-position {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--color-bg);
+  background: var(--color-gold);
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+
+/* ---------- Icons page ---------- */
+
+.icons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 18px;
+}
+
+/* ---------- Empty states ---------- */
+
+.empty-state {
+  padding: 48px 24px;
+  text-align: center;
+  border: 1px dashed var(--color-line);
+  border-radius: var(--radius);
+  color: var(--color-mist);
+  font-size: 0.9rem;
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  border-top: 1px solid var(--color-line);
+  padding: 32px;
+  text-align: center;
+}
+
+.sponsor-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.sponsor-row img {
+  height: 28px;
+  width: auto;
+  object-fit: contain;
+  opacity: 0.7;
+}
+
+.footer-note {
+  color: var(--color-mist);
+  font-size: 0.78rem;
+  margin: 0;
+}
+
+/* ---------- Accessibility ---------- */
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 640px) {
+  .site-header { padding: 14px 18px; }
+  .app { padding: 0 18px 60px; }
+  .hero { padding: 48px 0 32px; }
+  .team-header { flex-direction: column; align-items: flex-start; gap: 12px; }
+}

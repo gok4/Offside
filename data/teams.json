@@ -1,0 +1,3172 @@
+{
+  "teams": [
+    {
+      "name": "Amsterdam Ravens",
+      "manager": "Mikel Arteta",
+      "logo": "Amsterdam Ravens.png",
+      "players": [
+        {
+          "name": "Gregor Kobel",
+          "position": "GK",
+          "image": "Kobel.webp"
+        },
+        {
+          "name": "Alex Meret",
+          "position": "GK",
+          "image": "Meret.webp"
+        },
+        {
+          "name": "Aaron Wan-Bissaka",
+          "position": "RB",
+          "image": "Wan-Bissaka.webp"
+        },
+        {
+          "name": "Manuel Lazzari",
+          "position": "RB",
+          "image": "Lazzari.webp"
+        },
+        {
+          "name": "Nacho Fernández",
+          "position": "CB",
+          "image": "Nacho Fernández.webp"
+        },
+        {
+          "name": "Alessandro Buongiorno",
+          "position": "CB",
+          "image": "Buongiorno.webp"
+        },
+        {
+          "name": "Edmond Tapsoba",
+          "position": "CB",
+          "image": "Tapsoba.webp"
+        },
+        {
+          "name": "Danilo Pereira",
+          "position": "CB",
+          "image": "Danilo Pereira.webp"
+        },
+        {
+          "name": "Reinildo",
+          "position": "LB",
+          "image": "Reinildo.webp"
+        },
+        {
+          "name": "Fran García",
+          "position": "LB",
+          "image": "Fran García.webp"
+        },
+        {
+          "name": "Joshua Kimmich",
+          "position": "CDM",
+          "image": "Kimmich.webp"
+        },
+        {
+          "name": "Zubimendi",
+          "position": "CDM",
+          "image": "Zubimendi.webp"
+        },
+        {
+          "name": "João Neves",
+          "position": "CM",
+          "image": "João Neves.webp"
+        },
+        {
+          "name": "Bernardo Silva",
+          "position": "CM",
+          "image": "Bernardo Silva.webp"
+        },
+        {
+          "name": "Marten de Roon",
+          "position": "CM",
+          "image": "de Roon.webp"
+        },
+        {
+          "name": "Charles De Ketelaere",
+          "position": "CAM",
+          "image": "De Ketelaere.webp"
+        },
+        {
+          "name": "Kenan Yıldız",
+          "position": "CAM",
+          "image": "Yıldız.webp"
+        },
+        {
+          "name": "Nicolas Pépé",
+          "position": "RM",
+          "image": "Pépé.webp"
+        },
+        {
+          "name": "Salem Al Dawsari",
+          "position": "LM",
+          "image": "Al Dawsari.webp"
+        },
+        {
+          "name": "Bukayo Saka",
+          "position": "RW",
+          "image": "Saka.webp"
+        },
+        {
+          "name": "Yáser Asprilla",
+          "position": "RW",
+          "image": "Asprilla.webp"
+        },
+        {
+          "name": "David Neres",
+          "position": "LW",
+          "image": "David Neres.webp"
+        },
+        {
+          "name": "Sofiane Diop",
+          "position": "LW",
+          "image": "Diop.webp"
+        },
+        {
+          "name": "Cristiano Ronaldo",
+          "position": "ST",
+          "image": "Cristiano Ronaldo.webp"
+        },
+        {
+          "name": "Youssef En-Nesyri",
+          "position": "ST",
+          "image": "En-Nesyri.webp"
+        }
+      ]
+    },
+    {
+      "name": "Barcelona Titans",
+      "manager": "Roberto De Zerbi",
+      "logo": "Barcelona Titans.png",
+      "players": [
+        {
+          "name": "Yassine Bounou",
+          "position": "GK",
+          "image": "Bounou.webp"
+        },
+        {
+          "name": "Michele Di Gregorio",
+          "position": "GK",
+          "image": "Di Gregorio.webp"
+        },
+        {
+          "name": "Tino Livramento",
+          "position": "RB",
+          "image": "Livramento.webp"
+        },
+        {
+          "name": "Ki-Jana Hoever",
+          "position": "RB",
+          "image": "Hoever.webp"
+        },
+        {
+          "name": "Willian Pacho",
+          "position": "CB",
+          "image": "Pacho.webp"
+        },
+        {
+          "name": "Cristian Romero",
+          "position": "CB",
+          "image": "Romero.webp"
+        },
+        {
+          "name": "Matthias Ginter",
+          "position": "CB",
+          "image": "Ginter.webp"
+        },
+        {
+          "name": "Ibañez",
+          "position": "CB",
+          "image": "Ibañez.webp"
+        },
+        {
+          "name": "Maxim De Cuyper",
+          "position": "LB",
+          "image": "De Cuyper.webp"
+        },
+        {
+          "name": "Rico Henry",
+          "position": "LB",
+          "image": "Henry.webp"
+        },
+        {
+          "name": "Angelo Stiller",
+          "position": "CDM",
+          "image": "Stiller.webp"
+        },
+        {
+          "name": "Youssouf Fofana",
+          "position": "CDM",
+          "image": "Fofana.webp"
+        },
+        {
+          "name": "Nicolò Barella",
+          "position": "CM",
+          "image": "Barella.webp"
+        },
+        {
+          "name": "Sergej Milinković-Savić",
+          "position": "CM",
+          "image": "Milinković-Savić.webp"
+        },
+        {
+          "name": "Mario Götze",
+          "position": "CM",
+          "image": "Götze.webp"
+        },
+        {
+          "name": "Andrej Kramarić",
+          "position": "CAM",
+          "image": "Kramarić.webp"
+        },
+        {
+          "name": "Georgiy Sudakov",
+          "position": "CAM",
+          "image": "Sudakov.webp"
+        },
+        {
+          "name": "Iñaki Williams",
+          "position": "RM",
+          "image": "Iñaki Williams.webp"
+        },
+        {
+          "name": "Nico Williams",
+          "position": "LM",
+          "image": "Nico Williams.webp"
+        },
+        {
+          "name": "Antony",
+          "position": "RW",
+          "image": "Antony.webp"
+        },
+        {
+          "name": "Reiss Nelson",
+          "position": "RW",
+          "image": "Nelson.webp"
+        },
+        {
+          "name": "Harvey Barnes",
+          "position": "LW",
+          "image": "Barnes.webp"
+        },
+        {
+          "name": "Roland Sallai",
+          "position": "LW",
+          "image": "Sallai.webp"
+        },
+        {
+          "name": "Viktor Gyökeres",
+          "position": "ST",
+          "image": "Gyökeres.webp"
+        },
+        {
+          "name": "Loïs Openda",
+          "position": "ST",
+          "image": "Openda.webp"
+        }
+      ]
+    },
+    {
+      "name": "Bengaluru Rising FC",
+      "manager": "Julian Nagelsmann",
+      "logo": "Bengaluru Rising FC.png",
+      "players": [
+        {
+          "name": "Giorgi Mamardashvili",
+          "position": "GK",
+          "image": "Mamardashvili.webp"
+        },
+        {
+          "name": "Koen Casteels",
+          "position": "GK",
+          "image": "Casteels.webp"
+        },
+        {
+          "name": "Carvajal",
+          "position": "RB",
+          "image": "Carvajal.webp"
+        },
+        {
+          "name": "James Justin",
+          "position": "RB",
+          "image": "Justin.webp"
+        },
+        {
+          "name": "Marquinhos",
+          "position": "CB",
+          "image": "Marquinhos.webp"
+        },
+        {
+          "name": "Vivian",
+          "position": "CB",
+          "image": "Vivian.webp"
+        },
+        {
+          "name": "Mario Hermoso",
+          "position": "CB",
+          "image": "Mario Hermoso.webp"
+        },
+        {
+          "name": "Lukas Klostermann",
+          "position": "CB",
+          "image": "Klostermann.webp"
+        },
+        {
+          "name": "Miguel Gutiérrez",
+          "position": "LB",
+          "image": "Miguel Gutiérrez.webp"
+        },
+        {
+          "name": "Christian Günter",
+          "position": "LB",
+          "image": "Günter.webp"
+        },
+        {
+          "name": "Marcelo Brozović",
+          "position": "CDM",
+          "image": "Brozović.webp"
+        },
+        {
+          "name": "Aleksandar Pavlović",
+          "position": "CDM",
+          "image": "Pavlović.webp"
+        },
+        {
+          "name": "Leon Goretzka",
+          "position": "CM",
+          "image": "Goretzka.webp"
+        },
+        {
+          "name": "Orkun Kökçü",
+          "position": "CM",
+          "image": "Kökçü.webp"
+        },
+        {
+          "name": "Leandro Paredes",
+          "position": "CM",
+          "image": "Paredes.webp"
+        },
+        {
+          "name": "Jamal Musiala",
+          "position": "CAM",
+          "image": "Musiala.webp"
+        },
+        {
+          "name": "Ricardo Horta",
+          "position": "CAM",
+          "image": "Ricardo Horta.webp"
+        },
+        {
+          "name": "Franck Honorat",
+          "position": "RM",
+          "image": "Honorat.webp"
+        },
+        {
+          "name": "Galeno",
+          "position": "LM",
+          "image": "Galeno.webp"
+        },
+        {
+          "name": "Christian Pulisic",
+          "position": "RW",
+          "image": "Pulisic.webp"
+        },
+        {
+          "name": "Timothy Weah",
+          "position": "RW",
+          "image": "Weah.webp"
+        },
+        {
+          "name": "Leandro Trossard",
+          "position": "LW",
+          "image": "Trossard.webp"
+        },
+        {
+          "name": "Jacob Ramsey",
+          "position": "LW",
+          "image": "Ramsey.webp"
+        },
+        {
+          "name": "Victor Osimhen",
+          "position": "ST",
+          "image": "Osimhen.webp"
+        },
+        {
+          "name": "Ademola Lookman",
+          "position": "ST",
+          "image": "Lookman.webp"
+        }
+      ]
+    },
+    {
+      "name": "Celtic FC",
+      "manager": "Pep Guardiola",
+      "logo": "Celtic FC.png",
+      "players": [
+        {
+          "name": "Álex Remiro",
+          "position": "GK",
+          "image": "Álex Remiro.webp"
+        },
+        {
+          "name": "Alexander Nübel",
+          "position": "GK",
+          "image": "Nübel.webp"
+        },
+        {
+          "name": "Konrad Laimer",
+          "position": "RB",
+          "image": "Laimer.webp"
+        },
+        {
+          "name": "Alistair Johnston",
+          "position": "RB",
+          "image": "Johnston.webp"
+        },
+        {
+          "name": "Nicolás Otamendi",
+          "position": "CB",
+          "image": "Otamendi.webp"
+        },
+        {
+          "name": "Gonçalo Inácio",
+          "position": "CB",
+          "image": "Gonçalo Inácio.webp"
+        },
+        {
+          "name": "Calvin Bassey",
+          "position": "CB",
+          "image": "Bassey.webp"
+        },
+        {
+          "name": "António Silva",
+          "position": "CB",
+          "image": "António Silva.webp"
+        },
+        {
+          "name": "Antonee Robinson",
+          "position": "LB",
+          "image": "Robinson.webp"
+        },
+        {
+          "name": "Ferland Mendy",
+          "position": "LB",
+          "image": "Mendy.webp"
+        },
+        {
+          "name": "Xaver Schlager",
+          "position": "CDM",
+          "image": "Schlager.webp"
+        },
+        {
+          "name": "Yves Bissouma",
+          "position": "CDM",
+          "image": "Bissouma.webp"
+        },
+        {
+          "name": "Bruno Guimarães",
+          "position": "CM",
+          "image": "Bruno Guimarães.webp"
+        },
+        {
+          "name": "Alexis Mac Allister",
+          "position": "CM",
+          "image": "Mac Allister.webp"
+        },
+        {
+          "name": "İlkay Gündoğan",
+          "position": "CM",
+          "image": "Gündoğan.webp"
+        },
+        {
+          "name": "Eberechi Eze",
+          "position": "CAM",
+          "image": "Eze.webp"
+        },
+        {
+          "name": "Pedro Gonçalves",
+          "position": "CAM",
+          "image": "Pedro Gonçalves.webp"
+        },
+        {
+          "name": "Viktor Tsygankov",
+          "position": "RM",
+          "image": "Tsygankov.webp"
+        },
+        {
+          "name": "Mattia Zaccagni",
+          "position": "LM",
+          "image": "Zaccagni.webp"
+        },
+        {
+          "name": "Iago Aspas",
+          "position": "RW",
+          "image": "Iago Aspas.webp"
+        },
+        {
+          "name": "Evann Guessand",
+          "position": "RW",
+          "image": "Guessand.webp"
+        },
+        {
+          "name": "Vini Jr.",
+          "position": "LW",
+          "image": "Vini Jr.webp"
+        },
+        {
+          "name": "Maxwel Cornet",
+          "position": "LW",
+          "image": "Cornet.webp"
+        },
+        {
+          "name": "Kylian Mbappé",
+          "position": "ST",
+          "image": "Mbappé.webp"
+        },
+        {
+          "name": "Victor Boniface",
+          "position": "ST",
+          "image": "Boniface.webp"
+        }
+      ]
+    },
+    {
+      "name": "Delhi Capitals",
+      "manager": "Carlo Ancelotti",
+      "logo": "Delhi Capitals.png",
+      "players": [
+        {
+          "name": "Yann Sommer",
+          "position": "GK",
+          "image": "Sommer.webp"
+        },
+        {
+          "name": "Uğurcan Çakır",
+          "position": "GK",
+          "image": "Çakır.webp"
+        },
+        {
+          "name": "Malo Gusto",
+          "position": "RB",
+          "image": "Gusto.webp"
+        },
+        {
+          "name": "Nordi Mukiele",
+          "position": "RB",
+          "image": "Mukiele.webp"
+        },
+        {
+          "name": "Alessandro Bastoni",
+          "position": "CB",
+          "image": "Bastoni.webp"
+        },
+        {
+          "name": "Benjamin Pavard",
+          "position": "CB",
+          "image": "Pavard.webp"
+        },
+        {
+          "name": "Dean Huijsen",
+          "position": "CB",
+          "image": "Huijsen.webp"
+        },
+        {
+          "name": "Kim Min Jae",
+          "position": "CB",
+          "image": "Kim Min Jae.webp"
+        },
+        {
+          "name": "Leonardo Spinazzola",
+          "position": "LB",
+          "image": "Spinazzola.webp"
+        },
+        {
+          "name": "Nuno Tavares",
+          "position": "LB",
+          "image": "Nuno Tavares.webp"
+        },
+        {
+          "name": "Palhinha",
+          "position": "CDM",
+          "image": "Palhinha.webp"
+        },
+        {
+          "name": "Remo Freuler",
+          "position": "CDM",
+          "image": "Freuler.webp"
+        },
+        {
+          "name": "Tijjani Reijnders",
+          "position": "CM",
+          "image": "Reijnders.webp"
+        },
+        {
+          "name": "Fabián Ruiz",
+          "position": "CM",
+          "image": "Fabián Ruiz.webp"
+        },
+        {
+          "name": "Scott McTominay",
+          "position": "CM",
+          "image": "McTominay.webp"
+        },
+        {
+          "name": "Otávio",
+          "position": "CAM",
+          "image": "Otávio.webp"
+        },
+        {
+          "name": "Isi",
+          "position": "CAM",
+          "image": "Isi.webp"
+        },
+        {
+          "name": "Federico Chiesa",
+          "position": "RM",
+          "image": "Chiesa.webp"
+        },
+        {
+          "name": "Marcus Rashford",
+          "position": "LM",
+          "image": "Rashford.webp"
+        },
+        {
+          "name": "Savinho",
+          "position": "RW",
+          "image": "Savinho.webp"
+        },
+        {
+          "name": "Giovanni Reyna",
+          "position": "RW",
+          "image": "Reyna.webp"
+        },
+        {
+          "name": "Ferran Torres",
+          "position": "LW",
+          "image": "Ferran Torres.webp"
+        },
+        {
+          "name": "Iliman Ndiaye",
+          "position": "LW",
+          "image": "Ndiaye.webp"
+        },
+        {
+          "name": "Moise Kean",
+          "position": "ST",
+          "image": "Kean.webp"
+        },
+        {
+          "name": "Yoane Wissa",
+          "position": "ST",
+          "image": "Wissa.webp"
+        }
+      ]
+    },
+    {
+      "name": "Dubai Falcons",
+      "manager": "Zinedine Zidane",
+      "logo": "Dubai Falcons.png",
+      "players": [
+        {
+          "name": "Matz Sels",
+          "position": "GK",
+          "image": "Sels.webp"
+        },
+        {
+          "name": "Senne Lammens",
+          "position": "GK",
+          "image": "Lammens.webp"
+        },
+        {
+          "name": "Matteo Darmian",
+          "position": "RB",
+          "image": "Darmian.webp"
+        },
+        {
+          "name": "Ruben Aguilar",
+          "position": "RB",
+          "image": "Aguilar.webp"
+        },
+        {
+          "name": "Emre Can",
+          "position": "CB",
+          "image": "Can.webp"
+        },
+        {
+          "name": "Alessio Romagnoli",
+          "position": "CB",
+          "image": "Romagnoli.webp"
+        },
+        {
+          "name": "Sven Botman",
+          "position": "CB",
+          "image": "Botman.webp"
+        },
+        {
+          "name": "Leonardo Balerdi",
+          "position": "CB",
+          "image": "Balerdi.webp"
+        },
+        {
+          "name": "Vitaliy Mykolenko",
+          "position": "LB",
+          "image": "Mykolenko.webp"
+        },
+        {
+          "name": "Kostas Tsimikas",
+          "position": "LB",
+          "image": "Tsimikas.webp"
+        },
+        {
+          "name": "Ryan Gravenberch",
+          "position": "CDM",
+          "image": "Gravenberch.webp"
+        },
+        {
+          "name": "Hakan Çalhanoğlu",
+          "position": "CDM",
+          "image": "Çalhanoğlu.webp"
+        },
+        {
+          "name": "Aleix García",
+          "position": "CM",
+          "image": "Aleix García.webp"
+        },
+        {
+          "name": "Davide Frattesi",
+          "position": "CM",
+          "image": "Frattesi.webp"
+        },
+        {
+          "name": "Khéphren Thuram",
+          "position": "CM",
+          "image": "Thuram.webp"
+        },
+        {
+          "name": "Jude Bellingham",
+          "position": "CAM",
+          "image": "Bellingham.webp"
+        },
+        {
+          "name": "Matt O'Riley",
+          "position": "CAM",
+          "image": "O'Riley.webp"
+        },
+        {
+          "name": "Jarrod Bowen",
+          "position": "RM",
+          "image": "Bowen.webp"
+        },
+        {
+          "name": "Christos Tzolis",
+          "position": "LM",
+          "image": "Tzolis.webp"
+        },
+        {
+          "name": "Lionel Messi",
+          "position": "RW",
+          "image": "Messi.webp"
+        },
+        {
+          "name": "Francisco Conceição",
+          "position": "RW",
+          "image": "Francisco Conceição.webp"
+        },
+        {
+          "name": "Wilfried Zaha",
+          "position": "LW",
+          "image": "Zaha.webp"
+        },
+        {
+          "name": "Jonathan Bamba",
+          "position": "LW",
+          "image": "Bamba.webp"
+        },
+        {
+          "name": "Ivan Toney",
+          "position": "ST",
+          "image": "Toney.webp"
+        },
+        {
+          "name": "Julian Quiñones",
+          "position": "ST",
+          "image": "Quiñones.webp"
+        }
+      ]
+    },
+    {
+      "name": "FC Copenhagen",
+      "manager": "Xabi Alonso",
+      "logo": "FC Copenhagen.png",
+      "players": [
+        {
+          "name": "Mike Maignan",
+          "position": "GK",
+          "image": "Maignan.webp"
+        },
+        {
+          "name": "Manuel Neuer",
+          "position": "GK",
+          "image": "Neuer.webp"
+        },
+        {
+          "name": "Jeremie Frimpong",
+          "position": "RB",
+          "image": "Frimpong.webp"
+        },
+        {
+          "name": "Kieran Trippier",
+          "position": "RB",
+          "image": "Trippier.webp"
+        },
+        {
+          "name": "Rúben Dias",
+          "position": "CB",
+          "image": "Rúben Dias.webp"
+        },
+        {
+          "name": "Willi Orban",
+          "position": "CB",
+          "image": "Orban.webp"
+        },
+        {
+          "name": "Jean-Clair Todibo",
+          "position": "CB",
+          "image": "Todibo.webp"
+        },
+        {
+          "name": "Josip Stanišić",
+          "position": "CB",
+          "image": "Stanišić.webp"
+        },
+        {
+          "name": "Tyrick Mitchell",
+          "position": "LB",
+          "image": "Mitchell.webp"
+        },
+        {
+          "name": "Kieran Tierney",
+          "position": "LB",
+          "image": "Tierney.webp"
+        },
+        {
+          "name": "Denis Zakaria",
+          "position": "CDM",
+          "image": "Zakaria.webp"
+        },
+        {
+          "name": "Tomáš Souček",
+          "position": "CDM",
+          "image": "Souček.webp"
+        },
+        {
+          "name": "Corentin Tolisso",
+          "position": "CM",
+          "image": "Tolisso.webp"
+        },
+        {
+          "name": "Brais Méndez",
+          "position": "CM",
+          "image": "Brais Méndez.webp"
+        },
+        {
+          "name": "Koke",
+          "position": "CM",
+          "image": "Koke.webp"
+        },
+        {
+          "name": "Konstantinos Fortounis",
+          "position": "CAM",
+          "image": "Fortounis.webp"
+        },
+        {
+          "name": "Justin Kluivert",
+          "position": "CAM",
+          "image": "Kluivert.webp"
+        },
+        {
+          "name": "Mohamed Salah",
+          "position": "RM",
+          "image": "Salah.webp"
+        },
+        {
+          "name": "Kaoru Mitoma",
+          "position": "LM",
+          "image": "Mitoma.webp"
+        },
+        {
+          "name": "Désiré Doué",
+          "position": "RW",
+          "image": "Doué.webp"
+        },
+        {
+          "name": "Domenico Berardi",
+          "position": "RW",
+          "image": "Berardi.webp"
+        },
+        {
+          "name": "Timo Werner",
+          "position": "LW",
+          "image": "Werner.webp"
+        },
+        {
+          "name": "Eljif Elmas",
+          "position": "LW",
+          "image": "Elmas.webp"
+        },
+        {
+          "name": "Mateo Retegui",
+          "position": "ST",
+          "image": "Retegui.webp"
+        },
+        {
+          "name": "Gabriel Jesus",
+          "position": "ST",
+          "image": "Gabriel Jesus.webp"
+        }
+      ]
+    },
+    {
+      "name": "Galacticos FC",
+      "manager": "Julen Lopetegui",
+      "logo": "Galacticos FC.png",
+      "players": [
+        {
+          "name": "De Gea",
+          "position": "GK",
+          "image": "De Gea.webp"
+        },
+        {
+          "name": "Dean Henderson",
+          "position": "GK",
+          "image": "Henderson.webp"
+        },
+        {
+          "name": "Mitchell Weiser",
+          "position": "RB",
+          "image": "Weiser.webp"
+        },
+        {
+          "name": "Ricardo Pereira",
+          "position": "RB",
+          "image": "Ricardo Pereira.webp"
+        },
+        {
+          "name": "Jonathan Tah",
+          "position": "CB",
+          "image": "Tah.webp"
+        },
+        {
+          "name": "Amir Rrahmani",
+          "position": "CB",
+          "image": "Rrahmani.webp"
+        },
+        {
+          "name": "Waldemar Anton",
+          "position": "CB",
+          "image": "Anton.webp"
+        },
+        {
+          "name": "Pau Cubarsí",
+          "position": "CB",
+          "image": "Pau Cubarsí.webp"
+        },
+        {
+          "name": "Daniel Svensson",
+          "position": "LB",
+          "image": "Svensson.webp"
+        },
+        {
+          "name": "Keane Lewis-Potter",
+          "position": "LB",
+          "image": "Lewis-Potter.webp"
+        },
+        {
+          "name": "Morten Hjulmand",
+          "position": "CDM",
+          "image": "Hjulmand.webp"
+        },
+        {
+          "name": "Manuel Ugarte",
+          "position": "CDM",
+          "image": "Ugarte.webp"
+        },
+        {
+          "name": "Federico Valverde",
+          "position": "CM",
+          "image": "Valverde.webp"
+        },
+        {
+          "name": "Eduardo Camavinga",
+          "position": "CM",
+          "image": "Camavinga.webp"
+        },
+        {
+          "name": "André-Franck Zambo Anguissa",
+          "position": "CM",
+          "image": "Zambo Anguissa.webp"
+        },
+        {
+          "name": "Cole Palmer",
+          "position": "CAM",
+          "image": "Palmer.webp"
+        },
+        {
+          "name": "João Félix",
+          "position": "CAM",
+          "image": "João Félix.webp"
+        },
+        {
+          "name": "Karim Adeyemi",
+          "position": "RM",
+          "image": "Adeyemi.webp"
+        },
+        {
+          "name": "Filip Kostić",
+          "position": "LM",
+          "image": "Kostić.webp"
+        },
+        {
+          "name": "Matteo Politano",
+          "position": "RW",
+          "image": "Politano.webp"
+        },
+        {
+          "name": "Federico Bernardeschi",
+          "position": "RW",
+          "image": "Bernardeschi.webp"
+        },
+        {
+          "name": "Jack Grealish",
+          "position": "LW",
+          "image": "Grealish.webp"
+        },
+        {
+          "name": "Assane Diao",
+          "position": "LW",
+          "image": "Diao.webp"
+        },
+        {
+          "name": "Alexander Sørloth",
+          "position": "ST",
+          "image": "Sørloth.webp"
+        },
+        {
+          "name": "Kai Havertz",
+          "position": "ST",
+          "image": "Havertz.webp"
+        }
+      ]
+    },
+    {
+      "name": "Glasgow United",
+      "manager": "Marcelo Bielsa",
+      "logo": "Glasgow United.png",
+      "players": [
+        {
+          "name": "Diogo Costa",
+          "position": "GK",
+          "image": "Diogo Costa.webp"
+        },
+        {
+          "name": "Ivan Provedel",
+          "position": "GK",
+          "image": "Provedel.webp"
+        },
+        {
+          "name": "Valentin Rosier",
+          "position": "RB",
+          "image": "Rosier.webp"
+        },
+        {
+          "name": "Alexander Bah",
+          "position": "RB",
+          "image": "Bah.webp"
+        },
+        {
+          "name": "Nikola Milenković",
+          "position": "CB",
+          "image": "Milenković.webp"
+        },
+        {
+          "name": "Lisandro Martínez",
+          "position": "CB",
+          "image": "Martínez.webp"
+        },
+        {
+          "name": "Abdukodir Khusanov",
+          "position": "CB",
+          "image": "Khusanov.webp"
+        },
+        {
+          "name": "Luke Shaw",
+          "position": "CB",
+          "image": "Shaw.webp"
+        },
+        {
+          "name": "Milos Kerkez",
+          "position": "LB",
+          "image": "Kerkez.webp"
+        },
+        {
+          "name": "Carlos Augusto",
+          "position": "LB",
+          "image": "Carlos Augusto.webp"
+        },
+        {
+          "name": "Granit Xhaka",
+          "position": "CDM",
+          "image": "Xhaka.webp"
+        },
+        {
+          "name": "Carlos Baleba",
+          "position": "CDM",
+          "image": "Baleba.webp"
+        },
+        {
+          "name": "Kevin De Bruyne",
+          "position": "CM",
+          "image": "De Bruyne.webp"
+        },
+        {
+          "name": "Dejan Kulusevski",
+          "position": "CM",
+          "image": "Kulusevski.webp"
+        },
+        {
+          "name": "Ruben Loftus-Cheek",
+          "position": "CM",
+          "image": "Loftus-Cheek.webp"
+        },
+        {
+          "name": "Dani Olmo",
+          "position": "CAM",
+          "image": "Dani Olmo.webp"
+        },
+        {
+          "name": "Bruno Fernandes",
+          "position": "CAM",
+          "image": "Bruno Fernandes.webp"
+        },
+        {
+          "name": "Giuliano Simeone",
+          "position": "RM",
+          "image": "Simeone.webp"
+        },
+        {
+          "name": "Alex Iwobi",
+          "position": "LM",
+          "image": "Iwobi.webp"
+        },
+        {
+          "name": "Brennan Johnson",
+          "position": "RW",
+          "image": "Johnson.webp"
+        },
+        {
+          "name": "Nicolò Zaniolo",
+          "position": "RW",
+          "image": "Zaniolo.webp"
+        },
+        {
+          "name": "Johan Bakayoko",
+          "position": "LW",
+          "image": "Bakayoko.webp"
+        },
+        {
+          "name": "Jamie Gittens",
+          "position": "LW",
+          "image": "Gittens.webp"
+        },
+        {
+          "name": "Marcus Thuram",
+          "position": "ST",
+          "image": "Thuram.webp"
+        },
+        {
+          "name": "Tim Kleindienst",
+          "position": "ST",
+          "image": "Kleindienst.webp"
+        }
+      ]
+    },
+    {
+      "name": "Inter Miami",
+      "manager": "Ronald Koeman",
+      "logo": "Inter Miami.png",
+      "players": [
+        {
+          "name": "Wojciech Szczęsny",
+          "position": "GK",
+          "image": "Szczęsny.webp"
+        },
+        {
+          "name": "Lucas Perri",
+          "position": "GK",
+          "image": "Lucas Perri.webp"
+        },
+        {
+          "name": "Kenny Tete",
+          "position": "RB",
+          "image": "Tete.webp"
+        },
+        {
+          "name": "Rico Lewis",
+          "position": "RB",
+          "image": "Lewis.webp"
+        },
+        {
+          "name": "Gianluca Mancini",
+          "position": "CB",
+          "image": "Mancini.webp"
+        },
+        {
+          "name": "Kalidou Koulibaly",
+          "position": "CB",
+          "image": "Koulibaly.webp"
+        },
+        {
+          "name": "Maximilian Kilman",
+          "position": "CB",
+          "image": "Kilman.webp"
+        },
+        {
+          "name": "Maxence Lacroix",
+          "position": "CB",
+          "image": "Lacroix.webp"
+        },
+        {
+          "name": "Lucas Digne",
+          "position": "LB",
+          "image": "Digne.webp"
+        },
+        {
+          "name": "Myles Lewis-Skelly",
+          "position": "LB",
+          "image": "Lewis-Skelly.webp"
+        },
+        {
+          "name": "Moisés Caicedo",
+          "position": "CDM",
+          "image": "Caicedo.webp"
+        },
+        {
+          "name": "Mats Wieffer",
+          "position": "CDM",
+          "image": "Wieffer.webp"
+        },
+        {
+          "name": "Rodrigo De Paul",
+          "position": "CM",
+          "image": "De Paul.webp"
+        },
+        {
+          "name": "James Maddison",
+          "position": "CM",
+          "image": "Maddison.webp"
+        },
+        {
+          "name": "Mikel Merino",
+          "position": "CM",
+          "image": "Mikel Merino.webp"
+        },
+        {
+          "name": "Giovani Lo Celso",
+          "position": "CAM",
+          "image": "Lo Celso.webp"
+        },
+        {
+          "name": "Anderson Talisca",
+          "position": "CAM",
+          "image": "Anderson Talisca.webp"
+        },
+        {
+          "name": "Dodi Lukébakio",
+          "position": "RM",
+          "image": "Lukébakio.webp"
+        },
+        {
+          "name": "Sadio Mané",
+          "position": "LM",
+          "image": "Mané.webp"
+        },
+        {
+          "name": "Bryan Mbeumo",
+          "position": "RW",
+          "image": "Mbeumo.webp"
+        },
+        {
+          "name": "Mohammed Kudus",
+          "position": "RW",
+          "image": "Kudus.webp"
+        },
+        {
+          "name": "Anthony Martial",
+          "position": "LW",
+          "image": "Martial.webp"
+        },
+        {
+          "name": "Crysencio Summerville",
+          "position": "LW",
+          "image": "Summerville.webp"
+        },
+        {
+          "name": "Antoine Griezmann",
+          "position": "ST",
+          "image": "Griezmann.webp"
+        },
+        {
+          "name": "Dušan Vlahović",
+          "position": "ST",
+          "image": "Vlahović.webp"
+        }
+      ]
+    },
+    {
+      "name": "Johannesburg Wolves",
+      "manager": "Jürgen Klopp",
+      "logo": "Johannesburg Wolves.png",
+      "players": [
+        {
+          "name": "Jan Oblak",
+          "position": "GK",
+          "image": "Oblak.webp"
+        },
+        {
+          "name": "Dominik Livaković",
+          "position": "GK",
+          "image": "Livaković.webp"
+        },
+        {
+          "name": "Reece James",
+          "position": "RB",
+          "image": "James.webp"
+        },
+        {
+          "name": "Kyle Walker-Peters",
+          "position": "RB",
+          "image": "Walker-Peters.webp"
+        },
+        {
+          "name": "Virgil van Dijk",
+          "position": "CB",
+          "image": "van Dijk.webp"
+        },
+        {
+          "name": "Robin Le Normand",
+          "position": "CB",
+          "image": "Le Normand.webp"
+        },
+        {
+          "name": "José María Giménez",
+          "position": "CB",
+          "image": "Giménez.webp"
+        },
+        {
+          "name": "Piero Hincapié",
+          "position": "CB",
+          "image": "Hincapié.webp"
+        },
+        {
+          "name": "Riccardo Calafiori",
+          "position": "LB",
+          "image": "Calafiori.webp"
+        },
+        {
+          "name": "Junior Firpo",
+          "position": "LB",
+          "image": "Junior Firpo.webp"
+        },
+        {
+          "name": "Sandro Tonali",
+          "position": "CDM",
+          "image": "Tonali.webp"
+        },
+        {
+          "name": "Julian Weigl",
+          "position": "CDM",
+          "image": "Weigl.webp"
+        },
+        {
+          "name": "Gavi",
+          "position": "CM",
+          "image": "Gavi.webp"
+        },
+        {
+          "name": "Conor Gallagher",
+          "position": "CM",
+          "image": "Gallagher.webp"
+        },
+        {
+          "name": "Ilaix Moriba",
+          "position": "CM",
+          "image": "Moriba.webp"
+        },
+        {
+          "name": "Christopher Nkunku",
+          "position": "CAM",
+          "image": "Nkunku.webp"
+        },
+        {
+          "name": "Nico Paz",
+          "position": "CAM",
+          "image": "Nico Paz.webp"
+        },
+        {
+          "name": "Riccardo Orsolini",
+          "position": "RM",
+          "image": "Orsolini.webp"
+        },
+        {
+          "name": "Luis Díaz",
+          "position": "LM",
+          "image": "Díaz.webp"
+        },
+        {
+          "name": "Ivan Perišić",
+          "position": "RW",
+          "image": "Perišić.webp"
+        },
+        {
+          "name": "Jacob Murphy",
+          "position": "RW",
+          "image": "Murphy.webp"
+        },
+        {
+          "name": "Saïd Benrahma",
+          "position": "LW",
+          "image": "Benrahma.webp"
+        },
+        {
+          "name": "Marcus Tavernier",
+          "position": "LW",
+          "image": "Tavernier.webp"
+        },
+        {
+          "name": "Romelu Lukaku",
+          "position": "ST",
+          "image": "Lukaku.webp"
+        },
+        {
+          "name": "Gerard Moreno",
+          "position": "ST",
+          "image": "Gerard Moreno.webp"
+        }
+      ]
+    },
+    {
+      "name": "Lisbon Lions",
+      "manager": "Arne Slot",
+      "logo": "Lisbon Lions.png",
+      "players": [
+        {
+          "name": "Guglielmo Vicario",
+          "position": "GK",
+          "image": "Vicario.webp"
+        },
+        {
+          "name": "Lukáš Hrádecký",
+          "position": "GK",
+          "image": "Hrádecký.webp"
+        },
+        {
+          "name": "Denzel Dumfries",
+          "position": "RB",
+          "image": "Dumfries.webp"
+        },
+        {
+          "name": "Pedro Porro",
+          "position": "RB",
+          "image": "Pedro Porro.webp"
+        },
+        {
+          "name": "Gabriel",
+          "position": "CB",
+          "image": "Gabriel.webp"
+        },
+        {
+          "name": "Dávid Hancko",
+          "position": "CB",
+          "image": "Hancko.webp"
+        },
+        {
+          "name": "Lucas Beraldo",
+          "position": "CB",
+          "image": "Lucas Beraldo.webp"
+        },
+        {
+          "name": "Diego Carlos",
+          "position": "CB",
+          "image": "Diego Carlos.webp"
+        },
+        {
+          "name": "Marc Cucurella",
+          "position": "LB",
+          "image": "Marc Cucurella.webp"
+        },
+        {
+          "name": "Renan Lodi",
+          "position": "LB",
+          "image": "Renan Lodi.webp"
+        },
+        {
+          "name": "Wataru Endo",
+          "position": "CDM",
+          "image": "Endo.webp"
+        },
+        {
+          "name": "Adam Wharton",
+          "position": "CDM",
+          "image": "Wharton.webp"
+        },
+        {
+          "name": "Youri Tielemans",
+          "position": "CM",
+          "image": "Tielemans.webp"
+        },
+        {
+          "name": "Pedri",
+          "position": "CM",
+          "image": "Pedri.webp"
+        },
+        {
+          "name": "Pablo Barrios",
+          "position": "CM",
+          "image": "Pablo Barrios.webp"
+        },
+        {
+          "name": "Fermín",
+          "position": "CAM",
+          "image": "Fermín.webp"
+        },
+        {
+          "name": "Harvey Elliott",
+          "position": "CAM",
+          "image": "Elliott.webp"
+        },
+        {
+          "name": "Brahim",
+          "position": "RM",
+          "image": "Brahim.webp"
+        },
+        {
+          "name": "Álex Baena",
+          "position": "LM",
+          "image": "Álex Baena.webp"
+        },
+        {
+          "name": "Noni Madueke",
+          "position": "RW",
+          "image": "Madueke.webp"
+        },
+        {
+          "name": "Lee Kang In",
+          "position": "RW",
+          "image": "Lee Kang In.webp"
+        },
+        {
+          "name": "Jérémy Doku",
+          "position": "LW",
+          "image": "Doku.webp"
+        },
+        {
+          "name": "Samuel Iling-Junior",
+          "position": "LW",
+          "image": "Iling-Junior.webp"
+        },
+        {
+          "name": "Erling Haaland",
+          "position": "ST",
+          "image": "Haaland.webp"
+        },
+        {
+          "name": "Jean-Philippe Mateta",
+          "position": "ST",
+          "image": "Mateta.webp"
+        }
+      ]
+    },
+    {
+      "name": "London Crusaders FC",
+      "manager": "Andoni Iraola",
+      "logo": "London Crusaders FC.png",
+      "players": [
+        {
+          "name": "Jordan Pickford",
+          "position": "GK",
+          "image": "Pickford.webp"
+        },
+        {
+          "name": "Éderson",
+          "position": "GK",
+          "image": "Ederson.webp"
+        },
+        {
+          "name": "João Cancelo",
+          "position": "RB",
+          "image": "João Cancelo.webp"
+        },
+        {
+          "name": "Jules Koundé",
+          "position": "RB",
+          "image": "Koundé.webp"
+        },
+        {
+          "name": "Stefan de Vrij",
+          "position": "CB",
+          "image": "de Vrij.webp"
+        },
+        {
+          "name": "Manuel Akanji",
+          "position": "CB",
+          "image": "Akanji.webp"
+        },
+        {
+          "name": "Nayef Aguerd",
+          "position": "CB",
+          "image": "Aguerd.webp"
+        },
+        {
+          "name": "Leny Yoro",
+          "position": "CB",
+          "image": "Yoro.webp"
+        },
+        {
+          "name": "Rayan Aït-Nouri",
+          "position": "LB",
+          "image": "Aït-Nouri.webp"
+        },
+        {
+          "name": "Gayà",
+          "position": "LB",
+          "image": "Gayà.webp"
+        },
+        {
+          "name": "N'Golo Kanté",
+          "position": "CDM",
+          "image": "Kanté.webp"
+        },
+        {
+          "name": "Lewis Cook",
+          "position": "CDM",
+          "image": "Cook.webp"
+        },
+        {
+          "name": "Enzo Fernández",
+          "position": "CM",
+          "image": "Fernández.webp"
+        },
+        {
+          "name": "Lucas Paquetá",
+          "position": "CM",
+          "image": "Lucas Paquetá.webp"
+        },
+        {
+          "name": "Kevin Kampl",
+          "position": "CM",
+          "image": "Kampl.webp"
+        },
+        {
+          "name": "Rafa",
+          "position": "CAM",
+          "image": "Rafa.webp"
+        },
+        {
+          "name": "Ismaïla Sarr",
+          "position": "CAM",
+          "image": "Sarr.webp"
+        },
+        {
+          "name": "Mason Greenwood",
+          "position": "RM",
+          "image": "Greenwood.webp"
+        },
+        {
+          "name": "Sergi Darder",
+          "position": "LM",
+          "image": "Sergi Darder.webp"
+        },
+        {
+          "name": "Nicolas Kühn",
+          "position": "RW",
+          "image": "Kühn.webp"
+        },
+        {
+          "name": "Daniel James",
+          "position": "RW",
+          "image": "James.webp"
+        },
+        {
+          "name": "Jadon Sancho",
+          "position": "LW",
+          "image": "Sancho.webp"
+        },
+        {
+          "name": "Moleiro",
+          "position": "LW",
+          "image": "Moleiro.webp"
+        },
+        {
+          "name": "Lautaro Martínez",
+          "position": "ST",
+          "image": "Martínez.webp"
+        },
+        {
+          "name": "Ollie Watkins",
+          "position": "ST",
+          "image": "Watkins.webp"
+        }
+      ]
+    },
+    {
+      "name": "Los Angeles Lakers",
+      "manager": "Diego Simeone",
+      "logo": "Los Angeles Lakers.png",
+      "players": [
+        {
+          "name": "Thibaut Courtois",
+          "position": "GK",
+          "image": "Courtois.webp"
+        },
+        {
+          "name": "Nick Pope",
+          "position": "GK",
+          "image": "Pope.webp"
+        },
+        {
+          "name": "Djed Spence",
+          "position": "RB",
+          "image": "Spence.webp"
+        },
+        {
+          "name": "Joël Veltman",
+          "position": "RB",
+          "image": "Veltman.webp"
+        },
+        {
+          "name": "Marc Guéhi",
+          "position": "CB",
+          "image": "Guéhi.webp"
+        },
+        {
+          "name": "Robin Koch",
+          "position": "CB",
+          "image": "Koch.webp"
+        },
+        {
+          "name": "Marcos Senesi",
+          "position": "CB",
+          "image": "Senesi.webp"
+        },
+        {
+          "name": "Joachim Andersen",
+          "position": "CB",
+          "image": "Andersen.webp"
+        },
+        {
+          "name": "Federico Dimarco",
+          "position": "LB",
+          "image": "Dimarco.webp"
+        },
+        {
+          "name": "Joško Gvardiol",
+          "position": "LB",
+          "image": "Gvardiol.webp"
+        },
+        {
+          "name": "Thomas Partey",
+          "position": "CDM",
+          "image": "Partey.webp"
+        },
+        {
+          "name": "Johnny Cardoso",
+          "position": "CDM",
+          "image": "Johnny Cardoso.webp"
+        },
+        {
+          "name": "Martin Ødegaard",
+          "position": "CM",
+          "image": "Ødegaard.webp"
+        },
+        {
+          "name": "Henrikh Mkhitaryan",
+          "position": "CM",
+          "image": "Mkhitaryan.webp"
+        },
+        {
+          "name": "Seko Fofana",
+          "position": "CM",
+          "image": "Fofana.webp"
+        },
+        {
+          "name": "Adrien Rabiot",
+          "position": "CAM",
+          "image": "Rabiot.webp"
+        },
+        {
+          "name": "Teun Koopmeiners",
+          "position": "CAM",
+          "image": "Koopmeiners.webp"
+        },
+        {
+          "name": "Ridle Baku",
+          "position": "RM",
+          "image": "Baku.webp"
+        },
+        {
+          "name": "Serge Gnabry",
+          "position": "LM",
+          "image": "Gnabry.webp"
+        },
+        {
+          "name": "Daniel Podence",
+          "position": "RW",
+          "image": "Daniel Podence.webp"
+        },
+        {
+          "name": "Leon Bailey",
+          "position": "RW",
+          "image": "Bailey.webp"
+        },
+        {
+          "name": "Heung Min Son",
+          "position": "LW",
+          "image": "Son.webp"
+        },
+        {
+          "name": "Anthony Gordon",
+          "position": "LW",
+          "image": "Gordon.webp"
+        },
+        {
+          "name": "Patrik Schick",
+          "position": "ST",
+          "image": "Schick.webp"
+        },
+        {
+          "name": "Nicolas Jackson",
+          "position": "ST",
+          "image": "Jackson.webp"
+        }
+      ]
+    },
+    {
+      "name": "Melbourne Renegades",
+      "manager": "Enzo Maresca",
+      "logo": "Melbourne Renegades.png",
+      "players": [
+        {
+          "name": "Marco Carnesecchi",
+          "position": "GK",
+          "image": "Carnesecchi.webp"
+        },
+        {
+          "name": "David Soria",
+          "position": "GK",
+          "image": "David Soria.webp"
+        },
+        {
+          "name": "Conor Bradley",
+          "position": "RB",
+          "image": "Bradley.webp"
+        },
+        {
+          "name": "Jordan Teze",
+          "position": "RB",
+          "image": "Teze.webp"
+        },
+        {
+          "name": "Francesco Acerbi",
+          "position": "CB",
+          "image": "Acerbi.webp"
+        },
+        {
+          "name": "Fabian Schär",
+          "position": "CB",
+          "image": "Schär.webp"
+        },
+        {
+          "name": "John Stones",
+          "position": "CB",
+          "image": "Stones.webp"
+        },
+        {
+          "name": "Olivier Boscagli",
+          "position": "CB",
+          "image": "Boscagli.webp"
+        },
+        {
+          "name": "Nuno Mendes",
+          "position": "LB",
+          "image": "Nuno Mendes.webp"
+        },
+        {
+          "name": "Theo Hernández",
+          "position": "LB",
+          "image": "Hernández.webp"
+        },
+        {
+          "name": "Felix Nmecha",
+          "position": "CDM",
+          "image": "Nmecha.webp"
+        },
+        {
+          "name": "Marcel Sabitzer",
+          "position": "CDM",
+          "image": "Sabitzer.webp"
+        },
+        {
+          "name": "Yangel Herrera",
+          "position": "CM",
+          "image": "Herrera.webp"
+        },
+        {
+          "name": "Fred",
+          "position": "CM",
+          "image": "Fred.webp"
+        },
+        {
+          "name": "Mauro Arambarri",
+          "position": "CM",
+          "image": "Arambarri.webp"
+        },
+        {
+          "name": "Morgan Rogers",
+          "position": "CAM",
+          "image": "Rogers.webp"
+        },
+        {
+          "name": "Trincão",
+          "position": "CAM",
+          "image": "Trincão.webp"
+        },
+        {
+          "name": "Michael Olise",
+          "position": "RM",
+          "image": "Olise.webp"
+        },
+        {
+          "name": "Callum Hudson-Odoi",
+          "position": "LM",
+          "image": "Hudson-Odoi.webp"
+        },
+        {
+          "name": "Cengiz Ünder",
+          "position": "RW",
+          "image": "Ünder.webp"
+        },
+        {
+          "name": "Bertrand Traoré",
+          "position": "RW",
+          "image": "Traoré.webp"
+        },
+        {
+          "name": "Denis Bouanga",
+          "position": "LW",
+          "image": "Bouanga.webp"
+        },
+        {
+          "name": "João Mário",
+          "position": "LW",
+          "image": "João Mário.webp"
+        },
+        {
+          "name": "Serhou Guirassy",
+          "position": "ST",
+          "image": "Guirassy.webp"
+        },
+        {
+          "name": "Omar Marmoush",
+          "position": "ST",
+          "image": "Marmoush.webp"
+        }
+      ]
+    },
+    {
+      "name": "Mexico City FC",
+      "manager": "José Mourinho",
+      "logo": "Mexico City FC.png",
+      "players": [
+        {
+          "name": "Marc-André ter Stegen",
+          "position": "GK",
+          "image": "ter Stegen.webp"
+        },
+        {
+          "name": "Joan García",
+          "position": "GK",
+          "image": "Joan García.webp"
+        },
+        {
+          "name": "Achraf Hakimi",
+          "position": "RB",
+          "image": "Hakimi.webp"
+        },
+        {
+          "name": "Ola Aina",
+          "position": "RB",
+          "image": "Aina.webp"
+        },
+        {
+          "name": "William Saliba",
+          "position": "CB",
+          "image": "Saliba.webp"
+        },
+        {
+          "name": "Mohamed Simakan",
+          "position": "CB",
+          "image": "Simakan.webp"
+        },
+        {
+          "name": "Niklas Süle",
+          "position": "CB",
+          "image": "Süle.webp"
+        },
+        {
+          "name": "Geoffrey Kondogbia",
+          "position": "CB",
+          "image": "Kondogbia.webp"
+        },
+        {
+          "name": "Alphonso Davies",
+          "position": "LB",
+          "image": "Davies.webp"
+        },
+        {
+          "name": "Lewis Hall",
+          "position": "LB",
+          "image": "Hall.webp"
+        },
+        {
+          "name": "Mattéo Guendouzi",
+          "position": "CDM",
+          "image": "Guendouzi.webp"
+        },
+        {
+          "name": "Valentin Rongier",
+          "position": "CDM",
+          "image": "Rongier.webp"
+        },
+        {
+          "name": "Parejo",
+          "position": "CM",
+          "image": "Parejo.webp"
+        },
+        {
+          "name": "Nadiem Amiri",
+          "position": "CM",
+          "image": "Amiri.webp"
+        },
+        {
+          "name": "Andrey Santos",
+          "position": "CM",
+          "image": "Andrey Santos.webp"
+        },
+        {
+          "name": "Dominik Szoboszlai",
+          "position": "CAM",
+          "image": "Szoboszlai.webp"
+        },
+        {
+          "name": "Alejandro Garnacho",
+          "position": "CAM",
+          "image": "Garnacho.webp"
+        },
+        {
+          "name": "Riyad Mahrez",
+          "position": "RM",
+          "image": "Mahrez.webp"
+        },
+        {
+          "name": "Kingsley Coman",
+          "position": "LM",
+          "image": "Coman.webp"
+        },
+        {
+          "name": "Miguel Almirón",
+          "position": "RW",
+          "image": "Almirón.webp"
+        },
+        {
+          "name": "Adama Traoré",
+          "position": "RW",
+          "image": "Adama Traoré.webp"
+        },
+        {
+          "name": "Ryan Gauld",
+          "position": "LW",
+          "image": "Gauld.webp"
+        },
+        {
+          "name": "Jota",
+          "position": "LW",
+          "image": "Jota.webp"
+        },
+        {
+          "name": "Harry Kane",
+          "position": "ST",
+          "image": "Kane.webp"
+        },
+        {
+          "name": "Chris Wood",
+          "position": "ST",
+          "image": "Wood.webp"
+        }
+      ]
+    },
+    {
+      "name": "Mumbai Royals FC",
+      "manager": "Xavi Hernández",
+      "logo": "Mumbai Royals FC.png",
+      "players": [
+        {
+          "name": "Robert Sánchez",
+          "position": "GK",
+          "image": "Robert Sánchez.webp"
+        },
+        {
+          "name": "Gianluigi Donnarumma",
+          "position": "GK",
+          "image": "Donnarumma.webp"
+        },
+        {
+          "name": "Giovanni Di Lorenzo",
+          "position": "RB",
+          "image": "Di Lorenzo.webp"
+        },
+        {
+          "name": "Stefan Posch",
+          "position": "RB",
+          "image": "Posch.webp"
+        },
+        {
+          "name": "Bremer",
+          "position": "CB",
+          "image": "Bremer.webp"
+        },
+        {
+          "name": "Milan Škriniar",
+          "position": "CB",
+          "image": "Škriniar.webp"
+        },
+        {
+          "name": "Joe Gomez",
+          "position": "CB",
+          "image": "Gomez.webp"
+        },
+        {
+          "name": "Matteo Gabbia",
+          "position": "CB",
+          "image": "Gabbia.webp"
+        },
+        {
+          "name": "Álvaro Carreras",
+          "position": "LB",
+          "image": "Álvaro Carreras.webp"
+        },
+        {
+          "name": "Javi Galán",
+          "position": "LB",
+          "image": "Javi Galán.webp"
+        },
+        {
+          "name": "Pierre-Emile Højbjerg",
+          "position": "CDM",
+          "image": "Højbjerg.webp"
+        },
+        {
+          "name": "Idrissa Gueye",
+          "position": "CDM",
+          "image": "Gueye.webp"
+        },
+        {
+          "name": "Exequiel Palacios",
+          "position": "CM",
+          "image": "Palacios.webp"
+        },
+        {
+          "name": "Bryan Cristante",
+          "position": "CM",
+          "image": "Cristante.webp"
+        },
+        {
+          "name": "Lucas Bergvall",
+          "position": "CM",
+          "image": "Bergvall.webp"
+        },
+        {
+          "name": "Sancet",
+          "position": "CAM",
+          "image": "Sancet.webp"
+        },
+        {
+          "name": "Morgan Gibbs-White",
+          "position": "CAM",
+          "image": "Gibbs-White.webp"
+        },
+        {
+          "name": "Moussa Diaby",
+          "position": "RM",
+          "image": "Diaby.webp"
+        },
+        {
+          "name": "Raphinha",
+          "position": "LM",
+          "image": "Raphinha.webp"
+        },
+        {
+          "name": "Anders Dreyer",
+          "position": "RW",
+          "image": "Dreyer.webp"
+        },
+        {
+          "name": "Harry Wilson",
+          "position": "RW",
+          "image": "Wilson.webp"
+        },
+        {
+          "name": "Noa Lang",
+          "position": "LW",
+          "image": "Lang.webp"
+        },
+        {
+          "name": "Dwight McNeil",
+          "position": "LW",
+          "image": "McNeil.webp"
+        },
+        {
+          "name": "Jonathan Burkardt",
+          "position": "ST",
+          "image": "Burkardt.webp"
+        },
+        {
+          "name": "Randal Kolo Muani",
+          "position": "ST",
+          "image": "Kolo Muani.webp"
+        }
+      ]
+    },
+    {
+      "name": "Nairobi Thunder City",
+      "manager": "Ralf Rangnick",
+      "logo": "Nairobi Thunder City.png",
+      "players": [
+        {
+          "name": "Mile Svilar",
+          "position": "GK",
+          "image": "Svilar.webp"
+        },
+        {
+          "name": "Bernd Leno",
+          "position": "GK",
+          "image": "Leno.webp"
+        },
+        {
+          "name": "James Tavernier",
+          "position": "RB",
+          "image": "Tavernier.webp"
+        },
+        {
+          "name": "Sacha Boey",
+          "position": "RB",
+          "image": "Boey.webp"
+        },
+        {
+          "name": "Dayot Upamecano",
+          "position": "CB",
+          "image": "Upamecano.webp"
+        },
+        {
+          "name": "Éder Militão",
+          "position": "CB",
+          "image": "Éder Militão.webp"
+        },
+        {
+          "name": "David Alaba",
+          "position": "CB",
+          "image": "Alaba.webp"
+        },
+        {
+          "name": "Lucas Hernández",
+          "position": "CB",
+          "image": "Hernández.webp"
+        },
+        {
+          "name": "Neco Williams",
+          "position": "LB",
+          "image": "Williams.webp"
+        },
+        {
+          "name": "Joakim Mæhle",
+          "position": "LB",
+          "image": "Mæhle.webp"
+        },
+        {
+          "name": "Rodri",
+          "position": "CDM",
+          "image": "Rodri.webp"
+        },
+        {
+          "name": "Lucas Torreira",
+          "position": "CDM",
+          "image": "Torreira.webp"
+        },
+        {
+          "name": "Frenkie de Jong",
+          "position": "CM",
+          "image": "de Jong.webp"
+        },
+        {
+          "name": "Joelinton",
+          "position": "CM",
+          "image": "Joelinton.webp"
+        },
+        {
+          "name": "Mateo Kovačić",
+          "position": "CM",
+          "image": "Kovačić.webp"
+        },
+        {
+          "name": "Curtis Jones",
+          "position": "CAM",
+          "image": "Jones.webp"
+        },
+        {
+          "name": "Emil Forsberg",
+          "position": "CAM",
+          "image": "Forsberg.webp"
+        },
+        {
+          "name": "Lamine Yamal",
+          "position": "RM",
+          "image": "Lamine Yamal.webp"
+        },
+        {
+          "name": "Álex Berenguer",
+          "position": "LM",
+          "image": "Álex Berenguer.webp"
+        },
+        {
+          "name": "Ethan Nwaneri",
+          "position": "RW",
+          "image": "Nwaneri.webp"
+        },
+        {
+          "name": "Jonathan Ikoné",
+          "position": "RW",
+          "image": "Ikoné.webp"
+        },
+        {
+          "name": "Yannick Carrasco",
+          "position": "LW",
+          "image": "Carrasco.webp"
+        },
+        {
+          "name": "Riquelme",
+          "position": "LW",
+          "image": "Riquelme.webp"
+        },
+        {
+          "name": "Duván Zapata",
+          "position": "ST",
+          "image": "Zapata.webp"
+        },
+        {
+          "name": "Jonathan David",
+          "position": "ST",
+          "image": "David.webp"
+        }
+      ]
+    },
+    {
+      "name": "New York Titans",
+      "manager": "Mauricio Pochettino",
+      "logo": "New York Titans.png",
+      "players": [
+        {
+          "name": "Lucas Chevalier",
+          "position": "GK",
+          "image": "Chevalier.webp"
+        },
+        {
+          "name": "Wladimiro Falcone",
+          "position": "GK",
+          "image": "Falcone.webp"
+        },
+        {
+          "name": "Marcos Llorente",
+          "position": "RB",
+          "image": "Marcos Llorente.webp"
+        },
+        {
+          "name": "Jurriën Timber",
+          "position": "RB",
+          "image": "Timber.webp"
+        },
+        {
+          "name": "Nico Schlotterbeck",
+          "position": "CB",
+          "image": "Schlotterbeck.webp"
+        },
+        {
+          "name": "Nathan Aké",
+          "position": "CB",
+          "image": "Aké.webp"
+        },
+        {
+          "name": "Aymeric Laporte",
+          "position": "CB",
+          "image": "Laporte.webp"
+        },
+        {
+          "name": "Evan Ndicka",
+          "position": "CB",
+          "image": "Ndicka.webp"
+        },
+        {
+          "name": "Robin Gosens",
+          "position": "LB",
+          "image": "Gosens.webp"
+        },
+        {
+          "name": "Nicolás Tagliafico",
+          "position": "LB",
+          "image": "Tagliafico.webp"
+        },
+        {
+          "name": "Declan Rice",
+          "position": "CDM",
+          "image": "Rice.webp"
+        },
+        {
+          "name": "Boubacar Kamara",
+          "position": "CDM",
+          "image": "Kamara.webp"
+        },
+        {
+          "name": "Luka Modrić",
+          "position": "CM",
+          "image": "Modrić.webp"
+        },
+        {
+          "name": "Mario Pašalić",
+          "position": "CM",
+          "image": "Pašalić.webp"
+        },
+        {
+          "name": "Kobbie Mainoo",
+          "position": "CM",
+          "image": "Mainoo.webp"
+        },
+        {
+          "name": "Mikkel Damsgaard",
+          "position": "CAM",
+          "image": "Damsgaard.webp"
+        },
+        {
+          "name": "Thiago Almada",
+          "position": "CAM",
+          "image": "Almada.webp"
+        },
+        {
+          "name": "Takefusa Kubo",
+          "position": "RM",
+          "image": "Kubo.webp"
+        },
+        {
+          "name": "John McGinn",
+          "position": "LM",
+          "image": "McGinn.webp"
+        },
+        {
+          "name": "Samuel Chukwueze",
+          "position": "RW",
+          "image": "Chukwueze.webp"
+        },
+        {
+          "name": "Simon Adingra",
+          "position": "RW",
+          "image": "Adingra.webp"
+        },
+        {
+          "name": "Hirving Lozano",
+          "position": "LW",
+          "image": "Lozano.webp"
+        },
+        {
+          "name": "Ansu Fati",
+          "position": "LW",
+          "image": "Ansu Fati.webp"
+        },
+        {
+          "name": "Ousmane Dembélé",
+          "position": "ST",
+          "image": "Dembélé.webp"
+        },
+        {
+          "name": "Oyarzabal",
+          "position": "ST",
+          "image": "Oyarzabal.webp"
+        }
+      ]
+    },
+    {
+      "name": "Riyadh Desert Kings",
+      "manager": "Didier Deschamps",
+      "logo": "Riyadh Desert Kings.png",
+      "players": [
+        {
+          "name": "Alisson",
+          "position": "GK",
+          "image": "Alisson.webp"
+        },
+        {
+          "name": "Kevin Trapp",
+          "position": "GK",
+          "image": "Trapp.webp"
+        },
+        {
+          "name": "Jonathan Clauss",
+          "position": "RB",
+          "image": "Clauss.webp"
+        },
+        {
+          "name": "Yan Couto",
+          "position": "RB",
+          "image": "Yan Couto.webp"
+        },
+        {
+          "name": "Ronald Araujo",
+          "position": "CB",
+          "image": "Araujo.webp"
+        },
+        {
+          "name": "Davinson Sánchez",
+          "position": "CB",
+          "image": "Sánchez.webp"
+        },
+        {
+          "name": "Wilfried Singo",
+          "position": "CB",
+          "image": "Singo.webp"
+        },
+        {
+          "name": "Jarrad Branthwaite",
+          "position": "CB",
+          "image": "Branthwaite.webp"
+        },
+        {
+          "name": "Maximilian Mittelstädt",
+          "position": "LB",
+          "image": "Mittelstädt.webp"
+        },
+        {
+          "name": "Jorrel Hato",
+          "position": "LB",
+          "image": "Hato.webp"
+        },
+        {
+          "name": "Manuel Locatelli",
+          "position": "CDM",
+          "image": "Locatelli.webp"
+        },
+        {
+          "name": "Rúben Neves",
+          "position": "CDM",
+          "image": "Rúben Neves.webp"
+        },
+        {
+          "name": "Stanislav Lobotka",
+          "position": "CM",
+          "image": "Lobotka.webp"
+        },
+        {
+          "name": "Piotr Zieliński",
+          "position": "CM",
+          "image": "Zieliński.webp"
+        },
+        {
+          "name": "Lewis Ferguson",
+          "position": "CM",
+          "image": "Ferguson.webp"
+        },
+        {
+          "name": "Lorenzo Pellegrini",
+          "position": "CAM",
+          "image": "Pellegrini.webp"
+        },
+        {
+          "name": "Amad",
+          "position": "CAM",
+          "image": "Amad.webp"
+        },
+        {
+          "name": "Ritsu Doan",
+          "position": "RM",
+          "image": "Doan.webp"
+        },
+        {
+          "name": "Steven Bergwijn",
+          "position": "LM",
+          "image": "Bergwijn.webp"
+        },
+        {
+          "name": "Rodrygo",
+          "position": "RW",
+          "image": "Rodrygo.webp"
+        },
+        {
+          "name": "Phil Foden",
+          "position": "RW",
+          "image": "Foden.webp"
+        },
+        {
+          "name": "Bruma",
+          "position": "LW",
+          "image": "Bruma.webp"
+        },
+        {
+          "name": "Bryan Gil",
+          "position": "LW",
+          "image": "Bryan Gil.webp"
+        },
+        {
+          "name": "Alexander Isak",
+          "position": "ST",
+          "image": "Isak.webp"
+        },
+        {
+          "name": "Edin Džeko",
+          "position": "ST",
+          "image": "Džeko.webp"
+        }
+      ]
+    },
+    {
+      "name": "Sahara Wanderers",
+      "manager": "Arsène Wenger",
+      "logo": "Sahara Wanderers.png",
+      "players": [
+        {
+          "name": "David Raya",
+          "position": "GK",
+          "image": "David Raya.webp"
+        },
+        {
+          "name": "André Onana",
+          "position": "GK",
+          "image": "Onana.webp"
+        },
+        {
+          "name": "Benjamin White",
+          "position": "RB",
+          "image": "White.webp"
+        },
+        {
+          "name": "Noussair Mazraoui",
+          "position": "RB",
+          "image": "Mazraoui.webp"
+        },
+        {
+          "name": "Ibrahima Konaté",
+          "position": "CB",
+          "image": "Konaté.webp"
+        },
+        {
+          "name": "Iñigo Martínez",
+          "position": "CB",
+          "image": "Iñigo Martínez.webp"
+        },
+        {
+          "name": "Micky van de Ven",
+          "position": "CB",
+          "image": "van de Ven.webp"
+        },
+        {
+          "name": "Matthijs de Ligt",
+          "position": "CB",
+          "image": "de Ligt.webp"
+        },
+        {
+          "name": "Andrew Robertson",
+          "position": "LB",
+          "image": "Robertson.webp"
+        },
+        {
+          "name": "Álex Moreno",
+          "position": "LB",
+          "image": "Álex Moreno.webp"
+        },
+        {
+          "name": "Fabinho",
+          "position": "CDM",
+          "image": "Fabinho.webp"
+        },
+        {
+          "name": "Pascal Groß",
+          "position": "CDM",
+          "image": "Groß.webp"
+        },
+        {
+          "name": "Gabriel Sara",
+          "position": "CM",
+          "image": "Gabriel Sara.webp"
+        },
+        {
+          "name": "Carlos Soler",
+          "position": "CM",
+          "image": "Carlos Soler.webp"
+        },
+        {
+          "name": "Mathias Jensen",
+          "position": "CM",
+          "image": "Jensen.webp"
+        },
+        {
+          "name": "Isco",
+          "position": "CAM",
+          "image": "Isco.webp"
+        },
+        {
+          "name": "Julian Brandt",
+          "position": "CAM",
+          "image": "Brandt.webp"
+        },
+        {
+          "name": "Antoine Semenyo",
+          "position": "RM",
+          "image": "Semenyo.webp"
+        },
+        {
+          "name": "Kevin Schade",
+          "position": "LM",
+          "image": "Schade.webp"
+        },
+        {
+          "name": "Marco Asensio",
+          "position": "RW",
+          "image": "Marco Asensio.webp"
+        },
+        {
+          "name": "Matías Rojas",
+          "position": "RW",
+          "image": "Rojas.webp"
+        },
+        {
+          "name": "Gabriel Martinelli",
+          "position": "LW",
+          "image": "Gabriel Martinelli.webp"
+        },
+        {
+          "name": "Malick Fofana",
+          "position": "LW",
+          "image": "Fofana.webp"
+        },
+        {
+          "name": "Julián Alvarez",
+          "position": "ST",
+          "image": "Alvarez.webp"
+        },
+        {
+          "name": "Ayoze",
+          "position": "ST",
+          "image": "Ayoze.webp"
+        }
+      ]
+    },
+    {
+      "name": "Seoul Phoenix City",
+      "manager": "Claudio Ranieri",
+      "logo": "Seoul Phoenix City.png",
+      "players": [
+        {
+          "name": "Emiliano Martínez",
+          "position": "GK",
+          "image": "Martínez.webp"
+        },
+        {
+          "name": "Andriy Lunin",
+          "position": "GK",
+          "image": "Lunin.webp"
+        },
+        {
+          "name": "Trent Alexander-Arnold",
+          "position": "RB",
+          "image": "Alexander-Arnold.webp"
+        },
+        {
+          "name": "Mingueza",
+          "position": "RB",
+          "image": "Mingueza.webp"
+        },
+        {
+          "name": "Ezri Konsa",
+          "position": "CB",
+          "image": "Konsa.webp"
+        },
+        {
+          "name": "Trevoh Chalobah",
+          "position": "CB",
+          "image": "Chalobah.webp"
+        },
+        {
+          "name": "Illia Zabarnyi",
+          "position": "CB",
+          "image": "Zabarnyi.webp"
+        },
+        {
+          "name": "Malick Thiaw",
+          "position": "CB",
+          "image": "Thiaw.webp"
+        },
+        {
+          "name": "Balde",
+          "position": "LB",
+          "image": "Balde.webp"
+        },
+        {
+          "name": "David Raum",
+          "position": "LB",
+          "image": "Raum.webp"
+        },
+        {
+          "name": "Aurélien Tchouaméni",
+          "position": "CDM",
+          "image": "Tchouaméni.webp"
+        },
+        {
+          "name": "Robert Andrich",
+          "position": "CDM",
+          "image": "Andrich.webp"
+        },
+        {
+          "name": "Fredrik Aursnes",
+          "position": "CM",
+          "image": "Aursnes.webp"
+        },
+        {
+          "name": "Weston McKennie",
+          "position": "CM",
+          "image": "McKennie.webp"
+        },
+        {
+          "name": "Thomas Lemar",
+          "position": "CM",
+          "image": "Lemar.webp"
+        },
+        {
+          "name": "Paulo Dybala",
+          "position": "CAM",
+          "image": "Dybala.webp"
+        },
+        {
+          "name": "Malcom",
+          "position": "CAM",
+          "image": "Malcom.webp"
+        },
+        {
+          "name": "Arda Güler",
+          "position": "RM",
+          "image": "Güler.webp"
+        },
+        {
+          "name": "Grimaldo",
+          "position": "LM",
+          "image": "Grimaldo.webp"
+        },
+        {
+          "name": "Rayan Cherki",
+          "position": "RW",
+          "image": "Cherki.webp"
+        },
+        {
+          "name": "Luis Henrique",
+          "position": "RW",
+          "image": "Luis Henrique.webp"
+        },
+        {
+          "name": "Raheem Sterling",
+          "position": "LW",
+          "image": "Sterling.webp"
+        },
+        {
+          "name": "Jacob Bruun Larsen",
+          "position": "LW",
+          "image": "Larsen.webp"
+        },
+        {
+          "name": "Hugo Ekitiké",
+          "position": "ST",
+          "image": "Ekitiké.webp"
+        },
+        {
+          "name": "Morata",
+          "position": "ST",
+          "image": "Morata.webp"
+        }
+      ]
+    },
+    {
+      "name": "Shanghai Dragons",
+      "manager": "Oliver Glasner",
+      "logo": "Shanghai Dragons.png",
+      "players": [
+        {
+          "name": "Péter Gulácsi",
+          "position": "GK",
+          "image": "Gulácsi.webp"
+        },
+        {
+          "name": "Gerónimo Rulli",
+          "position": "GK",
+          "image": "Rulli.webp"
+        },
+        {
+          "name": "Benjamin Henrichs",
+          "position": "RB",
+          "image": "Henrichs.webp"
+        },
+        {
+          "name": "Aaron Hickey",
+          "position": "RB",
+          "image": "Hickey.webp"
+        },
+        {
+          "name": "Murillo",
+          "position": "CB",
+          "image": "Murillo.webp"
+        },
+        {
+          "name": "Pierre Kalulu",
+          "position": "CB",
+          "image": "Kalulu.webp"
+        },
+        {
+          "name": "Wesley Fofana",
+          "position": "CB",
+          "image": "Fofana.webp"
+        },
+        {
+          "name": "Lutsharel Geertruida",
+          "position": "CB",
+          "image": "Geertruida.webp"
+        },
+        {
+          "name": "Destiny Udogie",
+          "position": "LB",
+          "image": "Udogie.webp"
+        },
+        {
+          "name": "Emerson",
+          "position": "LB",
+          "image": "Emerson.webp"
+        },
+        {
+          "name": "Rodrigo Bentancur",
+          "position": "CDM",
+          "image": "Bentancur.webp"
+        },
+        {
+          "name": "Franck Yannick Kessié",
+          "position": "CDM",
+          "image": "Kessié.webp"
+        },
+        {
+          "name": "Douglas Luiz",
+          "position": "CM",
+          "image": "Douglas Luiz.webp"
+        },
+        {
+          "name": "Quinten Timber",
+          "position": "CM",
+          "image": "Timber.webp"
+        },
+        {
+          "name": "Kiernan Dewsbury-Hall",
+          "position": "CM",
+          "image": "Dewsbury-Hall.webp"
+        },
+        {
+          "name": "Matheus Cunha",
+          "position": "CAM",
+          "image": "Matheus Cunha.webp"
+        },
+        {
+          "name": "Malik Tillman",
+          "position": "CAM",
+          "image": "Tillman.webp"
+        },
+        {
+          "name": "Leroy Sané",
+          "position": "RM",
+          "image": "Sané.webp"
+        },
+        {
+          "name": "Barış Alper Yılmaz",
+          "position": "LM",
+          "image": "Yılmaz.webp"
+        },
+        {
+          "name": "Anthony Elanga",
+          "position": "RW",
+          "image": "Elanga.webp"
+        },
+        {
+          "name": "Alexis Saelemaekers",
+          "position": "RW",
+          "image": "Saelemaekers.webp"
+        },
+        {
+          "name": "Khvicha Kvaratskhelia",
+          "position": "LW",
+          "image": "Kvaratskhelia.webp"
+        },
+        {
+          "name": "Bradley Barcola",
+          "position": "LW",
+          "image": "Barcola.webp"
+        },
+        {
+          "name": "Karim Benzema",
+          "position": "ST",
+          "image": "Benzema.webp"
+        },
+        {
+          "name": "Robert Lewandowski",
+          "position": "ST",
+          "image": "Lewandowski.webp"
+        }
+      ]
+    },
+    {
+      "name": "Tokyo Verdy",
+      "manager": "Sir Alex Ferguson",
+      "logo": "Tokyo Verdy.png",
+      "players": [
+        {
+          "name": "Unai Simón",
+          "position": "GK",
+          "image": "Unai Simón.webp"
+        },
+        {
+          "name": "Rui Silva",
+          "position": "GK",
+          "image": "Rui Silva.webp"
+        },
+        {
+          "name": "Daniel Muñoz",
+          "position": "RB",
+          "image": "Muñoz.webp"
+        },
+        {
+          "name": "Devyne Rensch",
+          "position": "RB",
+          "image": "Rensch.webp"
+        },
+        {
+          "name": "Antonio Rüdiger",
+          "position": "CB",
+          "image": "Rüdiger.webp"
+        },
+        {
+          "name": "Fikayo Tomori",
+          "position": "CB",
+          "image": "Tomori.webp"
+        },
+        {
+          "name": "Dan Burn",
+          "position": "CB",
+          "image": "Burn.webp"
+        },
+        {
+          "name": "Gabriel Paulista",
+          "position": "CB",
+          "image": "Gabriel Paulista.webp"
+        },
+        {
+          "name": "Raphaël Guerreiro",
+          "position": "LB",
+          "image": "Guerreiro.webp"
+        },
+        {
+          "name": "Ben Chilwell",
+          "position": "LB",
+          "image": "Chilwell.webp"
+        },
+        {
+          "name": "Ismaël Bennacer",
+          "position": "CDM",
+          "image": "Bennacer.webp"
+        },
+        {
+          "name": "Elliot Anderson",
+          "position": "CDM",
+          "image": "Anderson.webp"
+        },
+        {
+          "name": "Vitinha",
+          "position": "CM",
+          "image": "Vitinha.webp"
+        },
+        {
+          "name": "Dani Ceballos",
+          "position": "CM",
+          "image": "Dani Ceballos.webp"
+        },
+        {
+          "name": "Warren Zaïre-Emery",
+          "position": "CM",
+          "image": "Zaïre-Emery.webp"
+        },
+        {
+          "name": "Florian Wirtz",
+          "position": "CAM",
+          "image": "Wirtz.webp"
+        },
+        {
+          "name": "Xavi Simons",
+          "position": "CAM",
+          "image": "Simons.webp"
+        },
+        {
+          "name": "Pedro Neto",
+          "position": "RM",
+          "image": "Pedro Neto.webp"
+        },
+        {
+          "name": "Cody Gakpo",
+          "position": "LM",
+          "image": "Gakpo.webp"
+        },
+        {
+          "name": "Ángel Di María",
+          "position": "RW",
+          "image": "Di María.webp"
+        },
+        {
+          "name": "Donyell Malen",
+          "position": "RW",
+          "image": "Malen.webp"
+        },
+        {
+          "name": "Rafael Leão",
+          "position": "LW",
+          "image": "Rafael Leão.webp"
+        },
+        {
+          "name": "Takumi Minamino",
+          "position": "LW",
+          "image": "Minamino.webp"
+        },
+        {
+          "name": "Artem Dovbyk",
+          "position": "ST",
+          "image": "Dovbyk.webp"
+        },
+        {
+          "name": "Ante Budimir",
+          "position": "ST",
+          "image": "Budimir.webp"
+        }
+      ]
+    }
+  ]
+}
