@@ -355,6 +355,11 @@ img { max-width: 100%; display: block; }
   margin: 0;
 }
 
+.version-tag {
+  color: var(--color-gold);
+  font-weight: 600;
+}
+
 /* ---------- Accessibility ---------- */
 
 a:focus-visible,
