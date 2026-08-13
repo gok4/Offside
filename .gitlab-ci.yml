@@ -1,0 +1,20 @@
+stages:
+  - validate
+  - deploy
+
+validate-data:
+  stage: validate
+  image: python:3.11-slim
+  script:
+    - python scripts/match_players.py data/teams.json assets/player_cards
+
+pages:
+  stage: deploy
+  script:
+    - mkdir public
+    - cp -r index.html css js data assets public/
+  artifacts:
+    paths:
+      - public
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
