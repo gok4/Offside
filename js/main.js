@@ -127,20 +127,19 @@ async function renderTeam(slug) {
 
 function renderPlayerCard(teamName, player) {
   if (!player.image) {
-    // Data exists but the image hasn't been prepared/validated yet.
     return `
-      <div class="player-card">
+      <button class="player-card" data-team="${escapeHtml(teamName)}" data-player="${escapeHtml(player.name)}">
         <div class="player-img-wrap"><span class="empty-state" style="border:none;padding:0;font-size:0.7rem;">No image yet</span></div>
         <div class="player-meta">
           <p class="player-name">${escapeHtml(player.name)}</p>
           <span class="player-position">${escapeHtml(player.position)}</span>
         </div>
-      </div>
+      </button>
     `;
   }
   const src = `assets/player_cards/${encodeURIComponent(teamName)}/${encodeURIComponent(player.image)}`;
   return `
-    <div class="player-card">
+    <button class="player-card" data-team="${escapeHtml(teamName)}" data-player="${escapeHtml(player.name)}">
       <div class="player-img-wrap">
         <img src="${src}" alt="${escapeHtml(player.name)}" loading="lazy">
       </div>
@@ -148,7 +147,7 @@ function renderPlayerCard(teamName, player) {
         <p class="player-name">${escapeHtml(player.name)}</p>
         <span class="player-position">${escapeHtml(player.position)}</span>
       </div>
-    </div>
+    </button>
   `;
 }
 
@@ -198,6 +197,81 @@ async function loadVersion() {
     // no version.json yet — footer just omits the version, that's fine
   }
 }
+
+/* ---------- Player quick-view modal ---------- */
+
+const STAT_LABELS = { pac: 'PAC', sho: 'SHO', pas: 'PAS', dri: 'DRI', def: 'DEF', phy: 'PHY' };
+
+const modalOverlay = document.getElementById('player-modal');
+const modalBody = document.getElementById('modal-body');
+const modalClose = document.getElementById('modal-close');
+
+function statBar(label, value) {
+  const pct = Math.max(0, Math.min(100, value));
+  return `
+    <div class="stat-row">
+      <span class="stat-label">${label}</span>
+      <div class="stat-bar"><div class="stat-fill" style="width:${pct}%"></div></div>
+      <span class="stat-value">${value}</span>
+    </div>
+  `;
+}
+
+async function openPlayerModal(teamName, playerName) {
+  const teams = await loadTeams();
+  const team = teams.find(t => t.name === teamName);
+  const player = team?.players.find(p => p.name === playerName);
+  if (!player) return;
+
+  const imgSrc = player.image
+    ? `assets/player_cards/${encodeURIComponent(teamName)}/${encodeURIComponent(player.image)}`
+    : null;
+
+  if (!player.stats) {
+    modalBody.innerHTML = `
+      ${imgSrc ? `<img class="modal-player-img" src="${imgSrc}" alt="${escapeHtml(playerName)}">` : ''}
+      <h2 class="modal-name">${escapeHtml(playerName)}</h2>
+      <p class="modal-sub">${escapeHtml(player.position)} · ${escapeHtml(teamName)}</p>
+      <p class="empty-state" style="margin-top:16px;">Stats not available for this player yet.</p>
+    `;
+  } else {
+    const s = player.stats;
+    modalBody.innerHTML = `
+      ${imgSrc ? `<img class="modal-player-img" src="${imgSrc}" alt="${escapeHtml(playerName)}">` : ''}
+      <h2 class="modal-name">${escapeHtml(playerName)}</h2>
+      <p class="modal-sub">${escapeHtml(player.position)} · ${escapeHtml(teamName)}${s.nation ? ` · ${escapeHtml(s.nation)}` : ''}</p>
+      <div class="modal-ovr">${s.ovr} <span>OVR</span></div>
+      <div class="stat-list">
+        ${Object.entries(STAT_LABELS).map(([key, label]) => statBar(label, s[key])).join('')}
+      </div>
+    `;
+  }
+
+  modalOverlay.hidden = false;
+  document.body.style.overflow = 'hidden';
+}
+
+function closePlayerModal() {
+  modalOverlay.hidden = true;
+  document.body.style.overflow = '';
+}
+
+modalClose.addEventListener('click', closePlayerModal);
+modalOverlay.addEventListener('click', (e) => {
+  if (e.target === modalOverlay) closePlayerModal();
+});
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && !modalOverlay.hidden) closePlayerModal();
+});
+
+// Event delegation: catches clicks on player cards in home/team/icons views,
+// since content is re-rendered dynamically by the router.
+app.addEventListener('click', (e) => {
+  const card = e.target.closest('.player-card');
+  if (card && card.dataset.team && card.dataset.player) {
+    openPlayerModal(card.dataset.team, card.dataset.player);
+  }
+});
 
 /* ---------- Router ---------- */
 

@@ -325,6 +325,133 @@ img { max-width: 100%; display: block; }
   font-size: 0.9rem;
 }
 
+/* ---------- Player quick-view modal ---------- */
+
+.player-card {
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  color: inherit;
+  border: 1px solid var(--color-line);
+  padding: 0;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgba(5, 9, 17, 0.78);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal-overlay[hidden] { display: none; }
+
+.modal-card {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  max-height: 88vh;
+  overflow-y: auto;
+  background: var(--color-bg-card);
+  border: 1px solid rgba(240, 192, 90, 0.25);
+  border-radius: 14px;
+  padding: 28px 24px 24px;
+  box-shadow: 0 0 60px rgba(240, 192, 90, 0.08);
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  background: none;
+  border: none;
+  color: var(--color-mist);
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.modal-close:hover { color: var(--color-chalk); }
+
+.modal-player-img {
+  width: 140px;
+  margin: 0 auto 16px;
+  aspect-ratio: 1288 / 1800;
+  object-fit: contain;
+}
+
+.modal-name {
+  font-size: 1.3rem;
+  margin: 0 0 4px;
+  text-align: center;
+}
+
+.modal-sub {
+  color: var(--color-mist);
+  font-size: 0.82rem;
+  text-align: center;
+  margin: 0 0 18px;
+}
+
+.modal-ovr {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--color-gold);
+  margin-bottom: 18px;
+}
+
+.modal-ovr span {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--color-mist);
+}
+
+.stat-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.stat-row {
+  display: grid;
+  grid-template-columns: 36px 1fr 28px;
+  align-items: center;
+  gap: 10px;
+}
+
+.stat-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--color-mist);
+}
+
+.stat-bar {
+  height: 6px;
+  background: var(--color-bg-elevated);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.stat-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-turf), var(--color-gold));
+  border-radius: 3px;
+}
+
+.stat-value {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-align: right;
+}
+
 /* ---------- Footer ---------- */
 
 .site-footer {
