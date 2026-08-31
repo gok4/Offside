@@ -1,0 +1,5527 @@
+{
+  "season": "2026",
+  "format": "double round-robin",
+  "matchweeks": 46,
+  "fixtures": [
+    {
+      "matchId": "gfl-2026-001",
+      "matchweek": 1,
+      "homeTeam": "Amsterdam Ravens",
+      "awayTeam": "Tokyo Verdy",
+      "date": "2026-08-30",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-002",
+      "matchweek": 1,
+      "homeTeam": "Barcelona Titans",
+      "awayTeam": "Shanghai Dragons",
+      "date": "2026-08-30",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-003",
+      "matchweek": 1,
+      "homeTeam": "Bengaluru Rising FC",
+      "awayTeam": "Seoul Phoenix City",
+      "date": "2026-08-30",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-004",
+      "matchweek": 1,
+      "homeTeam": "Celtic FC",
+      "awayTeam": "Sahara Wanderers",
+      "date": "2026-08-30",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-005",
+      "matchweek": 1,
+      "homeTeam": "Delhi Capitals",
+      "awayTeam": "Riyadh Desert Kings",
+      "date": "2026-08-30",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-006",
+      "matchweek": 1,
+      "homeTeam": "Dubai Falcons",
+      "awayTeam": "New York Titans",
+      "date": "2026-08-30",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-007",
+      "matchweek": 1,
+      "homeTeam": "FC Copenhagen",
+      "awayTeam": "Nairobi Thunder City",
+      "date": "2026-08-30",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-008",
+      "matchweek": 1,
+      "homeTeam": "Galacticos FC",
+      "awayTeam": "Mumbai Royals FC",
+      "date": "2026-08-30",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-009",
+      "matchweek": 1,
+      "homeTeam": "Glasgow United",
+      "awayTeam": "Mexico City FC",
+      "date": "2026-08-30",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-010",
+      "matchweek": 1,
+      "homeTeam": "Inter Miami",
+      "awayTeam": "Melbourne Renegades",
+      "date": "2026-08-30",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-011",
+      "matchweek": 1,
+      "homeTeam": "Johannesburg Wolves",
+      "awayTeam": "Los Angeles Lakers",
+      "date": "2026-08-30",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-012",
+      "matchweek": 1,
+      "homeTeam": "Lisbon Lions",
+      "awayTeam": "London Crusaders FC",
+      "date": "2026-08-30",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-013",
+      "matchweek": 2,
+      "homeTeam": "Shanghai Dragons",
+      "awayTeam": "Amsterdam Ravens",
+      "date": "2026-09-06",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-014",
+      "matchweek": 2,
+      "homeTeam": "Seoul Phoenix City",
+      "awayTeam": "Tokyo Verdy",
+      "date": "2026-09-06",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-015",
+      "matchweek": 2,
+      "homeTeam": "Sahara Wanderers",
+      "awayTeam": "Barcelona Titans",
+      "date": "2026-09-06",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-016",
+      "matchweek": 2,
+      "homeTeam": "Riyadh Desert Kings",
+      "awayTeam": "Bengaluru Rising FC",
+      "date": "2026-09-06",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-017",
+      "matchweek": 2,
+      "homeTeam": "New York Titans",
+      "awayTeam": "Celtic FC",
+      "date": "2026-09-06",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-018",
+      "matchweek": 2,
+      "homeTeam": "Nairobi Thunder City",
+      "awayTeam": "Delhi Capitals",
+      "date": "2026-09-06",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-019",
+      "matchweek": 2,
+      "homeTeam": "Mumbai Royals FC",
+      "awayTeam": "Dubai Falcons",
+      "date": "2026-09-06",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-020",
+      "matchweek": 2,
+      "homeTeam": "Mexico City FC",
+      "awayTeam": "FC Copenhagen",
+      "date": "2026-09-06",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-021",
+      "matchweek": 2,
+      "homeTeam": "Melbourne Renegades",
+      "awayTeam": "Galacticos FC",
+      "date": "2026-09-06",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-022",
+      "matchweek": 2,
+      "homeTeam": "Los Angeles Lakers",
+      "awayTeam": "Glasgow United",
+      "date": "2026-09-06",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-023",
+      "matchweek": 2,
+      "homeTeam": "London Crusaders FC",
+      "awayTeam": "Inter Miami",
+      "date": "2026-09-06",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-024",
+      "matchweek": 2,
+      "homeTeam": "Lisbon Lions",
+      "awayTeam": "Johannesburg Wolves",
+      "date": "2026-09-06",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-025",
+      "matchweek": 3,
+      "homeTeam": "Amsterdam Ravens",
+      "awayTeam": "Seoul Phoenix City",
+      "date": "2026-09-13",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-026",
+      "matchweek": 3,
+      "homeTeam": "Shanghai Dragons",
+      "awayTeam": "Sahara Wanderers",
+      "date": "2026-09-13",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-027",
+      "matchweek": 3,
+      "homeTeam": "Tokyo Verdy",
+      "awayTeam": "Riyadh Desert Kings",
+      "date": "2026-09-13",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-028",
+      "matchweek": 3,
+      "homeTeam": "Barcelona Titans",
+      "awayTeam": "New York Titans",
+      "date": "2026-09-13",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-029",
+      "matchweek": 3,
+      "homeTeam": "Bengaluru Rising FC",
+      "awayTeam": "Nairobi Thunder City",
+      "date": "2026-09-13",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-030",
+      "matchweek": 3,
+      "homeTeam": "Celtic FC",
+      "awayTeam": "Mumbai Royals FC",
+      "date": "2026-09-13",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-031",
+      "matchweek": 3,
+      "homeTeam": "Delhi Capitals",
+      "awayTeam": "Mexico City FC",
+      "date": "2026-09-13",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-032",
+      "matchweek": 3,
+      "homeTeam": "Dubai Falcons",
+      "awayTeam": "Melbourne Renegades",
+      "date": "2026-09-13",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-033",
+      "matchweek": 3,
+      "homeTeam": "FC Copenhagen",
+      "awayTeam": "Los Angeles Lakers",
+      "date": "2026-09-13",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-034",
+      "matchweek": 3,
+      "homeTeam": "Galacticos FC",
+      "awayTeam": "London Crusaders FC",
+      "date": "2026-09-13",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-035",
+      "matchweek": 3,
+      "homeTeam": "Glasgow United",
+      "awayTeam": "Lisbon Lions",
+      "date": "2026-09-13",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-036",
+      "matchweek": 3,
+      "homeTeam": "Inter Miami",
+      "awayTeam": "Johannesburg Wolves",
+      "date": "2026-09-13",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-037",
+      "matchweek": 4,
+      "homeTeam": "Sahara Wanderers",
+      "awayTeam": "Amsterdam Ravens",
+      "date": "2026-09-20",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-038",
+      "matchweek": 4,
+      "homeTeam": "Riyadh Desert Kings",
+      "awayTeam": "Seoul Phoenix City",
+      "date": "2026-09-20",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-039",
+      "matchweek": 4,
+      "homeTeam": "New York Titans",
+      "awayTeam": "Shanghai Dragons",
+      "date": "2026-09-20",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-040",
+      "matchweek": 4,
+      "homeTeam": "Nairobi Thunder City",
+      "awayTeam": "Tokyo Verdy",
+      "date": "2026-09-20",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-041",
+      "matchweek": 4,
+      "homeTeam": "Mumbai Royals FC",
+      "awayTeam": "Barcelona Titans",
+      "date": "2026-09-20",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-042",
+      "matchweek": 4,
+      "homeTeam": "Mexico City FC",
+      "awayTeam": "Bengaluru Rising FC",
+      "date": "2026-09-20",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-043",
+      "matchweek": 4,
+      "homeTeam": "Melbourne Renegades",
+      "awayTeam": "Celtic FC",
+      "date": "2026-09-20",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-044",
+      "matchweek": 4,
+      "homeTeam": "Los Angeles Lakers",
+      "awayTeam": "Delhi Capitals",
+      "date": "2026-09-20",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-045",
+      "matchweek": 4,
+      "homeTeam": "London Crusaders FC",
+      "awayTeam": "Dubai Falcons",
+      "date": "2026-09-20",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-046",
+      "matchweek": 4,
+      "homeTeam": "Lisbon Lions",
+      "awayTeam": "FC Copenhagen",
+      "date": "2026-09-20",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-047",
+      "matchweek": 4,
+      "homeTeam": "Johannesburg Wolves",
+      "awayTeam": "Galacticos FC",
+      "date": "2026-09-20",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-048",
+      "matchweek": 4,
+      "homeTeam": "Inter Miami",
+      "awayTeam": "Glasgow United",
+      "date": "2026-09-20",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-049",
+      "matchweek": 5,
+      "homeTeam": "Amsterdam Ravens",
+      "awayTeam": "Riyadh Desert Kings",
+      "date": "2026-09-27",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-050",
+      "matchweek": 5,
+      "homeTeam": "Sahara Wanderers",
+      "awayTeam": "New York Titans",
+      "date": "2026-09-27",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-051",
+      "matchweek": 5,
+      "homeTeam": "Seoul Phoenix City",
+      "awayTeam": "Nairobi Thunder City",
+      "date": "2026-09-27",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-052",
+      "matchweek": 5,
+      "homeTeam": "Shanghai Dragons",
+      "awayTeam": "Mumbai Royals FC",
+      "date": "2026-09-27",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-053",
+      "matchweek": 5,
+      "homeTeam": "Tokyo Verdy",
+      "awayTeam": "Mexico City FC",
+      "date": "2026-09-27",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-054",
+      "matchweek": 5,
+      "homeTeam": "Barcelona Titans",
+      "awayTeam": "Melbourne Renegades",
+      "date": "2026-09-27",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-055",
+      "matchweek": 5,
+      "homeTeam": "Bengaluru Rising FC",
+      "awayTeam": "Los Angeles Lakers",
+      "date": "2026-09-27",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-056",
+      "matchweek": 5,
+      "homeTeam": "Celtic FC",
+      "awayTeam": "London Crusaders FC",
+      "date": "2026-09-27",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-057",
+      "matchweek": 5,
+      "homeTeam": "Delhi Capitals",
+      "awayTeam": "Lisbon Lions",
+      "date": "2026-09-27",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-058",
+      "matchweek": 5,
+      "homeTeam": "Dubai Falcons",
+      "awayTeam": "Johannesburg Wolves",
+      "date": "2026-09-27",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-059",
+      "matchweek": 5,
+      "homeTeam": "FC Copenhagen",
+      "awayTeam": "Inter Miami",
+      "date": "2026-09-27",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-060",
+      "matchweek": 5,
+      "homeTeam": "Galacticos FC",
+      "awayTeam": "Glasgow United",
+      "date": "2026-09-27",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-061",
+      "matchweek": 6,
+      "homeTeam": "New York Titans",
+      "awayTeam": "Amsterdam Ravens",
+      "date": "2026-10-04",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-062",
+      "matchweek": 6,
+      "homeTeam": "Nairobi Thunder City",
+      "awayTeam": "Riyadh Desert Kings",
+      "date": "2026-10-04",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-063",
+      "matchweek": 6,
+      "homeTeam": "Mumbai Royals FC",
+      "awayTeam": "Sahara Wanderers",
+      "date": "2026-10-04",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-064",
+      "matchweek": 6,
+      "homeTeam": "Mexico City FC",
+      "awayTeam": "Seoul Phoenix City",
+      "date": "2026-10-04",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-065",
+      "matchweek": 6,
+      "homeTeam": "Melbourne Renegades",
+      "awayTeam": "Shanghai Dragons",
+      "date": "2026-10-04",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-066",
+      "matchweek": 6,
+      "homeTeam": "Los Angeles Lakers",
+      "awayTeam": "Tokyo Verdy",
+      "date": "2026-10-04",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-067",
+      "matchweek": 6,
+      "homeTeam": "London Crusaders FC",
+      "awayTeam": "Barcelona Titans",
+      "date": "2026-10-04",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-068",
+      "matchweek": 6,
+      "homeTeam": "Lisbon Lions",
+      "awayTeam": "Bengaluru Rising FC",
+      "date": "2026-10-04",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-069",
+      "matchweek": 6,
+      "homeTeam": "Johannesburg Wolves",
+      "awayTeam": "Celtic FC",
+      "date": "2026-10-04",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-070",
+      "matchweek": 6,
+      "homeTeam": "Inter Miami",
+      "awayTeam": "Delhi Capitals",
+      "date": "2026-10-04",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-071",
+      "matchweek": 6,
+      "homeTeam": "Glasgow United",
+      "awayTeam": "Dubai Falcons",
+      "date": "2026-10-04",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-072",
+      "matchweek": 6,
+      "homeTeam": "Galacticos FC",
+      "awayTeam": "FC Copenhagen",
+      "date": "2026-10-04",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-073",
+      "matchweek": 7,
+      "homeTeam": "Amsterdam Ravens",
+      "awayTeam": "Nairobi Thunder City",
+      "date": "2026-10-11",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-074",
+      "matchweek": 7,
+      "homeTeam": "New York Titans",
+      "awayTeam": "Mumbai Royals FC",
+      "date": "2026-10-11",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-075",
+      "matchweek": 7,
+      "homeTeam": "Riyadh Desert Kings",
+      "awayTeam": "Mexico City FC",
+      "date": "2026-10-11",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-076",
+      "matchweek": 7,
+      "homeTeam": "Sahara Wanderers",
+      "awayTeam": "Melbourne Renegades",
+      "date": "2026-10-11",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-077",
+      "matchweek": 7,
+      "homeTeam": "Seoul Phoenix City",
+      "awayTeam": "Los Angeles Lakers",
+      "date": "2026-10-11",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-078",
+      "matchweek": 7,
+      "homeTeam": "Shanghai Dragons",
+      "awayTeam": "London Crusaders FC",
+      "date": "2026-10-11",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-079",
+      "matchweek": 7,
+      "homeTeam": "Tokyo Verdy",
+      "awayTeam": "Lisbon Lions",
+      "date": "2026-10-11",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-080",
+      "matchweek": 7,
+      "homeTeam": "Barcelona Titans",
+      "awayTeam": "Johannesburg Wolves",
+      "date": "2026-10-11",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-081",
+      "matchweek": 7,
+      "homeTeam": "Bengaluru Rising FC",
+      "awayTeam": "Inter Miami",
+      "date": "2026-10-11",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-082",
+      "matchweek": 7,
+      "homeTeam": "Celtic FC",
+      "awayTeam": "Glasgow United",
+      "date": "2026-10-11",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-083",
+      "matchweek": 7,
+      "homeTeam": "Delhi Capitals",
+      "awayTeam": "Galacticos FC",
+      "date": "2026-10-11",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-084",
+      "matchweek": 7,
+      "homeTeam": "Dubai Falcons",
+      "awayTeam": "FC Copenhagen",
+      "date": "2026-10-11",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-085",
+      "matchweek": 8,
+      "homeTeam": "Mumbai Royals FC",
+      "awayTeam": "Amsterdam Ravens",
+      "date": "2026-10-18",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-086",
+      "matchweek": 8,
+      "homeTeam": "Mexico City FC",
+      "awayTeam": "Nairobi Thunder City",
+      "date": "2026-10-18",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-087",
+      "matchweek": 8,
+      "homeTeam": "Melbourne Renegades",
+      "awayTeam": "New York Titans",
+      "date": "2026-10-18",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-088",
+      "matchweek": 8,
+      "homeTeam": "Los Angeles Lakers",
+      "awayTeam": "Riyadh Desert Kings",
+      "date": "2026-10-18",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-089",
+      "matchweek": 8,
+      "homeTeam": "London Crusaders FC",
+      "awayTeam": "Sahara Wanderers",
+      "date": "2026-10-18",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-090",
+      "matchweek": 8,
+      "homeTeam": "Lisbon Lions",
+      "awayTeam": "Seoul Phoenix City",
+      "date": "2026-10-18",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-091",
+      "matchweek": 8,
+      "homeTeam": "Johannesburg Wolves",
+      "awayTeam": "Shanghai Dragons",
+      "date": "2026-10-18",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-092",
+      "matchweek": 8,
+      "homeTeam": "Inter Miami",
+      "awayTeam": "Tokyo Verdy",
+      "date": "2026-10-18",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-093",
+      "matchweek": 8,
+      "homeTeam": "Glasgow United",
+      "awayTeam": "Barcelona Titans",
+      "date": "2026-10-18",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-094",
+      "matchweek": 8,
+      "homeTeam": "Galacticos FC",
+      "awayTeam": "Bengaluru Rising FC",
+      "date": "2026-10-18",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-095",
+      "matchweek": 8,
+      "homeTeam": "FC Copenhagen",
+      "awayTeam": "Celtic FC",
+      "date": "2026-10-18",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-096",
+      "matchweek": 8,
+      "homeTeam": "Dubai Falcons",
+      "awayTeam": "Delhi Capitals",
+      "date": "2026-10-18",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-097",
+      "matchweek": 9,
+      "homeTeam": "Amsterdam Ravens",
+      "awayTeam": "Mexico City FC",
+      "date": "2026-10-25",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-098",
+      "matchweek": 9,
+      "homeTeam": "Mumbai Royals FC",
+      "awayTeam": "Melbourne Renegades",
+      "date": "2026-10-25",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-099",
+      "matchweek": 9,
+      "homeTeam": "Nairobi Thunder City",
+      "awayTeam": "Los Angeles Lakers",
+      "date": "2026-10-25",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-100",
+      "matchweek": 9,
+      "homeTeam": "New York Titans",
+      "awayTeam": "London Crusaders FC",
+      "date": "2026-10-25",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-101",
+      "matchweek": 9,
+      "homeTeam": "Riyadh Desert Kings",
+      "awayTeam": "Lisbon Lions",
+      "date": "2026-10-25",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-102",
+      "matchweek": 9,
+      "homeTeam": "Sahara Wanderers",
+      "awayTeam": "Johannesburg Wolves",
+      "date": "2026-10-25",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-103",
+      "matchweek": 9,
+      "homeTeam": "Seoul Phoenix City",
+      "awayTeam": "Inter Miami",
+      "date": "2026-10-25",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-104",
+      "matchweek": 9,
+      "homeTeam": "Shanghai Dragons",
+      "awayTeam": "Glasgow United",
+      "date": "2026-10-25",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-105",
+      "matchweek": 9,
+      "homeTeam": "Tokyo Verdy",
+      "awayTeam": "Galacticos FC",
+      "date": "2026-10-25",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-106",
+      "matchweek": 9,
+      "homeTeam": "Barcelona Titans",
+      "awayTeam": "FC Copenhagen",
+      "date": "2026-10-25",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-107",
+      "matchweek": 9,
+      "homeTeam": "Bengaluru Rising FC",
+      "awayTeam": "Dubai Falcons",
+      "date": "2026-10-25",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-108",
+      "matchweek": 9,
+      "homeTeam": "Celtic FC",
+      "awayTeam": "Delhi Capitals",
+      "date": "2026-10-25",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-109",
+      "matchweek": 10,
+      "homeTeam": "Melbourne Renegades",
+      "awayTeam": "Amsterdam Ravens",
+      "date": "2026-11-01",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-110",
+      "matchweek": 10,
+      "homeTeam": "Los Angeles Lakers",
+      "awayTeam": "Mexico City FC",
+      "date": "2026-11-01",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-111",
+      "matchweek": 10,
+      "homeTeam": "London Crusaders FC",
+      "awayTeam": "Mumbai Royals FC",
+      "date": "2026-11-01",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-112",
+      "matchweek": 10,
+      "homeTeam": "Lisbon Lions",
+      "awayTeam": "Nairobi Thunder City",
+      "date": "2026-11-01",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-113",
+      "matchweek": 10,
+      "homeTeam": "Johannesburg Wolves",
+      "awayTeam": "New York Titans",
+      "date": "2026-11-01",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-114",
+      "matchweek": 10,
+      "homeTeam": "Inter Miami",
+      "awayTeam": "Riyadh Desert Kings",
+      "date": "2026-11-01",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-115",
+      "matchweek": 10,
+      "homeTeam": "Glasgow United",
+      "awayTeam": "Sahara Wanderers",
+      "date": "2026-11-01",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-116",
+      "matchweek": 10,
+      "homeTeam": "Galacticos FC",
+      "awayTeam": "Seoul Phoenix City",
+      "date": "2026-11-01",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-117",
+      "matchweek": 10,
+      "homeTeam": "FC Copenhagen",
+      "awayTeam": "Shanghai Dragons",
+      "date": "2026-11-01",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-118",
+      "matchweek": 10,
+      "homeTeam": "Dubai Falcons",
+      "awayTeam": "Tokyo Verdy",
+      "date": "2026-11-01",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-119",
+      "matchweek": 10,
+      "homeTeam": "Delhi Capitals",
+      "awayTeam": "Barcelona Titans",
+      "date": "2026-11-01",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-120",
+      "matchweek": 10,
+      "homeTeam": "Celtic FC",
+      "awayTeam": "Bengaluru Rising FC",
+      "date": "2026-11-01",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-121",
+      "matchweek": 11,
+      "homeTeam": "Amsterdam Ravens",
+      "awayTeam": "Los Angeles Lakers",
+      "date": "2026-11-08",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-122",
+      "matchweek": 11,
+      "homeTeam": "Melbourne Renegades",
+      "awayTeam": "London Crusaders FC",
+      "date": "2026-11-08",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-123",
+      "matchweek": 11,
+      "homeTeam": "Mexico City FC",
+      "awayTeam": "Lisbon Lions",
+      "date": "2026-11-08",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-124",
+      "matchweek": 11,
+      "homeTeam": "Mumbai Royals FC",
+      "awayTeam": "Johannesburg Wolves",
+      "date": "2026-11-08",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-125",
+      "matchweek": 11,
+      "homeTeam": "Nairobi Thunder City",
+      "awayTeam": "Inter Miami",
+      "date": "2026-11-08",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-126",
+      "matchweek": 11,
+      "homeTeam": "New York Titans",
+      "awayTeam": "Glasgow United",
+      "date": "2026-11-08",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-127",
+      "matchweek": 11,
+      "homeTeam": "Riyadh Desert Kings",
+      "awayTeam": "Galacticos FC",
+      "date": "2026-11-08",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-128",
+      "matchweek": 11,
+      "homeTeam": "Sahara Wanderers",
+      "awayTeam": "FC Copenhagen",
+      "date": "2026-11-08",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-129",
+      "matchweek": 11,
+      "homeTeam": "Seoul Phoenix City",
+      "awayTeam": "Dubai Falcons",
+      "date": "2026-11-08",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-130",
+      "matchweek": 11,
+      "homeTeam": "Shanghai Dragons",
+      "awayTeam": "Delhi Capitals",
+      "date": "2026-11-08",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-131",
+      "matchweek": 11,
+      "homeTeam": "Tokyo Verdy",
+      "awayTeam": "Celtic FC",
+      "date": "2026-11-08",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-132",
+      "matchweek": 11,
+      "homeTeam": "Barcelona Titans",
+      "awayTeam": "Bengaluru Rising FC",
+      "date": "2026-11-08",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-133",
+      "matchweek": 12,
+      "homeTeam": "London Crusaders FC",
+      "awayTeam": "Amsterdam Ravens",
+      "date": "2026-11-15",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-134",
+      "matchweek": 12,
+      "homeTeam": "Lisbon Lions",
+      "awayTeam": "Los Angeles Lakers",
+      "date": "2026-11-15",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-135",
+      "matchweek": 12,
+      "homeTeam": "Johannesburg Wolves",
+      "awayTeam": "Melbourne Renegades",
+      "date": "2026-11-15",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-136",
+      "matchweek": 12,
+      "homeTeam": "Inter Miami",
+      "awayTeam": "Mexico City FC",
+      "date": "2026-11-15",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-137",
+      "matchweek": 12,
+      "homeTeam": "Glasgow United",
+      "awayTeam": "Mumbai Royals FC",
+      "date": "2026-11-15",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-138",
+      "matchweek": 12,
+      "homeTeam": "Galacticos FC",
+      "awayTeam": "Nairobi Thunder City",
+      "date": "2026-11-15",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-139",
+      "matchweek": 12,
+      "homeTeam": "FC Copenhagen",
+      "awayTeam": "New York Titans",
+      "date": "2026-11-15",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-140",
+      "matchweek": 12,
+      "homeTeam": "Dubai Falcons",
+      "awayTeam": "Riyadh Desert Kings",
+      "date": "2026-11-15",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-141",
+      "matchweek": 12,
+      "homeTeam": "Delhi Capitals",
+      "awayTeam": "Sahara Wanderers",
+      "date": "2026-11-15",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-142",
+      "matchweek": 12,
+      "homeTeam": "Celtic FC",
+      "awayTeam": "Seoul Phoenix City",
+      "date": "2026-11-15",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-143",
+      "matchweek": 12,
+      "homeTeam": "Bengaluru Rising FC",
+      "awayTeam": "Shanghai Dragons",
+      "date": "2026-11-15",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-144",
+      "matchweek": 12,
+      "homeTeam": "Barcelona Titans",
+      "awayTeam": "Tokyo Verdy",
+      "date": "2026-11-15",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-145",
+      "matchweek": 13,
+      "homeTeam": "Amsterdam Ravens",
+      "awayTeam": "Lisbon Lions",
+      "date": "2026-11-22",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-146",
+      "matchweek": 13,
+      "homeTeam": "London Crusaders FC",
+      "awayTeam": "Johannesburg Wolves",
+      "date": "2026-11-22",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-147",
+      "matchweek": 13,
+      "homeTeam": "Los Angeles Lakers",
+      "awayTeam": "Inter Miami",
+      "date": "2026-11-22",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-148",
+      "matchweek": 13,
+      "homeTeam": "Melbourne Renegades",
+      "awayTeam": "Glasgow United",
+      "date": "2026-11-22",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-149",
+      "matchweek": 13,
+      "homeTeam": "Mexico City FC",
+      "awayTeam": "Galacticos FC",
+      "date": "2026-11-22",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-150",
+      "matchweek": 13,
+      "homeTeam": "Mumbai Royals FC",
+      "awayTeam": "FC Copenhagen",
+      "date": "2026-11-22",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-151",
+      "matchweek": 13,
+      "homeTeam": "Nairobi Thunder City",
+      "awayTeam": "Dubai Falcons",
+      "date": "2026-11-22",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-152",
+      "matchweek": 13,
+      "homeTeam": "New York Titans",
+      "awayTeam": "Delhi Capitals",
+      "date": "2026-11-22",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-153",
+      "matchweek": 13,
+      "homeTeam": "Riyadh Desert Kings",
+      "awayTeam": "Celtic FC",
+      "date": "2026-11-22",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-154",
+      "matchweek": 13,
+      "homeTeam": "Sahara Wanderers",
+      "awayTeam": "Bengaluru Rising FC",
+      "date": "2026-11-22",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-155",
+      "matchweek": 13,
+      "homeTeam": "Seoul Phoenix City",
+      "awayTeam": "Barcelona Titans",
+      "date": "2026-11-22",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-156",
+      "matchweek": 13,
+      "homeTeam": "Shanghai Dragons",
+      "awayTeam": "Tokyo Verdy",
+      "date": "2026-11-22",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-157",
+      "matchweek": 14,
+      "homeTeam": "Johannesburg Wolves",
+      "awayTeam": "Amsterdam Ravens",
+      "date": "2026-11-29",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-158",
+      "matchweek": 14,
+      "homeTeam": "Inter Miami",
+      "awayTeam": "Lisbon Lions",
+      "date": "2026-11-29",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-159",
+      "matchweek": 14,
+      "homeTeam": "Glasgow United",
+      "awayTeam": "London Crusaders FC",
+      "date": "2026-11-29",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-160",
+      "matchweek": 14,
+      "homeTeam": "Galacticos FC",
+      "awayTeam": "Los Angeles Lakers",
+      "date": "2026-11-29",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-161",
+      "matchweek": 14,
+      "homeTeam": "FC Copenhagen",
+      "awayTeam": "Melbourne Renegades",
+      "date": "2026-11-29",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-162",
+      "matchweek": 14,
+      "homeTeam": "Dubai Falcons",
+      "awayTeam": "Mexico City FC",
+      "date": "2026-11-29",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-163",
+      "matchweek": 14,
+      "homeTeam": "Delhi Capitals",
+      "awayTeam": "Mumbai Royals FC",
+      "date": "2026-11-29",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-164",
+      "matchweek": 14,
+      "homeTeam": "Celtic FC",
+      "awayTeam": "Nairobi Thunder City",
+      "date": "2026-11-29",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-165",
+      "matchweek": 14,
+      "homeTeam": "Bengaluru Rising FC",
+      "awayTeam": "New York Titans",
+      "date": "2026-11-29",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-166",
+      "matchweek": 14,
+      "homeTeam": "Barcelona Titans",
+      "awayTeam": "Riyadh Desert Kings",
+      "date": "2026-11-29",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-167",
+      "matchweek": 14,
+      "homeTeam": "Tokyo Verdy",
+      "awayTeam": "Sahara Wanderers",
+      "date": "2026-11-29",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-168",
+      "matchweek": 14,
+      "homeTeam": "Shanghai Dragons",
+      "awayTeam": "Seoul Phoenix City",
+      "date": "2026-11-29",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-169",
+      "matchweek": 15,
+      "homeTeam": "Amsterdam Ravens",
+      "awayTeam": "Inter Miami",
+      "date": "2026-12-06",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-170",
+      "matchweek": 15,
+      "homeTeam": "Johannesburg Wolves",
+      "awayTeam": "Glasgow United",
+      "date": "2026-12-06",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-171",
+      "matchweek": 15,
+      "homeTeam": "Lisbon Lions",
+      "awayTeam": "Galacticos FC",
+      "date": "2026-12-06",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-172",
+      "matchweek": 15,
+      "homeTeam": "London Crusaders FC",
+      "awayTeam": "FC Copenhagen",
+      "date": "2026-12-06",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-173",
+      "matchweek": 15,
+      "homeTeam": "Los Angeles Lakers",
+      "awayTeam": "Dubai Falcons",
+      "date": "2026-12-06",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-174",
+      "matchweek": 15,
+      "homeTeam": "Melbourne Renegades",
+      "awayTeam": "Delhi Capitals",
+      "date": "2026-12-06",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-175",
+      "matchweek": 15,
+      "homeTeam": "Mexico City FC",
+      "awayTeam": "Celtic FC",
+      "date": "2026-12-06",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-176",
+      "matchweek": 15,
+      "homeTeam": "Mumbai Royals FC",
+      "awayTeam": "Bengaluru Rising FC",
+      "date": "2026-12-06",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-177",
+      "matchweek": 15,
+      "homeTeam": "Nairobi Thunder City",
+      "awayTeam": "Barcelona Titans",
+      "date": "2026-12-06",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-178",
+      "matchweek": 15,
+      "homeTeam": "New York Titans",
+      "awayTeam": "Tokyo Verdy",
+      "date": "2026-12-06",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-179",
+      "matchweek": 15,
+      "homeTeam": "Riyadh Desert Kings",
+      "awayTeam": "Shanghai Dragons",
+      "date": "2026-12-06",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-180",
+      "matchweek": 15,
+      "homeTeam": "Sahara Wanderers",
+      "awayTeam": "Seoul Phoenix City",
+      "date": "2026-12-06",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-181",
+      "matchweek": 16,
+      "homeTeam": "Glasgow United",
+      "awayTeam": "Amsterdam Ravens",
+      "date": "2026-12-13",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-182",
+      "matchweek": 16,
+      "homeTeam": "Galacticos FC",
+      "awayTeam": "Inter Miami",
+      "date": "2026-12-13",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-183",
+      "matchweek": 16,
+      "homeTeam": "FC Copenhagen",
+      "awayTeam": "Johannesburg Wolves",
+      "date": "2026-12-13",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-184",
+      "matchweek": 16,
+      "homeTeam": "Dubai Falcons",
+      "awayTeam": "Lisbon Lions",
+      "date": "2026-12-13",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-185",
+      "matchweek": 16,
+      "homeTeam": "Delhi Capitals",
+      "awayTeam": "London Crusaders FC",
+      "date": "2026-12-13",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-186",
+      "matchweek": 16,
+      "homeTeam": "Celtic FC",
+      "awayTeam": "Los Angeles Lakers",
+      "date": "2026-12-13",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-187",
+      "matchweek": 16,
+      "homeTeam": "Bengaluru Rising FC",
+      "awayTeam": "Melbourne Renegades",
+      "date": "2026-12-13",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-188",
+      "matchweek": 16,
+      "homeTeam": "Barcelona Titans",
+      "awayTeam": "Mexico City FC",
+      "date": "2026-12-13",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-189",
+      "matchweek": 16,
+      "homeTeam": "Tokyo Verdy",
+      "awayTeam": "Mumbai Royals FC",
+      "date": "2026-12-13",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-190",
+      "matchweek": 16,
+      "homeTeam": "Shanghai Dragons",
+      "awayTeam": "Nairobi Thunder City",
+      "date": "2026-12-13",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-191",
+      "matchweek": 16,
+      "homeTeam": "Seoul Phoenix City",
+      "awayTeam": "New York Titans",
+      "date": "2026-12-13",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-192",
+      "matchweek": 16,
+      "homeTeam": "Sahara Wanderers",
+      "awayTeam": "Riyadh Desert Kings",
+      "date": "2026-12-13",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-193",
+      "matchweek": 17,
+      "homeTeam": "Amsterdam Ravens",
+      "awayTeam": "Galacticos FC",
+      "date": "2026-12-20",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-194",
+      "matchweek": 17,
+      "homeTeam": "Glasgow United",
+      "awayTeam": "FC Copenhagen",
+      "date": "2026-12-20",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-195",
+      "matchweek": 17,
+      "homeTeam": "Inter Miami",
+      "awayTeam": "Dubai Falcons",
+      "date": "2026-12-20",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-196",
+      "matchweek": 17,
+      "homeTeam": "Johannesburg Wolves",
+      "awayTeam": "Delhi Capitals",
+      "date": "2026-12-20",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-197",
+      "matchweek": 17,
+      "homeTeam": "Lisbon Lions",
+      "awayTeam": "Celtic FC",
+      "date": "2026-12-20",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-198",
+      "matchweek": 17,
+      "homeTeam": "London Crusaders FC",
+      "awayTeam": "Bengaluru Rising FC",
+      "date": "2026-12-20",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-199",
+      "matchweek": 17,
+      "homeTeam": "Los Angeles Lakers",
+      "awayTeam": "Barcelona Titans",
+      "date": "2026-12-20",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-200",
+      "matchweek": 17,
+      "homeTeam": "Melbourne Renegades",
+      "awayTeam": "Tokyo Verdy",
+      "date": "2026-12-20",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-201",
+      "matchweek": 17,
+      "homeTeam": "Mexico City FC",
+      "awayTeam": "Shanghai Dragons",
+      "date": "2026-12-20",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-202",
+      "matchweek": 17,
+      "homeTeam": "Mumbai Royals FC",
+      "awayTeam": "Seoul Phoenix City",
+      "date": "2026-12-20",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-203",
+      "matchweek": 17,
+      "homeTeam": "Nairobi Thunder City",
+      "awayTeam": "Sahara Wanderers",
+      "date": "2026-12-20",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-204",
+      "matchweek": 17,
+      "homeTeam": "New York Titans",
+      "awayTeam": "Riyadh Desert Kings",
+      "date": "2026-12-20",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-205",
+      "matchweek": 18,
+      "homeTeam": "FC Copenhagen",
+      "awayTeam": "Amsterdam Ravens",
+      "date": "2026-12-27",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-206",
+      "matchweek": 18,
+      "homeTeam": "Dubai Falcons",
+      "awayTeam": "Galacticos FC",
+      "date": "2026-12-27",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-207",
+      "matchweek": 18,
+      "homeTeam": "Delhi Capitals",
+      "awayTeam": "Glasgow United",
+      "date": "2026-12-27",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-208",
+      "matchweek": 18,
+      "homeTeam": "Celtic FC",
+      "awayTeam": "Inter Miami",
+      "date": "2026-12-27",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-209",
+      "matchweek": 18,
+      "homeTeam": "Bengaluru Rising FC",
+      "awayTeam": "Johannesburg Wolves",
+      "date": "2026-12-27",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-210",
+      "matchweek": 18,
+      "homeTeam": "Barcelona Titans",
+      "awayTeam": "Lisbon Lions",
+      "date": "2026-12-27",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-211",
+      "matchweek": 18,
+      "homeTeam": "Tokyo Verdy",
+      "awayTeam": "London Crusaders FC",
+      "date": "2026-12-27",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-212",
+      "matchweek": 18,
+      "homeTeam": "Shanghai Dragons",
+      "awayTeam": "Los Angeles Lakers",
+      "date": "2026-12-27",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-213",
+      "matchweek": 18,
+      "homeTeam": "Seoul Phoenix City",
+      "awayTeam": "Melbourne Renegades",
+      "date": "2026-12-27",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-214",
+      "matchweek": 18,
+      "homeTeam": "Sahara Wanderers",
+      "awayTeam": "Mexico City FC",
+      "date": "2026-12-27",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-215",
+      "matchweek": 18,
+      "homeTeam": "Riyadh Desert Kings",
+      "awayTeam": "Mumbai Royals FC",
+      "date": "2026-12-27",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-216",
+      "matchweek": 18,
+      "homeTeam": "New York Titans",
+      "awayTeam": "Nairobi Thunder City",
+      "date": "2026-12-27",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-217",
+      "matchweek": 19,
+      "homeTeam": "Amsterdam Ravens",
+      "awayTeam": "Dubai Falcons",
+      "date": "2027-01-03",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-218",
+      "matchweek": 19,
+      "homeTeam": "FC Copenhagen",
+      "awayTeam": "Delhi Capitals",
+      "date": "2027-01-03",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-219",
+      "matchweek": 19,
+      "homeTeam": "Galacticos FC",
+      "awayTeam": "Celtic FC",
+      "date": "2027-01-03",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-220",
+      "matchweek": 19,
+      "homeTeam": "Glasgow United",
+      "awayTeam": "Bengaluru Rising FC",
+      "date": "2027-01-03",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-221",
+      "matchweek": 19,
+      "homeTeam": "Inter Miami",
+      "awayTeam": "Barcelona Titans",
+      "date": "2027-01-03",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-222",
+      "matchweek": 19,
+      "homeTeam": "Johannesburg Wolves",
+      "awayTeam": "Tokyo Verdy",
+      "date": "2027-01-03",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-223",
+      "matchweek": 19,
+      "homeTeam": "Lisbon Lions",
+      "awayTeam": "Shanghai Dragons",
+      "date": "2027-01-03",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-224",
+      "matchweek": 19,
+      "homeTeam": "London Crusaders FC",
+      "awayTeam": "Seoul Phoenix City",
+      "date": "2027-01-03",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-225",
+      "matchweek": 19,
+      "homeTeam": "Los Angeles Lakers",
+      "awayTeam": "Sahara Wanderers",
+      "date": "2027-01-03",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-226",
+      "matchweek": 19,
+      "homeTeam": "Melbourne Renegades",
+      "awayTeam": "Riyadh Desert Kings",
+      "date": "2027-01-03",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-227",
+      "matchweek": 19,
+      "homeTeam": "Mexico City FC",
+      "awayTeam": "New York Titans",
+      "date": "2027-01-03",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-228",
+      "matchweek": 19,
+      "homeTeam": "Mumbai Royals FC",
+      "awayTeam": "Nairobi Thunder City",
+      "date": "2027-01-03",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-229",
+      "matchweek": 20,
+      "homeTeam": "Delhi Capitals",
+      "awayTeam": "Amsterdam Ravens",
+      "date": "2027-01-10",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-230",
+      "matchweek": 20,
+      "homeTeam": "Celtic FC",
+      "awayTeam": "Dubai Falcons",
+      "date": "2027-01-10",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-231",
+      "matchweek": 20,
+      "homeTeam": "Bengaluru Rising FC",
+      "awayTeam": "FC Copenhagen",
+      "date": "2027-01-10",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-232",
+      "matchweek": 20,
+      "homeTeam": "Barcelona Titans",
+      "awayTeam": "Galacticos FC",
+      "date": "2027-01-10",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-233",
+      "matchweek": 20,
+      "homeTeam": "Tokyo Verdy",
+      "awayTeam": "Glasgow United",
+      "date": "2027-01-10",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-234",
+      "matchweek": 20,
+      "homeTeam": "Shanghai Dragons",
+      "awayTeam": "Inter Miami",
+      "date": "2027-01-10",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-235",
+      "matchweek": 20,
+      "homeTeam": "Seoul Phoenix City",
+      "awayTeam": "Johannesburg Wolves",
+      "date": "2027-01-10",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-236",
+      "matchweek": 20,
+      "homeTeam": "Sahara Wanderers",
+      "awayTeam": "Lisbon Lions",
+      "date": "2027-01-10",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-237",
+      "matchweek": 20,
+      "homeTeam": "Riyadh Desert Kings",
+      "awayTeam": "London Crusaders FC",
+      "date": "2027-01-10",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-238",
+      "matchweek": 20,
+      "homeTeam": "New York Titans",
+      "awayTeam": "Los Angeles Lakers",
+      "date": "2027-01-10",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-239",
+      "matchweek": 20,
+      "homeTeam": "Nairobi Thunder City",
+      "awayTeam": "Melbourne Renegades",
+      "date": "2027-01-10",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-240",
+      "matchweek": 20,
+      "homeTeam": "Mumbai Royals FC",
+      "awayTeam": "Mexico City FC",
+      "date": "2027-01-10",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-241",
+      "matchweek": 21,
+      "homeTeam": "Amsterdam Ravens",
+      "awayTeam": "Celtic FC",
+      "date": "2027-01-17",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-242",
+      "matchweek": 21,
+      "homeTeam": "Delhi Capitals",
+      "awayTeam": "Bengaluru Rising FC",
+      "date": "2027-01-17",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-243",
+      "matchweek": 21,
+      "homeTeam": "Dubai Falcons",
+      "awayTeam": "Barcelona Titans",
+      "date": "2027-01-17",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-244",
+      "matchweek": 21,
+      "homeTeam": "FC Copenhagen",
+      "awayTeam": "Tokyo Verdy",
+      "date": "2027-01-17",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-245",
+      "matchweek": 21,
+      "homeTeam": "Galacticos FC",
+      "awayTeam": "Shanghai Dragons",
+      "date": "2027-01-17",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-246",
+      "matchweek": 21,
+      "homeTeam": "Glasgow United",
+      "awayTeam": "Seoul Phoenix City",
+      "date": "2027-01-17",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-247",
+      "matchweek": 21,
+      "homeTeam": "Inter Miami",
+      "awayTeam": "Sahara Wanderers",
+      "date": "2027-01-17",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-248",
+      "matchweek": 21,
+      "homeTeam": "Johannesburg Wolves",
+      "awayTeam": "Riyadh Desert Kings",
+      "date": "2027-01-17",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-249",
+      "matchweek": 21,
+      "homeTeam": "Lisbon Lions",
+      "awayTeam": "New York Titans",
+      "date": "2027-01-17",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-250",
+      "matchweek": 21,
+      "homeTeam": "London Crusaders FC",
+      "awayTeam": "Nairobi Thunder City",
+      "date": "2027-01-17",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-251",
+      "matchweek": 21,
+      "homeTeam": "Los Angeles Lakers",
+      "awayTeam": "Mumbai Royals FC",
+      "date": "2027-01-17",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-252",
+      "matchweek": 21,
+      "homeTeam": "Melbourne Renegades",
+      "awayTeam": "Mexico City FC",
+      "date": "2027-01-17",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-253",
+      "matchweek": 22,
+      "homeTeam": "Bengaluru Rising FC",
+      "awayTeam": "Amsterdam Ravens",
+      "date": "2027-01-24",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-254",
+      "matchweek": 22,
+      "homeTeam": "Barcelona Titans",
+      "awayTeam": "Celtic FC",
+      "date": "2027-01-24",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-255",
+      "matchweek": 22,
+      "homeTeam": "Tokyo Verdy",
+      "awayTeam": "Delhi Capitals",
+      "date": "2027-01-24",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-256",
+      "matchweek": 22,
+      "homeTeam": "Shanghai Dragons",
+      "awayTeam": "Dubai Falcons",
+      "date": "2027-01-24",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-257",
+      "matchweek": 22,
+      "homeTeam": "Seoul Phoenix City",
+      "awayTeam": "FC Copenhagen",
+      "date": "2027-01-24",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-258",
+      "matchweek": 22,
+      "homeTeam": "Sahara Wanderers",
+      "awayTeam": "Galacticos FC",
+      "date": "2027-01-24",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-259",
+      "matchweek": 22,
+      "homeTeam": "Riyadh Desert Kings",
+      "awayTeam": "Glasgow United",
+      "date": "2027-01-24",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-260",
+      "matchweek": 22,
+      "homeTeam": "New York Titans",
+      "awayTeam": "Inter Miami",
+      "date": "2027-01-24",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-261",
+      "matchweek": 22,
+      "homeTeam": "Nairobi Thunder City",
+      "awayTeam": "Johannesburg Wolves",
+      "date": "2027-01-24",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-262",
+      "matchweek": 22,
+      "homeTeam": "Mumbai Royals FC",
+      "awayTeam": "Lisbon Lions",
+      "date": "2027-01-24",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-263",
+      "matchweek": 22,
+      "homeTeam": "Mexico City FC",
+      "awayTeam": "London Crusaders FC",
+      "date": "2027-01-24",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-264",
+      "matchweek": 22,
+      "homeTeam": "Melbourne Renegades",
+      "awayTeam": "Los Angeles Lakers",
+      "date": "2027-01-24",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-265",
+      "matchweek": 23,
+      "homeTeam": "Amsterdam Ravens",
+      "awayTeam": "Barcelona Titans",
+      "date": "2027-01-31",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-266",
+      "matchweek": 23,
+      "homeTeam": "Bengaluru Rising FC",
+      "awayTeam": "Tokyo Verdy",
+      "date": "2027-01-31",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-267",
+      "matchweek": 23,
+      "homeTeam": "Celtic FC",
+      "awayTeam": "Shanghai Dragons",
+      "date": "2027-01-31",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-268",
+      "matchweek": 23,
+      "homeTeam": "Delhi Capitals",
+      "awayTeam": "Seoul Phoenix City",
+      "date": "2027-01-31",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-269",
+      "matchweek": 23,
+      "homeTeam": "Dubai Falcons",
+      "awayTeam": "Sahara Wanderers",
+      "date": "2027-01-31",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-270",
+      "matchweek": 23,
+      "homeTeam": "FC Copenhagen",
+      "awayTeam": "Riyadh Desert Kings",
+      "date": "2027-01-31",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-271",
+      "matchweek": 23,
+      "homeTeam": "Galacticos FC",
+      "awayTeam": "New York Titans",
+      "date": "2027-01-31",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-272",
+      "matchweek": 23,
+      "homeTeam": "Glasgow United",
+      "awayTeam": "Nairobi Thunder City",
+      "date": "2027-01-31",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-273",
+      "matchweek": 23,
+      "homeTeam": "Inter Miami",
+      "awayTeam": "Mumbai Royals FC",
+      "date": "2027-01-31",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-274",
+      "matchweek": 23,
+      "homeTeam": "Johannesburg Wolves",
+      "awayTeam": "Mexico City FC",
+      "date": "2027-01-31",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-275",
+      "matchweek": 23,
+      "homeTeam": "Lisbon Lions",
+      "awayTeam": "Melbourne Renegades",
+      "date": "2027-01-31",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-276",
+      "matchweek": 23,
+      "homeTeam": "London Crusaders FC",
+      "awayTeam": "Los Angeles Lakers",
+      "date": "2027-01-31",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-277",
+      "matchweek": 24,
+      "homeTeam": "Tokyo Verdy",
+      "awayTeam": "Amsterdam Ravens",
+      "date": "2027-02-07",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-278",
+      "matchweek": 24,
+      "homeTeam": "Shanghai Dragons",
+      "awayTeam": "Barcelona Titans",
+      "date": "2027-02-07",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-279",
+      "matchweek": 24,
+      "homeTeam": "Seoul Phoenix City",
+      "awayTeam": "Bengaluru Rising FC",
+      "date": "2027-02-07",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-280",
+      "matchweek": 24,
+      "homeTeam": "Sahara Wanderers",
+      "awayTeam": "Celtic FC",
+      "date": "2027-02-07",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-281",
+      "matchweek": 24,
+      "homeTeam": "Riyadh Desert Kings",
+      "awayTeam": "Delhi Capitals",
+      "date": "2027-02-07",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-282",
+      "matchweek": 24,
+      "homeTeam": "New York Titans",
+      "awayTeam": "Dubai Falcons",
+      "date": "2027-02-07",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-283",
+      "matchweek": 24,
+      "homeTeam": "Nairobi Thunder City",
+      "awayTeam": "FC Copenhagen",
+      "date": "2027-02-07",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-284",
+      "matchweek": 24,
+      "homeTeam": "Mumbai Royals FC",
+      "awayTeam": "Galacticos FC",
+      "date": "2027-02-07",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-285",
+      "matchweek": 24,
+      "homeTeam": "Mexico City FC",
+      "awayTeam": "Glasgow United",
+      "date": "2027-02-07",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-286",
+      "matchweek": 24,
+      "homeTeam": "Melbourne Renegades",
+      "awayTeam": "Inter Miami",
+      "date": "2027-02-07",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-287",
+      "matchweek": 24,
+      "homeTeam": "Los Angeles Lakers",
+      "awayTeam": "Johannesburg Wolves",
+      "date": "2027-02-07",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-288",
+      "matchweek": 24,
+      "homeTeam": "London Crusaders FC",
+      "awayTeam": "Lisbon Lions",
+      "date": "2027-02-07",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-289",
+      "matchweek": 25,
+      "homeTeam": "Amsterdam Ravens",
+      "awayTeam": "Shanghai Dragons",
+      "date": "2027-02-14",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-290",
+      "matchweek": 25,
+      "homeTeam": "Tokyo Verdy",
+      "awayTeam": "Seoul Phoenix City",
+      "date": "2027-02-14",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-291",
+      "matchweek": 25,
+      "homeTeam": "Barcelona Titans",
+      "awayTeam": "Sahara Wanderers",
+      "date": "2027-02-14",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-292",
+      "matchweek": 25,
+      "homeTeam": "Bengaluru Rising FC",
+      "awayTeam": "Riyadh Desert Kings",
+      "date": "2027-02-14",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-293",
+      "matchweek": 25,
+      "homeTeam": "Celtic FC",
+      "awayTeam": "New York Titans",
+      "date": "2027-02-14",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-294",
+      "matchweek": 25,
+      "homeTeam": "Delhi Capitals",
+      "awayTeam": "Nairobi Thunder City",
+      "date": "2027-02-14",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-295",
+      "matchweek": 25,
+      "homeTeam": "Dubai Falcons",
+      "awayTeam": "Mumbai Royals FC",
+      "date": "2027-02-14",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-296",
+      "matchweek": 25,
+      "homeTeam": "FC Copenhagen",
+      "awayTeam": "Mexico City FC",
+      "date": "2027-02-14",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-297",
+      "matchweek": 25,
+      "homeTeam": "Galacticos FC",
+      "awayTeam": "Melbourne Renegades",
+      "date": "2027-02-14",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-298",
+      "matchweek": 25,
+      "homeTeam": "Glasgow United",
+      "awayTeam": "Los Angeles Lakers",
+      "date": "2027-02-14",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-299",
+      "matchweek": 25,
+      "homeTeam": "Inter Miami",
+      "awayTeam": "London Crusaders FC",
+      "date": "2027-02-14",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-300",
+      "matchweek": 25,
+      "homeTeam": "Johannesburg Wolves",
+      "awayTeam": "Lisbon Lions",
+      "date": "2027-02-14",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-301",
+      "matchweek": 26,
+      "homeTeam": "Seoul Phoenix City",
+      "awayTeam": "Amsterdam Ravens",
+      "date": "2027-02-21",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-302",
+      "matchweek": 26,
+      "homeTeam": "Sahara Wanderers",
+      "awayTeam": "Shanghai Dragons",
+      "date": "2027-02-21",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-303",
+      "matchweek": 26,
+      "homeTeam": "Riyadh Desert Kings",
+      "awayTeam": "Tokyo Verdy",
+      "date": "2027-02-21",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-304",
+      "matchweek": 26,
+      "homeTeam": "New York Titans",
+      "awayTeam": "Barcelona Titans",
+      "date": "2027-02-21",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-305",
+      "matchweek": 26,
+      "homeTeam": "Nairobi Thunder City",
+      "awayTeam": "Bengaluru Rising FC",
+      "date": "2027-02-21",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-306",
+      "matchweek": 26,
+      "homeTeam": "Mumbai Royals FC",
+      "awayTeam": "Celtic FC",
+      "date": "2027-02-21",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-307",
+      "matchweek": 26,
+      "homeTeam": "Mexico City FC",
+      "awayTeam": "Delhi Capitals",
+      "date": "2027-02-21",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-308",
+      "matchweek": 26,
+      "homeTeam": "Melbourne Renegades",
+      "awayTeam": "Dubai Falcons",
+      "date": "2027-02-21",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-309",
+      "matchweek": 26,
+      "homeTeam": "Los Angeles Lakers",
+      "awayTeam": "FC Copenhagen",
+      "date": "2027-02-21",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-310",
+      "matchweek": 26,
+      "homeTeam": "London Crusaders FC",
+      "awayTeam": "Galacticos FC",
+      "date": "2027-02-21",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-311",
+      "matchweek": 26,
+      "homeTeam": "Lisbon Lions",
+      "awayTeam": "Glasgow United",
+      "date": "2027-02-21",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-312",
+      "matchweek": 26,
+      "homeTeam": "Johannesburg Wolves",
+      "awayTeam": "Inter Miami",
+      "date": "2027-02-21",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-313",
+      "matchweek": 27,
+      "homeTeam": "Amsterdam Ravens",
+      "awayTeam": "Sahara Wanderers",
+      "date": "2027-02-28",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-314",
+      "matchweek": 27,
+      "homeTeam": "Seoul Phoenix City",
+      "awayTeam": "Riyadh Desert Kings",
+      "date": "2027-02-28",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-315",
+      "matchweek": 27,
+      "homeTeam": "Shanghai Dragons",
+      "awayTeam": "New York Titans",
+      "date": "2027-02-28",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-316",
+      "matchweek": 27,
+      "homeTeam": "Tokyo Verdy",
+      "awayTeam": "Nairobi Thunder City",
+      "date": "2027-02-28",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-317",
+      "matchweek": 27,
+      "homeTeam": "Barcelona Titans",
+      "awayTeam": "Mumbai Royals FC",
+      "date": "2027-02-28",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-318",
+      "matchweek": 27,
+      "homeTeam": "Bengaluru Rising FC",
+      "awayTeam": "Mexico City FC",
+      "date": "2027-02-28",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-319",
+      "matchweek": 27,
+      "homeTeam": "Celtic FC",
+      "awayTeam": "Melbourne Renegades",
+      "date": "2027-02-28",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-320",
+      "matchweek": 27,
+      "homeTeam": "Delhi Capitals",
+      "awayTeam": "Los Angeles Lakers",
+      "date": "2027-02-28",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-321",
+      "matchweek": 27,
+      "homeTeam": "Dubai Falcons",
+      "awayTeam": "London Crusaders FC",
+      "date": "2027-02-28",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-322",
+      "matchweek": 27,
+      "homeTeam": "FC Copenhagen",
+      "awayTeam": "Lisbon Lions",
+      "date": "2027-02-28",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-323",
+      "matchweek": 27,
+      "homeTeam": "Galacticos FC",
+      "awayTeam": "Johannesburg Wolves",
+      "date": "2027-02-28",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-324",
+      "matchweek": 27,
+      "homeTeam": "Glasgow United",
+      "awayTeam": "Inter Miami",
+      "date": "2027-02-28",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-325",
+      "matchweek": 28,
+      "homeTeam": "Riyadh Desert Kings",
+      "awayTeam": "Amsterdam Ravens",
+      "date": "2027-03-07",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-326",
+      "matchweek": 28,
+      "homeTeam": "New York Titans",
+      "awayTeam": "Sahara Wanderers",
+      "date": "2027-03-07",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-327",
+      "matchweek": 28,
+      "homeTeam": "Nairobi Thunder City",
+      "awayTeam": "Seoul Phoenix City",
+      "date": "2027-03-07",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-328",
+      "matchweek": 28,
+      "homeTeam": "Mumbai Royals FC",
+      "awayTeam": "Shanghai Dragons",
+      "date": "2027-03-07",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-329",
+      "matchweek": 28,
+      "homeTeam": "Mexico City FC",
+      "awayTeam": "Tokyo Verdy",
+      "date": "2027-03-07",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-330",
+      "matchweek": 28,
+      "homeTeam": "Melbourne Renegades",
+      "awayTeam": "Barcelona Titans",
+      "date": "2027-03-07",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-331",
+      "matchweek": 28,
+      "homeTeam": "Los Angeles Lakers",
+      "awayTeam": "Bengaluru Rising FC",
+      "date": "2027-03-07",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-332",
+      "matchweek": 28,
+      "homeTeam": "London Crusaders FC",
+      "awayTeam": "Celtic FC",
+      "date": "2027-03-07",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-333",
+      "matchweek": 28,
+      "homeTeam": "Lisbon Lions",
+      "awayTeam": "Delhi Capitals",
+      "date": "2027-03-07",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-334",
+      "matchweek": 28,
+      "homeTeam": "Johannesburg Wolves",
+      "awayTeam": "Dubai Falcons",
+      "date": "2027-03-07",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-335",
+      "matchweek": 28,
+      "homeTeam": "Inter Miami",
+      "awayTeam": "FC Copenhagen",
+      "date": "2027-03-07",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-336",
+      "matchweek": 28,
+      "homeTeam": "Glasgow United",
+      "awayTeam": "Galacticos FC",
+      "date": "2027-03-07",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-337",
+      "matchweek": 29,
+      "homeTeam": "Amsterdam Ravens",
+      "awayTeam": "New York Titans",
+      "date": "2027-03-14",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-338",
+      "matchweek": 29,
+      "homeTeam": "Riyadh Desert Kings",
+      "awayTeam": "Nairobi Thunder City",
+      "date": "2027-03-14",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-339",
+      "matchweek": 29,
+      "homeTeam": "Sahara Wanderers",
+      "awayTeam": "Mumbai Royals FC",
+      "date": "2027-03-14",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-340",
+      "matchweek": 29,
+      "homeTeam": "Seoul Phoenix City",
+      "awayTeam": "Mexico City FC",
+      "date": "2027-03-14",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-341",
+      "matchweek": 29,
+      "homeTeam": "Shanghai Dragons",
+      "awayTeam": "Melbourne Renegades",
+      "date": "2027-03-14",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-342",
+      "matchweek": 29,
+      "homeTeam": "Tokyo Verdy",
+      "awayTeam": "Los Angeles Lakers",
+      "date": "2027-03-14",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-343",
+      "matchweek": 29,
+      "homeTeam": "Barcelona Titans",
+      "awayTeam": "London Crusaders FC",
+      "date": "2027-03-14",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-344",
+      "matchweek": 29,
+      "homeTeam": "Bengaluru Rising FC",
+      "awayTeam": "Lisbon Lions",
+      "date": "2027-03-14",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-345",
+      "matchweek": 29,
+      "homeTeam": "Celtic FC",
+      "awayTeam": "Johannesburg Wolves",
+      "date": "2027-03-14",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-346",
+      "matchweek": 29,
+      "homeTeam": "Delhi Capitals",
+      "awayTeam": "Inter Miami",
+      "date": "2027-03-14",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-347",
+      "matchweek": 29,
+      "homeTeam": "Dubai Falcons",
+      "awayTeam": "Glasgow United",
+      "date": "2027-03-14",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-348",
+      "matchweek": 29,
+      "homeTeam": "FC Copenhagen",
+      "awayTeam": "Galacticos FC",
+      "date": "2027-03-14",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-349",
+      "matchweek": 30,
+      "homeTeam": "Nairobi Thunder City",
+      "awayTeam": "Amsterdam Ravens",
+      "date": "2027-03-21",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-350",
+      "matchweek": 30,
+      "homeTeam": "Mumbai Royals FC",
+      "awayTeam": "New York Titans",
+      "date": "2027-03-21",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-351",
+      "matchweek": 30,
+      "homeTeam": "Mexico City FC",
+      "awayTeam": "Riyadh Desert Kings",
+      "date": "2027-03-21",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-352",
+      "matchweek": 30,
+      "homeTeam": "Melbourne Renegades",
+      "awayTeam": "Sahara Wanderers",
+      "date": "2027-03-21",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-353",
+      "matchweek": 30,
+      "homeTeam": "Los Angeles Lakers",
+      "awayTeam": "Seoul Phoenix City",
+      "date": "2027-03-21",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-354",
+      "matchweek": 30,
+      "homeTeam": "London Crusaders FC",
+      "awayTeam": "Shanghai Dragons",
+      "date": "2027-03-21",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-355",
+      "matchweek": 30,
+      "homeTeam": "Lisbon Lions",
+      "awayTeam": "Tokyo Verdy",
+      "date": "2027-03-21",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-356",
+      "matchweek": 30,
+      "homeTeam": "Johannesburg Wolves",
+      "awayTeam": "Barcelona Titans",
+      "date": "2027-03-21",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-357",
+      "matchweek": 30,
+      "homeTeam": "Inter Miami",
+      "awayTeam": "Bengaluru Rising FC",
+      "date": "2027-03-21",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-358",
+      "matchweek": 30,
+      "homeTeam": "Glasgow United",
+      "awayTeam": "Celtic FC",
+      "date": "2027-03-21",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-359",
+      "matchweek": 30,
+      "homeTeam": "Galacticos FC",
+      "awayTeam": "Delhi Capitals",
+      "date": "2027-03-21",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-360",
+      "matchweek": 30,
+      "homeTeam": "FC Copenhagen",
+      "awayTeam": "Dubai Falcons",
+      "date": "2027-03-21",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-361",
+      "matchweek": 31,
+      "homeTeam": "Amsterdam Ravens",
+      "awayTeam": "Mumbai Royals FC",
+      "date": "2027-03-28",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-362",
+      "matchweek": 31,
+      "homeTeam": "Nairobi Thunder City",
+      "awayTeam": "Mexico City FC",
+      "date": "2027-03-28",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-363",
+      "matchweek": 31,
+      "homeTeam": "New York Titans",
+      "awayTeam": "Melbourne Renegades",
+      "date": "2027-03-28",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-364",
+      "matchweek": 31,
+      "homeTeam": "Riyadh Desert Kings",
+      "awayTeam": "Los Angeles Lakers",
+      "date": "2027-03-28",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-365",
+      "matchweek": 31,
+      "homeTeam": "Sahara Wanderers",
+      "awayTeam": "London Crusaders FC",
+      "date": "2027-03-28",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-366",
+      "matchweek": 31,
+      "homeTeam": "Seoul Phoenix City",
+      "awayTeam": "Lisbon Lions",
+      "date": "2027-03-28",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-367",
+      "matchweek": 31,
+      "homeTeam": "Shanghai Dragons",
+      "awayTeam": "Johannesburg Wolves",
+      "date": "2027-03-28",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-368",
+      "matchweek": 31,
+      "homeTeam": "Tokyo Verdy",
+      "awayTeam": "Inter Miami",
+      "date": "2027-03-28",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-369",
+      "matchweek": 31,
+      "homeTeam": "Barcelona Titans",
+      "awayTeam": "Glasgow United",
+      "date": "2027-03-28",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-370",
+      "matchweek": 31,
+      "homeTeam": "Bengaluru Rising FC",
+      "awayTeam": "Galacticos FC",
+      "date": "2027-03-28",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-371",
+      "matchweek": 31,
+      "homeTeam": "Celtic FC",
+      "awayTeam": "FC Copenhagen",
+      "date": "2027-03-28",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-372",
+      "matchweek": 31,
+      "homeTeam": "Delhi Capitals",
+      "awayTeam": "Dubai Falcons",
+      "date": "2027-03-28",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-373",
+      "matchweek": 32,
+      "homeTeam": "Mexico City FC",
+      "awayTeam": "Amsterdam Ravens",
+      "date": "2027-04-04",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-374",
+      "matchweek": 32,
+      "homeTeam": "Melbourne Renegades",
+      "awayTeam": "Mumbai Royals FC",
+      "date": "2027-04-04",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-375",
+      "matchweek": 32,
+      "homeTeam": "Los Angeles Lakers",
+      "awayTeam": "Nairobi Thunder City",
+      "date": "2027-04-04",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-376",
+      "matchweek": 32,
+      "homeTeam": "London Crusaders FC",
+      "awayTeam": "New York Titans",
+      "date": "2027-04-04",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-377",
+      "matchweek": 32,
+      "homeTeam": "Lisbon Lions",
+      "awayTeam": "Riyadh Desert Kings",
+      "date": "2027-04-04",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-378",
+      "matchweek": 32,
+      "homeTeam": "Johannesburg Wolves",
+      "awayTeam": "Sahara Wanderers",
+      "date": "2027-04-04",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-379",
+      "matchweek": 32,
+      "homeTeam": "Inter Miami",
+      "awayTeam": "Seoul Phoenix City",
+      "date": "2027-04-04",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-380",
+      "matchweek": 32,
+      "homeTeam": "Glasgow United",
+      "awayTeam": "Shanghai Dragons",
+      "date": "2027-04-04",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-381",
+      "matchweek": 32,
+      "homeTeam": "Galacticos FC",
+      "awayTeam": "Tokyo Verdy",
+      "date": "2027-04-04",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-382",
+      "matchweek": 32,
+      "homeTeam": "FC Copenhagen",
+      "awayTeam": "Barcelona Titans",
+      "date": "2027-04-04",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-383",
+      "matchweek": 32,
+      "homeTeam": "Dubai Falcons",
+      "awayTeam": "Bengaluru Rising FC",
+      "date": "2027-04-04",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-384",
+      "matchweek": 32,
+      "homeTeam": "Delhi Capitals",
+      "awayTeam": "Celtic FC",
+      "date": "2027-04-04",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-385",
+      "matchweek": 33,
+      "homeTeam": "Amsterdam Ravens",
+      "awayTeam": "Melbourne Renegades",
+      "date": "2027-04-11",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-386",
+      "matchweek": 33,
+      "homeTeam": "Mexico City FC",
+      "awayTeam": "Los Angeles Lakers",
+      "date": "2027-04-11",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-387",
+      "matchweek": 33,
+      "homeTeam": "Mumbai Royals FC",
+      "awayTeam": "London Crusaders FC",
+      "date": "2027-04-11",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-388",
+      "matchweek": 33,
+      "homeTeam": "Nairobi Thunder City",
+      "awayTeam": "Lisbon Lions",
+      "date": "2027-04-11",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-389",
+      "matchweek": 33,
+      "homeTeam": "New York Titans",
+      "awayTeam": "Johannesburg Wolves",
+      "date": "2027-04-11",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-390",
+      "matchweek": 33,
+      "homeTeam": "Riyadh Desert Kings",
+      "awayTeam": "Inter Miami",
+      "date": "2027-04-11",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-391",
+      "matchweek": 33,
+      "homeTeam": "Sahara Wanderers",
+      "awayTeam": "Glasgow United",
+      "date": "2027-04-11",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-392",
+      "matchweek": 33,
+      "homeTeam": "Seoul Phoenix City",
+      "awayTeam": "Galacticos FC",
+      "date": "2027-04-11",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-393",
+      "matchweek": 33,
+      "homeTeam": "Shanghai Dragons",
+      "awayTeam": "FC Copenhagen",
+      "date": "2027-04-11",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-394",
+      "matchweek": 33,
+      "homeTeam": "Tokyo Verdy",
+      "awayTeam": "Dubai Falcons",
+      "date": "2027-04-11",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-395",
+      "matchweek": 33,
+      "homeTeam": "Barcelona Titans",
+      "awayTeam": "Delhi Capitals",
+      "date": "2027-04-11",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-396",
+      "matchweek": 33,
+      "homeTeam": "Bengaluru Rising FC",
+      "awayTeam": "Celtic FC",
+      "date": "2027-04-11",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-397",
+      "matchweek": 34,
+      "homeTeam": "Los Angeles Lakers",
+      "awayTeam": "Amsterdam Ravens",
+      "date": "2027-04-18",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-398",
+      "matchweek": 34,
+      "homeTeam": "London Crusaders FC",
+      "awayTeam": "Melbourne Renegades",
+      "date": "2027-04-18",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-399",
+      "matchweek": 34,
+      "homeTeam": "Lisbon Lions",
+      "awayTeam": "Mexico City FC",
+      "date": "2027-04-18",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-400",
+      "matchweek": 34,
+      "homeTeam": "Johannesburg Wolves",
+      "awayTeam": "Mumbai Royals FC",
+      "date": "2027-04-18",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-401",
+      "matchweek": 34,
+      "homeTeam": "Inter Miami",
+      "awayTeam": "Nairobi Thunder City",
+      "date": "2027-04-18",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-402",
+      "matchweek": 34,
+      "homeTeam": "Glasgow United",
+      "awayTeam": "New York Titans",
+      "date": "2027-04-18",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-403",
+      "matchweek": 34,
+      "homeTeam": "Galacticos FC",
+      "awayTeam": "Riyadh Desert Kings",
+      "date": "2027-04-18",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-404",
+      "matchweek": 34,
+      "homeTeam": "FC Copenhagen",
+      "awayTeam": "Sahara Wanderers",
+      "date": "2027-04-18",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-405",
+      "matchweek": 34,
+      "homeTeam": "Dubai Falcons",
+      "awayTeam": "Seoul Phoenix City",
+      "date": "2027-04-18",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-406",
+      "matchweek": 34,
+      "homeTeam": "Delhi Capitals",
+      "awayTeam": "Shanghai Dragons",
+      "date": "2027-04-18",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-407",
+      "matchweek": 34,
+      "homeTeam": "Celtic FC",
+      "awayTeam": "Tokyo Verdy",
+      "date": "2027-04-18",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-408",
+      "matchweek": 34,
+      "homeTeam": "Bengaluru Rising FC",
+      "awayTeam": "Barcelona Titans",
+      "date": "2027-04-18",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-409",
+      "matchweek": 35,
+      "homeTeam": "Amsterdam Ravens",
+      "awayTeam": "London Crusaders FC",
+      "date": "2027-04-25",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-410",
+      "matchweek": 35,
+      "homeTeam": "Los Angeles Lakers",
+      "awayTeam": "Lisbon Lions",
+      "date": "2027-04-25",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-411",
+      "matchweek": 35,
+      "homeTeam": "Melbourne Renegades",
+      "awayTeam": "Johannesburg Wolves",
+      "date": "2027-04-25",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-412",
+      "matchweek": 35,
+      "homeTeam": "Mexico City FC",
+      "awayTeam": "Inter Miami",
+      "date": "2027-04-25",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-413",
+      "matchweek": 35,
+      "homeTeam": "Mumbai Royals FC",
+      "awayTeam": "Glasgow United",
+      "date": "2027-04-25",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-414",
+      "matchweek": 35,
+      "homeTeam": "Nairobi Thunder City",
+      "awayTeam": "Galacticos FC",
+      "date": "2027-04-25",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-415",
+      "matchweek": 35,
+      "homeTeam": "New York Titans",
+      "awayTeam": "FC Copenhagen",
+      "date": "2027-04-25",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-416",
+      "matchweek": 35,
+      "homeTeam": "Riyadh Desert Kings",
+      "awayTeam": "Dubai Falcons",
+      "date": "2027-04-25",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-417",
+      "matchweek": 35,
+      "homeTeam": "Sahara Wanderers",
+      "awayTeam": "Delhi Capitals",
+      "date": "2027-04-25",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-418",
+      "matchweek": 35,
+      "homeTeam": "Seoul Phoenix City",
+      "awayTeam": "Celtic FC",
+      "date": "2027-04-25",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-419",
+      "matchweek": 35,
+      "homeTeam": "Shanghai Dragons",
+      "awayTeam": "Bengaluru Rising FC",
+      "date": "2027-04-25",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-420",
+      "matchweek": 35,
+      "homeTeam": "Tokyo Verdy",
+      "awayTeam": "Barcelona Titans",
+      "date": "2027-04-25",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-421",
+      "matchweek": 36,
+      "homeTeam": "Lisbon Lions",
+      "awayTeam": "Amsterdam Ravens",
+      "date": "2027-05-02",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-422",
+      "matchweek": 36,
+      "homeTeam": "Johannesburg Wolves",
+      "awayTeam": "London Crusaders FC",
+      "date": "2027-05-02",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-423",
+      "matchweek": 36,
+      "homeTeam": "Inter Miami",
+      "awayTeam": "Los Angeles Lakers",
+      "date": "2027-05-02",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-424",
+      "matchweek": 36,
+      "homeTeam": "Glasgow United",
+      "awayTeam": "Melbourne Renegades",
+      "date": "2027-05-02",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-425",
+      "matchweek": 36,
+      "homeTeam": "Galacticos FC",
+      "awayTeam": "Mexico City FC",
+      "date": "2027-05-02",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-426",
+      "matchweek": 36,
+      "homeTeam": "FC Copenhagen",
+      "awayTeam": "Mumbai Royals FC",
+      "date": "2027-05-02",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-427",
+      "matchweek": 36,
+      "homeTeam": "Dubai Falcons",
+      "awayTeam": "Nairobi Thunder City",
+      "date": "2027-05-02",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-428",
+      "matchweek": 36,
+      "homeTeam": "Delhi Capitals",
+      "awayTeam": "New York Titans",
+      "date": "2027-05-02",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-429",
+      "matchweek": 36,
+      "homeTeam": "Celtic FC",
+      "awayTeam": "Riyadh Desert Kings",
+      "date": "2027-05-02",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-430",
+      "matchweek": 36,
+      "homeTeam": "Bengaluru Rising FC",
+      "awayTeam": "Sahara Wanderers",
+      "date": "2027-05-02",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-431",
+      "matchweek": 36,
+      "homeTeam": "Barcelona Titans",
+      "awayTeam": "Seoul Phoenix City",
+      "date": "2027-05-02",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-432",
+      "matchweek": 36,
+      "homeTeam": "Tokyo Verdy",
+      "awayTeam": "Shanghai Dragons",
+      "date": "2027-05-02",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-433",
+      "matchweek": 37,
+      "homeTeam": "Amsterdam Ravens",
+      "awayTeam": "Johannesburg Wolves",
+      "date": "2027-05-09",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-434",
+      "matchweek": 37,
+      "homeTeam": "Lisbon Lions",
+      "awayTeam": "Inter Miami",
+      "date": "2027-05-09",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-435",
+      "matchweek": 37,
+      "homeTeam": "London Crusaders FC",
+      "awayTeam": "Glasgow United",
+      "date": "2027-05-09",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-436",
+      "matchweek": 37,
+      "homeTeam": "Los Angeles Lakers",
+      "awayTeam": "Galacticos FC",
+      "date": "2027-05-09",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-437",
+      "matchweek": 37,
+      "homeTeam": "Melbourne Renegades",
+      "awayTeam": "FC Copenhagen",
+      "date": "2027-05-09",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-438",
+      "matchweek": 37,
+      "homeTeam": "Mexico City FC",
+      "awayTeam": "Dubai Falcons",
+      "date": "2027-05-09",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-439",
+      "matchweek": 37,
+      "homeTeam": "Mumbai Royals FC",
+      "awayTeam": "Delhi Capitals",
+      "date": "2027-05-09",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-440",
+      "matchweek": 37,
+      "homeTeam": "Nairobi Thunder City",
+      "awayTeam": "Celtic FC",
+      "date": "2027-05-09",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-441",
+      "matchweek": 37,
+      "homeTeam": "New York Titans",
+      "awayTeam": "Bengaluru Rising FC",
+      "date": "2027-05-09",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-442",
+      "matchweek": 37,
+      "homeTeam": "Riyadh Desert Kings",
+      "awayTeam": "Barcelona Titans",
+      "date": "2027-05-09",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-443",
+      "matchweek": 37,
+      "homeTeam": "Sahara Wanderers",
+      "awayTeam": "Tokyo Verdy",
+      "date": "2027-05-09",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-444",
+      "matchweek": 37,
+      "homeTeam": "Seoul Phoenix City",
+      "awayTeam": "Shanghai Dragons",
+      "date": "2027-05-09",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-445",
+      "matchweek": 38,
+      "homeTeam": "Inter Miami",
+      "awayTeam": "Amsterdam Ravens",
+      "date": "2027-05-16",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-446",
+      "matchweek": 38,
+      "homeTeam": "Glasgow United",
+      "awayTeam": "Johannesburg Wolves",
+      "date": "2027-05-16",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-447",
+      "matchweek": 38,
+      "homeTeam": "Galacticos FC",
+      "awayTeam": "Lisbon Lions",
+      "date": "2027-05-16",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-448",
+      "matchweek": 38,
+      "homeTeam": "FC Copenhagen",
+      "awayTeam": "London Crusaders FC",
+      "date": "2027-05-16",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-449",
+      "matchweek": 38,
+      "homeTeam": "Dubai Falcons",
+      "awayTeam": "Los Angeles Lakers",
+      "date": "2027-05-16",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-450",
+      "matchweek": 38,
+      "homeTeam": "Delhi Capitals",
+      "awayTeam": "Melbourne Renegades",
+      "date": "2027-05-16",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-451",
+      "matchweek": 38,
+      "homeTeam": "Celtic FC",
+      "awayTeam": "Mexico City FC",
+      "date": "2027-05-16",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-452",
+      "matchweek": 38,
+      "homeTeam": "Bengaluru Rising FC",
+      "awayTeam": "Mumbai Royals FC",
+      "date": "2027-05-16",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-453",
+      "matchweek": 38,
+      "homeTeam": "Barcelona Titans",
+      "awayTeam": "Nairobi Thunder City",
+      "date": "2027-05-16",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-454",
+      "matchweek": 38,
+      "homeTeam": "Tokyo Verdy",
+      "awayTeam": "New York Titans",
+      "date": "2027-05-16",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-455",
+      "matchweek": 38,
+      "homeTeam": "Shanghai Dragons",
+      "awayTeam": "Riyadh Desert Kings",
+      "date": "2027-05-16",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-456",
+      "matchweek": 38,
+      "homeTeam": "Seoul Phoenix City",
+      "awayTeam": "Sahara Wanderers",
+      "date": "2027-05-16",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-457",
+      "matchweek": 39,
+      "homeTeam": "Amsterdam Ravens",
+      "awayTeam": "Glasgow United",
+      "date": "2027-05-23",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-458",
+      "matchweek": 39,
+      "homeTeam": "Inter Miami",
+      "awayTeam": "Galacticos FC",
+      "date": "2027-05-23",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-459",
+      "matchweek": 39,
+      "homeTeam": "Johannesburg Wolves",
+      "awayTeam": "FC Copenhagen",
+      "date": "2027-05-23",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-460",
+      "matchweek": 39,
+      "homeTeam": "Lisbon Lions",
+      "awayTeam": "Dubai Falcons",
+      "date": "2027-05-23",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-461",
+      "matchweek": 39,
+      "homeTeam": "London Crusaders FC",
+      "awayTeam": "Delhi Capitals",
+      "date": "2027-05-23",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-462",
+      "matchweek": 39,
+      "homeTeam": "Los Angeles Lakers",
+      "awayTeam": "Celtic FC",
+      "date": "2027-05-23",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-463",
+      "matchweek": 39,
+      "homeTeam": "Melbourne Renegades",
+      "awayTeam": "Bengaluru Rising FC",
+      "date": "2027-05-23",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-464",
+      "matchweek": 39,
+      "homeTeam": "Mexico City FC",
+      "awayTeam": "Barcelona Titans",
+      "date": "2027-05-23",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-465",
+      "matchweek": 39,
+      "homeTeam": "Mumbai Royals FC",
+      "awayTeam": "Tokyo Verdy",
+      "date": "2027-05-23",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-466",
+      "matchweek": 39,
+      "homeTeam": "Nairobi Thunder City",
+      "awayTeam": "Shanghai Dragons",
+      "date": "2027-05-23",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-467",
+      "matchweek": 39,
+      "homeTeam": "New York Titans",
+      "awayTeam": "Seoul Phoenix City",
+      "date": "2027-05-23",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-468",
+      "matchweek": 39,
+      "homeTeam": "Riyadh Desert Kings",
+      "awayTeam": "Sahara Wanderers",
+      "date": "2027-05-23",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-469",
+      "matchweek": 40,
+      "homeTeam": "Galacticos FC",
+      "awayTeam": "Amsterdam Ravens",
+      "date": "2027-05-30",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-470",
+      "matchweek": 40,
+      "homeTeam": "FC Copenhagen",
+      "awayTeam": "Glasgow United",
+      "date": "2027-05-30",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-471",
+      "matchweek": 40,
+      "homeTeam": "Dubai Falcons",
+      "awayTeam": "Inter Miami",
+      "date": "2027-05-30",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-472",
+      "matchweek": 40,
+      "homeTeam": "Delhi Capitals",
+      "awayTeam": "Johannesburg Wolves",
+      "date": "2027-05-30",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-473",
+      "matchweek": 40,
+      "homeTeam": "Celtic FC",
+      "awayTeam": "Lisbon Lions",
+      "date": "2027-05-30",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-474",
+      "matchweek": 40,
+      "homeTeam": "Bengaluru Rising FC",
+      "awayTeam": "London Crusaders FC",
+      "date": "2027-05-30",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-475",
+      "matchweek": 40,
+      "homeTeam": "Barcelona Titans",
+      "awayTeam": "Los Angeles Lakers",
+      "date": "2027-05-30",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-476",
+      "matchweek": 40,
+      "homeTeam": "Tokyo Verdy",
+      "awayTeam": "Melbourne Renegades",
+      "date": "2027-05-30",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-477",
+      "matchweek": 40,
+      "homeTeam": "Shanghai Dragons",
+      "awayTeam": "Mexico City FC",
+      "date": "2027-05-30",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-478",
+      "matchweek": 40,
+      "homeTeam": "Seoul Phoenix City",
+      "awayTeam": "Mumbai Royals FC",
+      "date": "2027-05-30",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-479",
+      "matchweek": 40,
+      "homeTeam": "Sahara Wanderers",
+      "awayTeam": "Nairobi Thunder City",
+      "date": "2027-05-30",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-480",
+      "matchweek": 40,
+      "homeTeam": "Riyadh Desert Kings",
+      "awayTeam": "New York Titans",
+      "date": "2027-05-30",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-481",
+      "matchweek": 41,
+      "homeTeam": "Amsterdam Ravens",
+      "awayTeam": "FC Copenhagen",
+      "date": "2027-06-06",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-482",
+      "matchweek": 41,
+      "homeTeam": "Galacticos FC",
+      "awayTeam": "Dubai Falcons",
+      "date": "2027-06-06",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-483",
+      "matchweek": 41,
+      "homeTeam": "Glasgow United",
+      "awayTeam": "Delhi Capitals",
+      "date": "2027-06-06",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-484",
+      "matchweek": 41,
+      "homeTeam": "Inter Miami",
+      "awayTeam": "Celtic FC",
+      "date": "2027-06-06",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-485",
+      "matchweek": 41,
+      "homeTeam": "Johannesburg Wolves",
+      "awayTeam": "Bengaluru Rising FC",
+      "date": "2027-06-06",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-486",
+      "matchweek": 41,
+      "homeTeam": "Lisbon Lions",
+      "awayTeam": "Barcelona Titans",
+      "date": "2027-06-06",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-487",
+      "matchweek": 41,
+      "homeTeam": "London Crusaders FC",
+      "awayTeam": "Tokyo Verdy",
+      "date": "2027-06-06",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-488",
+      "matchweek": 41,
+      "homeTeam": "Los Angeles Lakers",
+      "awayTeam": "Shanghai Dragons",
+      "date": "2027-06-06",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-489",
+      "matchweek": 41,
+      "homeTeam": "Melbourne Renegades",
+      "awayTeam": "Seoul Phoenix City",
+      "date": "2027-06-06",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-490",
+      "matchweek": 41,
+      "homeTeam": "Mexico City FC",
+      "awayTeam": "Sahara Wanderers",
+      "date": "2027-06-06",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-491",
+      "matchweek": 41,
+      "homeTeam": "Mumbai Royals FC",
+      "awayTeam": "Riyadh Desert Kings",
+      "date": "2027-06-06",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-492",
+      "matchweek": 41,
+      "homeTeam": "Nairobi Thunder City",
+      "awayTeam": "New York Titans",
+      "date": "2027-06-06",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-493",
+      "matchweek": 42,
+      "homeTeam": "Dubai Falcons",
+      "awayTeam": "Amsterdam Ravens",
+      "date": "2027-06-13",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-494",
+      "matchweek": 42,
+      "homeTeam": "Delhi Capitals",
+      "awayTeam": "FC Copenhagen",
+      "date": "2027-06-13",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-495",
+      "matchweek": 42,
+      "homeTeam": "Celtic FC",
+      "awayTeam": "Galacticos FC",
+      "date": "2027-06-13",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-496",
+      "matchweek": 42,
+      "homeTeam": "Bengaluru Rising FC",
+      "awayTeam": "Glasgow United",
+      "date": "2027-06-13",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-497",
+      "matchweek": 42,
+      "homeTeam": "Barcelona Titans",
+      "awayTeam": "Inter Miami",
+      "date": "2027-06-13",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-498",
+      "matchweek": 42,
+      "homeTeam": "Tokyo Verdy",
+      "awayTeam": "Johannesburg Wolves",
+      "date": "2027-06-13",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-499",
+      "matchweek": 42,
+      "homeTeam": "Shanghai Dragons",
+      "awayTeam": "Lisbon Lions",
+      "date": "2027-06-13",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-500",
+      "matchweek": 42,
+      "homeTeam": "Seoul Phoenix City",
+      "awayTeam": "London Crusaders FC",
+      "date": "2027-06-13",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-501",
+      "matchweek": 42,
+      "homeTeam": "Sahara Wanderers",
+      "awayTeam": "Los Angeles Lakers",
+      "date": "2027-06-13",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-502",
+      "matchweek": 42,
+      "homeTeam": "Riyadh Desert Kings",
+      "awayTeam": "Melbourne Renegades",
+      "date": "2027-06-13",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-503",
+      "matchweek": 42,
+      "homeTeam": "New York Titans",
+      "awayTeam": "Mexico City FC",
+      "date": "2027-06-13",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-504",
+      "matchweek": 42,
+      "homeTeam": "Nairobi Thunder City",
+      "awayTeam": "Mumbai Royals FC",
+      "date": "2027-06-13",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-505",
+      "matchweek": 43,
+      "homeTeam": "Amsterdam Ravens",
+      "awayTeam": "Delhi Capitals",
+      "date": "2027-06-20",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-506",
+      "matchweek": 43,
+      "homeTeam": "Dubai Falcons",
+      "awayTeam": "Celtic FC",
+      "date": "2027-06-20",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-507",
+      "matchweek": 43,
+      "homeTeam": "FC Copenhagen",
+      "awayTeam": "Bengaluru Rising FC",
+      "date": "2027-06-20",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-508",
+      "matchweek": 43,
+      "homeTeam": "Galacticos FC",
+      "awayTeam": "Barcelona Titans",
+      "date": "2027-06-20",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-509",
+      "matchweek": 43,
+      "homeTeam": "Glasgow United",
+      "awayTeam": "Tokyo Verdy",
+      "date": "2027-06-20",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-510",
+      "matchweek": 43,
+      "homeTeam": "Inter Miami",
+      "awayTeam": "Shanghai Dragons",
+      "date": "2027-06-20",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-511",
+      "matchweek": 43,
+      "homeTeam": "Johannesburg Wolves",
+      "awayTeam": "Seoul Phoenix City",
+      "date": "2027-06-20",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-512",
+      "matchweek": 43,
+      "homeTeam": "Lisbon Lions",
+      "awayTeam": "Sahara Wanderers",
+      "date": "2027-06-20",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-513",
+      "matchweek": 43,
+      "homeTeam": "London Crusaders FC",
+      "awayTeam": "Riyadh Desert Kings",
+      "date": "2027-06-20",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-514",
+      "matchweek": 43,
+      "homeTeam": "Los Angeles Lakers",
+      "awayTeam": "New York Titans",
+      "date": "2027-06-20",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-515",
+      "matchweek": 43,
+      "homeTeam": "Melbourne Renegades",
+      "awayTeam": "Nairobi Thunder City",
+      "date": "2027-06-20",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-516",
+      "matchweek": 43,
+      "homeTeam": "Mexico City FC",
+      "awayTeam": "Mumbai Royals FC",
+      "date": "2027-06-20",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-517",
+      "matchweek": 44,
+      "homeTeam": "Celtic FC",
+      "awayTeam": "Amsterdam Ravens",
+      "date": "2027-06-27",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-518",
+      "matchweek": 44,
+      "homeTeam": "Bengaluru Rising FC",
+      "awayTeam": "Delhi Capitals",
+      "date": "2027-06-27",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-519",
+      "matchweek": 44,
+      "homeTeam": "Barcelona Titans",
+      "awayTeam": "Dubai Falcons",
+      "date": "2027-06-27",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-520",
+      "matchweek": 44,
+      "homeTeam": "Tokyo Verdy",
+      "awayTeam": "FC Copenhagen",
+      "date": "2027-06-27",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-521",
+      "matchweek": 44,
+      "homeTeam": "Shanghai Dragons",
+      "awayTeam": "Galacticos FC",
+      "date": "2027-06-27",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-522",
+      "matchweek": 44,
+      "homeTeam": "Seoul Phoenix City",
+      "awayTeam": "Glasgow United",
+      "date": "2027-06-27",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-523",
+      "matchweek": 44,
+      "homeTeam": "Sahara Wanderers",
+      "awayTeam": "Inter Miami",
+      "date": "2027-06-27",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-524",
+      "matchweek": 44,
+      "homeTeam": "Riyadh Desert Kings",
+      "awayTeam": "Johannesburg Wolves",
+      "date": "2027-06-27",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-525",
+      "matchweek": 44,
+      "homeTeam": "New York Titans",
+      "awayTeam": "Lisbon Lions",
+      "date": "2027-06-27",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-526",
+      "matchweek": 44,
+      "homeTeam": "Nairobi Thunder City",
+      "awayTeam": "London Crusaders FC",
+      "date": "2027-06-27",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-527",
+      "matchweek": 44,
+      "homeTeam": "Mumbai Royals FC",
+      "awayTeam": "Los Angeles Lakers",
+      "date": "2027-06-27",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-528",
+      "matchweek": 44,
+      "homeTeam": "Mexico City FC",
+      "awayTeam": "Melbourne Renegades",
+      "date": "2027-06-27",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-529",
+      "matchweek": 45,
+      "homeTeam": "Amsterdam Ravens",
+      "awayTeam": "Bengaluru Rising FC",
+      "date": "2027-07-04",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-530",
+      "matchweek": 45,
+      "homeTeam": "Celtic FC",
+      "awayTeam": "Barcelona Titans",
+      "date": "2027-07-04",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-531",
+      "matchweek": 45,
+      "homeTeam": "Delhi Capitals",
+      "awayTeam": "Tokyo Verdy",
+      "date": "2027-07-04",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-532",
+      "matchweek": 45,
+      "homeTeam": "Dubai Falcons",
+      "awayTeam": "Shanghai Dragons",
+      "date": "2027-07-04",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-533",
+      "matchweek": 45,
+      "homeTeam": "FC Copenhagen",
+      "awayTeam": "Seoul Phoenix City",
+      "date": "2027-07-04",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-534",
+      "matchweek": 45,
+      "homeTeam": "Galacticos FC",
+      "awayTeam": "Sahara Wanderers",
+      "date": "2027-07-04",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-535",
+      "matchweek": 45,
+      "homeTeam": "Glasgow United",
+      "awayTeam": "Riyadh Desert Kings",
+      "date": "2027-07-04",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-536",
+      "matchweek": 45,
+      "homeTeam": "Inter Miami",
+      "awayTeam": "New York Titans",
+      "date": "2027-07-04",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-537",
+      "matchweek": 45,
+      "homeTeam": "Johannesburg Wolves",
+      "awayTeam": "Nairobi Thunder City",
+      "date": "2027-07-04",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-538",
+      "matchweek": 45,
+      "homeTeam": "Lisbon Lions",
+      "awayTeam": "Mumbai Royals FC",
+      "date": "2027-07-04",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-539",
+      "matchweek": 45,
+      "homeTeam": "London Crusaders FC",
+      "awayTeam": "Mexico City FC",
+      "date": "2027-07-04",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-540",
+      "matchweek": 45,
+      "homeTeam": "Los Angeles Lakers",
+      "awayTeam": "Melbourne Renegades",
+      "date": "2027-07-04",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-541",
+      "matchweek": 46,
+      "homeTeam": "Barcelona Titans",
+      "awayTeam": "Amsterdam Ravens",
+      "date": "2027-07-11",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-542",
+      "matchweek": 46,
+      "homeTeam": "Tokyo Verdy",
+      "awayTeam": "Bengaluru Rising FC",
+      "date": "2027-07-11",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-543",
+      "matchweek": 46,
+      "homeTeam": "Shanghai Dragons",
+      "awayTeam": "Celtic FC",
+      "date": "2027-07-11",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-544",
+      "matchweek": 46,
+      "homeTeam": "Seoul Phoenix City",
+      "awayTeam": "Delhi Capitals",
+      "date": "2027-07-11",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-545",
+      "matchweek": 46,
+      "homeTeam": "Sahara Wanderers",
+      "awayTeam": "Dubai Falcons",
+      "date": "2027-07-11",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-546",
+      "matchweek": 46,
+      "homeTeam": "Riyadh Desert Kings",
+      "awayTeam": "FC Copenhagen",
+      "date": "2027-07-11",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-547",
+      "matchweek": 46,
+      "homeTeam": "New York Titans",
+      "awayTeam": "Galacticos FC",
+      "date": "2027-07-11",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-548",
+      "matchweek": 46,
+      "homeTeam": "Nairobi Thunder City",
+      "awayTeam": "Glasgow United",
+      "date": "2027-07-11",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-549",
+      "matchweek": 46,
+      "homeTeam": "Mumbai Royals FC",
+      "awayTeam": "Inter Miami",
+      "date": "2027-07-11",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-550",
+      "matchweek": 46,
+      "homeTeam": "Mexico City FC",
+      "awayTeam": "Johannesburg Wolves",
+      "date": "2027-07-11",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-551",
+      "matchweek": 46,
+      "homeTeam": "Melbourne Renegades",
+      "awayTeam": "Lisbon Lions",
+      "date": "2027-07-11",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    },
+    {
+      "matchId": "gfl-2026-552",
+      "matchweek": 46,
+      "homeTeam": "Los Angeles Lakers",
+      "awayTeam": "London Crusaders FC",
+      "date": "2027-07-11",
+      "status": "scheduled",
+      "homeScore": null,
+      "awayScore": null
+    }
+  ]
+}
