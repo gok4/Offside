@@ -5,6 +5,8 @@
      #/                -> home (badge wall)
      #/team/<slug>      -> team squad page
      #/icons            -> icons/legends gallery
+     #/match/<matchId>  -> match center (score, stats, lineups, points)
+     #/standings        -> league table
    ============================================ */
 
 const app = document.getElementById('app');
@@ -187,6 +189,199 @@ async function renderIcons() {
   `;
 }
 
+/* ---------- Match Center & Standings ---------- */
+
+async function loadMatch(matchId) {
+  const res = await fetch(`data/matches/${matchId}.json`);
+  if (!res.ok) throw new Error('Match not found');
+  return res.json();
+}
+
+async function loadStandings() {
+  const res = await fetch('data/standings.json');
+  const json = await res.json();
+  return json.standings || [];
+}
+
+function teamLogoSrc(teams, teamName) {
+  const team = teams.find(t => t.name === teamName);
+  return team ? `assets/team_logos/${encodeURIComponent(team.logo)}` : '';
+}
+
+function playerPosition(teams, teamName, playerName) {
+  const team = teams.find(t => t.name === teamName);
+  const player = team?.players.find(p => p.name === playerName);
+  return player ? player.position : '';
+}
+
+const TEAM_STAT_LABELS = {
+  totalShots: 'Total Shots',
+  shotsOnTarget: 'Shots On Target',
+  touchesInOppositionBox: 'Touches In Box',
+  accuratePasses: 'Accurate Passes',
+  yellowCards: 'Yellow Cards',
+};
+
+function renderStatBars(homeStats, awayStats) {
+  return Object.entries(TEAM_STAT_LABELS).map(([key, label]) => {
+    const h = homeStats[key] || 0;
+    const a = awayStats[key] || 0;
+    const total = h + a || 1;
+    const homePct = (h / total) * 100;
+    return `
+      <div class="compare-row">
+        <div class="compare-labels"><span class="compare-home-val">${h}</span><span class="compare-away-val">${a}</span></div>
+        <p class="compare-stat-name">${label}</p>
+        <div class="compare-track">
+          <div class="compare-home-bar" style="width:${homePct}%"></div>
+          <div class="compare-away-bar" style="width:${100 - homePct}%"></div>
+        </div>
+      </div>`;
+  }).join('');
+}
+
+function renderLineupList(teamName, names, playerStats, teams) {
+  if (!names || names.length === 0) {
+    return `<li class="empty-line">&mdash;</li>`;
+  }
+  return names.map(name => {
+    const stats = playerStats[name] || {};
+    const pos = playerPosition(teams, teamName, name);
+    return `
+      <li>
+        <button class="lineup-player" data-team="${escapeHtml(teamName)}" data-player="${escapeHtml(name)}">
+          <span class="lineup-pos">${escapeHtml(pos)}</span>
+          <span class="lineup-name">${escapeHtml(name)}</span>
+          <span class="lineup-pts">${stats.points ?? ''}</span>
+        </button>
+      </li>`;
+  }).join('');
+}
+
+function renderPointsTable(team, teams) {
+  const rows = Object.entries(team.playerStats)
+    .sort((a, b) => (b[1].points || 0) - (a[1].points || 0))
+    .map(([name, stats]) => {
+      const pos = playerPosition(teams, team.name, name);
+      return `
+        <tr>
+          <td>${escapeHtml(name)}</td>
+          <td>${escapeHtml(pos)}</td>
+          <td class="pts-val">${stats.points ?? 0}</td>
+        </tr>`;
+    }).join('');
+  return `
+    <p class="section-label">${escapeHtml(team.name)}</p>
+    <table class="points-table">
+      <thead><tr><th>Player</th><th>Pos</th><th>Pts</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table>`;
+}
+
+async function renderMatch(matchId) {
+  const teams = await loadTeams();
+  let match;
+  try {
+    match = await loadMatch(matchId);
+  } catch (e) {
+    app.innerHTML = `<div class="empty-state">No match found for this link. <a href="#/standings">Back to standings</a>.</div>`;
+    return;
+  }
+
+  const home = match.homeTeam;
+  const away = match.awayTeam;
+
+  app.innerHTML = `
+    <div class="scoreboard">
+      <div class="scoreboard-meta">
+        ${match.matchweek ? `<span>Matchweek ${escapeHtml(String(match.matchweek))}</span>` : ''}
+        ${match.date ? `<span>${escapeHtml(match.date)}</span>` : ''}
+        ${match.venue ? `<span>${escapeHtml(match.venue)}</span>` : ''}
+      </div>
+      <div class="scoreboard-row">
+        <div class="scoreboard-team home">
+          <img class="scoreboard-badge" src="${teamLogoSrc(teams, home.name)}" alt="${escapeHtml(home.name)} badge">
+          <span class="scoreboard-team-name">${escapeHtml(home.name)}</span>
+        </div>
+        <div class="scoreboard-center">
+          <div class="scoreboard-score">${home.score} &mdash; ${away.score}</div>
+          <div class="scoreboard-status">${match.status === 'completed' ? 'Full Time' : escapeHtml((match.status || '').toUpperCase())}</div>
+        </div>
+        <div class="scoreboard-team away">
+          <img class="scoreboard-badge" src="${teamLogoSrc(teams, away.name)}" alt="${escapeHtml(away.name)} badge">
+          <span class="scoreboard-team-name">${escapeHtml(away.name)}</span>
+        </div>
+      </div>
+    </div>
+
+    <p class="section-label">Match Stats</p>
+    <div class="compare-bars">
+      ${renderStatBars(home.teamStats, away.teamStats)}
+    </div>
+
+    <p class="section-label">Lineups</p>
+    <div class="lineups-grid">
+      <div class="lineup-col">
+        <h4>${escapeHtml(home.name)}</h4>
+        <ul class="lineup-list">${renderLineupList(home.name, home.startingXI, home.playerStats, teams)}</ul>
+        <p class="lineup-subheading">Substitutes</p>
+        <ul class="lineup-list">${renderLineupList(home.name, [...(home.substitutes || []), ...(home.unusedSubstitutes || [])], home.playerStats, teams)}</ul>
+      </div>
+      <div class="lineup-col">
+        <h4>${escapeHtml(away.name)}</h4>
+        <ul class="lineup-list">${renderLineupList(away.name, away.startingXI, away.playerStats, teams)}</ul>
+        <p class="lineup-subheading">Substitutes</p>
+        <ul class="lineup-list">${renderLineupList(away.name, [...(away.substitutes || []), ...(away.unusedSubstitutes || [])], away.playerStats, teams)}</ul>
+      </div>
+    </div>
+
+    <p class="section-label">Fantasy Points</p>
+    ${renderPointsTable(home, teams)}
+    ${renderPointsTable(away, teams)}
+
+    <a class="back-link" href="#/standings">&larr; Standings</a>
+  `;
+}
+
+async function renderStandingsPage() {
+  const standings = await loadStandings();
+
+  if (standings.length === 0) {
+    app.innerHTML = `
+      <section class="hero">
+        <span class="hero-eyebrow">Offside — Global Super League</span>
+        <h1 class="hero-title">Standings</h1>
+      </section>
+      <div class="empty-state">No completed matches yet. Check back after matchweek 1.</div>
+    `;
+    return;
+  }
+
+  app.innerHTML = `
+    <section class="hero">
+      <span class="hero-eyebrow">Offside — Global Super League</span>
+      <h1 class="hero-title">Standings</h1>
+    </section>
+    <table class="standings-table">
+      <thead>
+        <tr><th>#</th><th>Team</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GF</th><th>GA</th><th>GD</th><th>Pts</th></tr>
+      </thead>
+      <tbody>
+        ${standings.map(r => `
+          <tr>
+            <td class="rank-cell">${r.rank}</td>
+            <td><a href="#/team/${slugify(r.team)}">${escapeHtml(r.team)}</a></td>
+            <td>${r.played}</td><td>${r.won}</td><td>${r.drawn}</td><td>${r.lost}</td>
+            <td>${r.goalsFor}</td><td>${r.goalsAgainst}</td>
+            <td class="${r.goalDifference > 0 ? 'gd-pos' : (r.goalDifference < 0 ? 'gd-neg' : '')}">${r.goalDifference > 0 ? '+' + r.goalDifference : r.goalDifference}</td>
+            <td class="pts-cell">${r.points}</td>
+          </tr>
+        `).join('')}
+      </tbody>
+    </table>
+  `;
+}
+
 async function loadVersion() {
   const tag = document.getElementById('version-tag');
   try {
@@ -265,11 +460,12 @@ document.addEventListener('keydown', (e) => {
 });
 
 // Event delegation: catches clicks on player cards in home/team/icons views,
-// since content is re-rendered dynamically by the router.
+// and lineup-player rows in the match center, since content is re-rendered
+// dynamically by the router.
 app.addEventListener('click', (e) => {
-  const card = e.target.closest('.player-card');
-  if (card && card.dataset.team && card.dataset.player) {
-    openPlayerModal(card.dataset.team, card.dataset.player);
+  const trigger = e.target.closest('.player-card, .lineup-player');
+  if (trigger && trigger.dataset.team && trigger.dataset.player) {
+    openPlayerModal(trigger.dataset.team, trigger.dataset.player);
   }
 });
 
@@ -277,8 +473,18 @@ app.addEventListener('click', (e) => {
 
 function setActiveNav(route) {
   document.querySelectorAll('.nav-link').forEach(link => {
-    const isIcons = link.getAttribute('href') === '#/icons';
-    link.classList.toggle('active', (isIcons && route.startsWith('#/icons')) || (!isIcons && (route === '#/' || route.startsWith('#/team'))));
+    const href = link.getAttribute('href');
+    const isIcons = href === '#/icons';
+    const isStandings = href === '#/standings';
+    let active;
+    if (isIcons) {
+      active = route.startsWith('#/icons');
+    } else if (isStandings) {
+      active = route.startsWith('#/standings') || route.startsWith('#/match/');
+    } else {
+      active = (route === '#/' || route.startsWith('#/team'));
+    }
+    link.classList.toggle('active', active);
   });
 }
 
@@ -294,6 +500,11 @@ async function router() {
     await renderTeam(slug);
   } else if (route.startsWith('#/icons')) {
     await renderIcons();
+  } else if (route.startsWith('#/match/')) {
+    const matchId = route.replace('#/match/', '');
+    await renderMatch(matchId);
+  } else if (route.startsWith('#/standings')) {
+    await renderStandingsPage();
   } else {
     app.innerHTML = `<div class="empty-state">Page not found. <a href="#/">Back to clubs</a>.</div>`;
   }
