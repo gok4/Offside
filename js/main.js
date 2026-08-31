@@ -2,11 +2,13 @@
    OFFSIDE — main.js
    Simple hash-based router + renderers.
    Routes:
-     #/                -> home (badge wall)
-     #/team/<slug>      -> team squad page
-     #/icons            -> icons/legends gallery
-     #/match/<matchId>  -> match center (score, stats, lineups, points)
-     #/standings        -> league table
+     #/                -> landing home page
+     #/teams            -> club badge wall
+     #/team/<slug>       -> team squad page
+     #/fixtures          -> placeholder (v1.3.0)
+     #/statistics         -> placeholder (v1.5.0)
+     #/awards             -> placeholder (v1.7.0)
+     #/icons             -> icons/legends gallery
    ============================================ */
 
 const app = document.getElementById('app');
@@ -16,6 +18,14 @@ const POSITION_GROUPS = [
   { label: 'Defenders', positions: ['RB', 'CB', 'LB'] },
   { label: 'Midfielders', positions: ['CDM', 'CM', 'CAM', 'RM', 'LM'] },
   { label: 'Forwards', positions: ['RW', 'LW', 'ST'] },
+];
+
+const SECTIONS = [
+  { route: '#/fixtures', label: 'Fixtures', desc: 'Match schedule and results.' },
+  { route: '#/standings', label: 'Standings', desc: 'The league table.' },
+  { route: '#/teams', label: 'Teams', desc: 'All 24 clubs and their squads.' },
+  { route: '#/statistics', label: 'Statistics', desc: 'Goals, assists, clean sheets.' },
+  { route: '#/awards', label: 'Awards', desc: 'Player of the Week, Coach of the Month.' },
 ];
 
 let teamsData = null;
@@ -63,6 +73,17 @@ async function loadSponsors() {
   }
 }
 
+async function loadVersion() {
+  const tag = document.getElementById('version-tag');
+  try {
+    const res = await fetch('data/version.json');
+    const json = await res.json();
+    if (json.version) tag.textContent = `· v${json.version}`;
+  } catch (e) {
+    // no version.json yet — footer just omits the version, that's fine
+  }
+}
+
 function escapeHtml(str) {
   const div = document.createElement('div');
   div.textContent = str ?? '';
@@ -71,16 +92,33 @@ function escapeHtml(str) {
 
 /* ---------- Renderers ---------- */
 
-async function renderHome() {
-  const teams = await loadTeams();
-
+function renderLandingHome() {
   app.innerHTML = `
     <section class="hero">
       <span class="hero-eyebrow">Global Football League</span>
       <h1 class="hero-title">24 clubs. One league.</h1>
-      <p class="hero-sub">Pick a club to view its squad, or step into the Icons gallery to see the legends of the game.</p>
+      <p class="hero-sub">Follow fixtures, browse squads, track statistics, and see who's taking home the season's awards.</p>
     </section>
-    <p class="section-label">Clubs</p>
+    <div class="section-cards">
+      ${SECTIONS.map(s => `
+        <a class="section-card" href="${s.route}">
+          <span class="section-card-label">${escapeHtml(s.label)}</span>
+          <span class="section-card-desc">${escapeHtml(s.desc)}</span>
+        </a>
+      `).join('')}
+    </div>
+  `;
+}
+
+async function renderTeamsGrid() {
+  const teams = await loadTeams();
+
+  app.innerHTML = `
+    <section class="hero" style="padding-top:56px;">
+      <span class="hero-eyebrow">Global Football League</span>
+      <h1 class="hero-title">Teams</h1>
+      <p class="hero-sub">Pick a club to view its squad.</p>
+    </section>
     <div class="badge-wall">
       ${teams.map(t => `
         <a class="badge-tile" href="#/team/${slugify(t.name)}">
@@ -97,7 +135,7 @@ async function renderTeam(slug) {
   const team = teams.find(t => slugify(t.name) === slug);
 
   if (!team) {
-    app.innerHTML = `<div class="empty-state">No club found for this link. <a href="#/">Back to clubs</a>.</div>`;
+    app.innerHTML = `<div class="empty-state">No club found for this link. <a href="#/teams">Back to teams</a>.</div>`;
     return;
   }
 
@@ -123,7 +161,7 @@ async function renderTeam(slug) {
       </div>
     </div>
     ${groupsHtml}
-    <a class="back-link" href="#/">&larr; All clubs</a>
+    <a class="back-link" href="#/teams">&larr; All teams</a>
   `;
 }
 
@@ -176,7 +214,7 @@ async function renderIcons() {
     </section>
     <div class="icons-grid">
       ${icons.map(i => `
-        <div class="player-card">
+        <div class="player-card" style="cursor:default;">
           <div class="player-img-wrap">
             <img src="assets/icons/${encodeURIComponent(i.image)}" alt="${escapeHtml(i.name)}" loading="lazy">
           </div>
@@ -189,7 +227,95 @@ async function renderIcons() {
   `;
 }
 
-/* ---------- Match Center & Standings ---------- */
+function renderComingSoon(title, note) {
+  app.innerHTML = `
+    <section class="hero">
+      <span class="hero-eyebrow">Global Football League</span>
+      <h1 class="hero-title">${escapeHtml(title)}</h1>
+    </section>
+    <div class="empty-state">${escapeHtml(note)}</div>
+  `;
+}
+
+/* ---------- Fixtures ---------- */
+
+async function loadFixtures() {
+  const res = await fetch('data/fixtures.json');
+  const json = await res.json();
+  return json;
+}
+
+function fixtureRow(f) {
+  const played = f.status === 'completed' && f.homeScore !== null && f.awayScore !== null;
+  const centerContent = played
+    ? `<span class="fixture-score">${f.homeScore} &ndash; ${f.awayScore}</span>`
+    : `<span class="fixture-vs">vs</span>`;
+  const dateLabel = f.date ? new Date(f.date + 'T00:00:00').toLocaleDateString(undefined, { day: 'numeric', month: 'short' }) : '';
+
+  const inner = `
+    <span class="fixture-date">${escapeHtml(dateLabel)}</span>
+    <span class="fixture-team fixture-home">${escapeHtml(f.homeTeam)}</span>
+    ${centerContent}
+    <span class="fixture-team fixture-away">${escapeHtml(f.awayTeam)}</span>
+  `;
+
+  return played
+    ? `<a class="fixture-row played" href="#/match/${escapeHtml(f.matchId)}">${inner}</a>`
+    : `<div class="fixture-row">${inner}</div>`;
+}
+
+async function renderFixtures(requestedWeek) {
+  let data;
+  try {
+    data = await loadFixtures();
+  } catch (e) {
+    renderComingSoon('Fixtures', 'The season schedule hasn\'t been generated yet.');
+    return;
+  }
+
+  const { matchweeks, fixtures } = data;
+
+  // Default to the first matchweek with an unplayed fixture (i.e. "current" week),
+  // or matchweek 1 if the whole season is still unplayed / already finished.
+  let week = requestedWeek;
+  if (!week) {
+    const nextUnplayed = fixtures.find(f => f.status !== 'completed');
+    week = nextUnplayed ? nextUnplayed.matchweek : 1;
+  }
+  week = Math.max(1, Math.min(matchweeks, week));
+
+  const weekFixtures = fixtures.filter(f => f.matchweek === week);
+
+  const options = Array.from({ length: matchweeks }, (_, i) => i + 1)
+    .map(n => `<option value="${n}" ${n === week ? 'selected' : ''}>Matchweek ${n}</option>`)
+    .join('');
+
+  app.innerHTML = `
+    <section class="hero">
+      <span class="hero-eyebrow">Global Football League</span>
+      <h1 class="hero-title">Fixtures</h1>
+    </section>
+    <div class="fixtures-toolbar">
+      <button class="mw-nav" id="mw-prev" ${week <= 1 ? 'disabled' : ''} aria-label="Previous matchweek">&larr;</button>
+      <select id="mw-select" class="mw-select">${options}</select>
+      <button class="mw-nav" id="mw-next" ${week >= matchweeks ? 'disabled' : ''} aria-label="Next matchweek">&rarr;</button>
+    </div>
+    <div class="fixtures-list">
+      ${weekFixtures.map(fixtureRow).join('')}
+    </div>
+  `;
+
+  const select = document.getElementById('mw-select');
+  select.addEventListener('change', () => {
+    window.location.hash = `#/fixtures/${select.value}`;
+  });
+  document.getElementById('mw-prev').addEventListener('click', () => {
+    if (week > 1) window.location.hash = `#/fixtures/${week - 1}`;
+  });
+  document.getElementById('mw-next').addEventListener('click', () => {
+    if (week < matchweeks) window.location.hash = `#/fixtures/${week + 1}`;
+  });
+}
 
 async function loadMatch(matchId) {
   const res = await fetch(`data/matches/${matchId}.json`);
@@ -382,17 +508,6 @@ async function renderStandingsPage() {
   `;
 }
 
-async function loadVersion() {
-  const tag = document.getElementById('version-tag');
-  try {
-    const res = await fetch('data/version.json');
-    const json = await res.json();
-    if (json.version) tag.textContent = `· v${json.version}`;
-  } catch (e) {
-    // no version.json yet — footer just omits the version, that's fine
-  }
-}
-
 /* ---------- Player quick-view modal ---------- */
 
 const STAT_LABELS = { pac: 'PAC', sho: 'SHO', pas: 'PAS', dri: 'DRI', def: 'DEF', phy: 'PHY' };
@@ -459,8 +574,8 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape' && !modalOverlay.hidden) closePlayerModal();
 });
 
-// Event delegation: catches clicks on player cards in home/team/icons views,
-// and lineup-player rows in the match center, since content is re-rendered
+// Event delegation: catches clicks on player cards (home/team/icons views)
+// and lineup-player rows (match center), since content is re-rendered
 // dynamically by the router.
 app.addEventListener('click', (e) => {
   const trigger = e.target.closest('.player-card, .lineup-player');
@@ -472,19 +587,14 @@ app.addEventListener('click', (e) => {
 /* ---------- Router ---------- */
 
 function setActiveNav(route) {
-  document.querySelectorAll('.nav-link').forEach(link => {
+  document.querySelectorAll('.nav-link, .icons-link').forEach(link => {
     const href = link.getAttribute('href');
-    const isIcons = href === '#/icons';
-    const isStandings = href === '#/standings';
-    let active;
-    if (isIcons) {
-      active = route.startsWith('#/icons');
-    } else if (isStandings) {
-      active = route.startsWith('#/standings') || route.startsWith('#/match/');
-    } else {
-      active = (route === '#/' || route.startsWith('#/team'));
-    }
-    link.classList.toggle('active', active);
+    const isMatch =
+      href === route ||
+      (href === '#/fixtures' && route.startsWith('#/fixtures')) ||
+      (href === '#/teams' && route.startsWith('#/team/')) ||
+      (href === '#/standings' && route.startsWith('#/match/'));
+    link.classList.toggle('active', isMatch);
   });
 }
 
@@ -494,19 +604,30 @@ async function router() {
   window.scrollTo(0, 0);
 
   if (route === '#/' || route === '') {
-    await renderHome();
+    renderLandingHome();
+  } else if (route === '#/teams') {
+    await renderTeamsGrid();
   } else if (route.startsWith('#/team/')) {
     const slug = route.replace('#/team/', '');
     await renderTeam(slug);
   } else if (route.startsWith('#/icons')) {
     await renderIcons();
+  } else if (route === '#/standings') {
+    await renderStandingsPage();
   } else if (route.startsWith('#/match/')) {
     const matchId = route.replace('#/match/', '');
     await renderMatch(matchId);
-  } else if (route.startsWith('#/standings')) {
-    await renderStandingsPage();
+  } else if (route === '#/fixtures') {
+    await renderFixtures();
+  } else if (route.startsWith('#/fixtures/')) {
+    const week = parseInt(route.replace('#/fixtures/', ''), 10);
+    await renderFixtures(week);
+  } else if (route === '#/statistics') {
+    renderComingSoon('Statistics', 'Goals, assists, and clean sheet tracking are coming in a future release.');
+  } else if (route === '#/awards') {
+    renderComingSoon('Awards', 'Player of the Week and Coach of the Month are coming in a future release.');
   } else {
-    app.innerHTML = `<div class="empty-state">Page not found. <a href="#/">Back to clubs</a>.</div>`;
+    app.innerHTML = `<div class="empty-state">Page not found. <a href="#/">Back home</a>.</div>`;
   }
 }
 
