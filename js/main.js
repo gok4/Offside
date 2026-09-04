@@ -227,6 +227,7 @@ async function renderIcons() {
   `;
 }
 
+
 /* ---------- Statistics ---------- */
 
 async function loadStatistics() {
@@ -686,7 +687,9 @@ async function router() {
     const week = parseInt(route.replace('#/fixtures/', ''), 10);
     await renderFixtures(week);
   } else if (route === '#/statistics') {
+
     await renderStatistics();
+    
   } else if (route === '#/awards') {
     renderComingSoon('Awards', 'Player of the Week and Coach of the Month are coming in a future release.');
   } else {
