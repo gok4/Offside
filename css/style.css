@@ -629,6 +629,71 @@ a.fixture-row.played:hover {
   .fixture-home, .fixture-away { text-align: center; }
 }
 
+
+/* ---------- Statistics ---------- */
+
+.stat-boards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.stat-board { min-width: 0; }
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+
+.leaderboard-table td {
+  padding: 9px 6px;
+  border-bottom: 1px solid var(--color-line);
+}
+
+.leaderboard-table tr:last-child td {
+  border-bottom: none;
+}
+
+.lb-rank {
+  color: var(--color-mist);
+  font-weight: 700;
+  width: 20px;
+}
+
+.lb-name {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.lb-player-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: var(--color-chalk);
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+}
+
+.lb-player-btn:hover {
+  color: var(--color-gold);
+}
+
+.lb-team {
+  font-size: 0.7rem;
+  color: var(--color-mist);
+}
+
+.lb-value {
+  text-align: right;
+  color: var(--color-gold);
+  font-weight: 800;
+  white-space: nowrap;
+}
+
 /* ---------- Footer ---------- */
 
 .site-footer {

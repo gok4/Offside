@@ -227,6 +227,70 @@ async function renderIcons() {
   `;
 }
 
+
+/* ---------- Statistics ---------- */
+
+async function loadStatistics() {
+  const res = await fetch('data/statistics.json');
+  return res.json();
+}
+
+function statLeaderboard(title, rows, valueLabel) {
+  if (!rows || rows.length === 0) {
+    return `
+      <div class="stat-board">
+        <p class="section-label">${escapeHtml(title)}</p>
+        <div class="empty-state">No data yet.</div>
+      </div>`;
+  }
+  return `
+    <div class="stat-board">
+      <p class="section-label">${escapeHtml(title)}</p>
+      <table class="leaderboard-table">
+        <tbody>
+          ${rows.map(r => `
+            <tr>
+              <td class="lb-rank">${r.rank}</td>
+              <td class="lb-name">
+                <button class="lb-player-btn" data-team="${escapeHtml(r.team)}" data-player="${escapeHtml(r.name)}">${escapeHtml(r.name)}</button>
+                <span class="lb-team">${escapeHtml(r.team)}</span>
+              </td>
+              <td class="lb-value">${r.value}${escapeHtml(valueLabel ? ' ' + valueLabel : '')}</td>
+            </tr>
+          `).join('')}
+        </tbody>
+      </table>
+    </div>`;
+}
+
+async function renderStatistics() {
+  let data;
+  try {
+    data = await loadStatistics();
+  } catch (e) {
+    renderComingSoon('Statistics', 'Statistics will appear here once matches have been played.');
+    return;
+  }
+
+  const hasAnyData = [data.topScorers, data.topAssists, data.cleanSheets, data.topPoints]
+    .some(list => list && list.length > 0);
+
+  app.innerHTML = `
+    <section class="hero">
+      <span class="hero-eyebrow">Global Football League</span>
+      <h1 class="hero-title">Statistics</h1>
+    </section>
+    ${hasAnyData ? `
+      <div class="stat-boards-grid">
+        ${statLeaderboard('Top Scorers', data.topScorers, 'G')}
+        ${statLeaderboard('Top Assists', data.topAssists, 'A')}
+        ${statLeaderboard('Clean Sheets', data.cleanSheets, 'CS')}
+        ${statLeaderboard('Most Fantasy Points', data.topPoints, 'PTS')}
+      </div>
+    ` : `<div class="empty-state">No completed matches yet. Check back after matchweek 1.</div>`}
+  `;
+}
+
 function renderComingSoon(title, note) {
   app.innerHTML = `
     <section class="hero">
@@ -578,7 +642,7 @@ document.addEventListener('keydown', (e) => {
 // and lineup-player rows (match center), since content is re-rendered
 // dynamically by the router.
 app.addEventListener('click', (e) => {
-  const trigger = e.target.closest('.player-card, .lineup-player');
+  const trigger = e.target.closest('.player-card, .lineup-player, .lb-player-btn');
   if (trigger && trigger.dataset.team && trigger.dataset.player) {
     openPlayerModal(trigger.dataset.team, trigger.dataset.player);
   }
@@ -623,7 +687,9 @@ async function router() {
     const week = parseInt(route.replace('#/fixtures/', ''), 10);
     await renderFixtures(week);
   } else if (route === '#/statistics') {
-    renderComingSoon('Statistics', 'Goals, assists, and clean sheet tracking are coming in a future release.');
+
+    await renderStatistics();
+    
   } else if (route === '#/awards') {
     renderComingSoon('Awards', 'Player of the Week and Coach of the Month are coming in a future release.');
   } else {
