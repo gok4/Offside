@@ -1,5 +1,5 @@
 {
-  "generatedFrom": "1 match file(s) in ../offside/data/matches",
+  "generatedFrom": "2 match file(s) in ../offside/data/matches",
   "standings": [
     {
       "team": "Tokyo Verdy",
@@ -15,14 +15,14 @@
     },
     {
       "team": "Barcelona Titans",
-      "played": 0,
-      "won": 0,
+      "played": 1,
+      "won": 1,
       "drawn": 0,
       "lost": 0,
-      "goalsFor": 0,
+      "goalsFor": 3,
       "goalsAgainst": 0,
-      "goalDifference": 0,
-      "points": 0,
+      "goalDifference": 3,
+      "points": 3,
       "rank": 2
     },
     {
@@ -267,13 +267,13 @@
     },
     {
       "team": "Shanghai Dragons",
-      "played": 0,
+      "played": 1,
       "won": 0,
       "drawn": 0,
-      "lost": 0,
+      "lost": 1,
       "goalsFor": 0,
-      "goalsAgainst": 0,
-      "goalDifference": 0,
+      "goalsAgainst": 3,
+      "goalDifference": -3,
       "points": 0,
       "rank": 23
     },

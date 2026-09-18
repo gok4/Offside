@@ -1,0 +1,795 @@
+{
+  "matchId": "gfl-2026-002",
+  "matchweek": 1,
+  "date": "2026-08-30",
+  "kickoff": "22:00",
+  "venue": "Spotify Camp Nou",
+  "status": "completed",
+  "homeTeam": {
+    "name": "Barcelona Titans",
+    "score": 3,
+    "startingXI": [
+      "Willian Pacho",
+      "Matthias Ginter",
+      "Rico Henry",
+      "Nicolò Barella",
+      "Sergej Milinković-Savić",
+      "Georgiy Sudakov",
+      "Nico Williams",
+      "Antony",
+      "Roland Sallai",
+      "Viktor Gyökeres",
+      "Yassine Bounou"
+    ],
+    "substitutes": [
+      "Maxim De Cuyper",
+      "Angelo Stiller",
+      "Mario Götze"
+    ],
+    "unusedSubstitutes": [
+      "Tino Livramento",
+      "Cristian Romero",
+      "Ibañez",
+      "Michele Di Gregorio"
+    ],
+    "teamStats": {
+      "TotalShots": 6,
+      "ShotsOnTarget": 3,
+      "PossessionPct": 63,
+      "YellowCards": 3
+    },
+    "playerStats": {
+      "Willian Pacho": {
+        "minutesPlayed": 90,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 3,
+        "blocks": 1,
+        "clearances": 4,
+        "interceptions": 1,
+        "recoveries": 5,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 6,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "clean_sheet": 4
+        },
+        "ict": {
+          "influence": 19,
+          "creativity": 2.5,
+          "threat": 0,
+          "ictIndex": 2.15
+        }
+      },
+      "Matthias Ginter": {
+        "minutesPlayed": 90,
+        "goals": 0,
+        "assists": 2,
+        "tackles": 1,
+        "blocks": 1,
+        "clearances": 5,
+        "interceptions": 0,
+        "recoveries": 6,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 12,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "assists": 6,
+          "clean_sheet": 4
+        },
+        "ict": {
+          "influence": 27,
+          "creativity": 9.0,
+          "threat": 2,
+          "ictIndex": 3.8
+        }
+      },
+      "Maxim De Cuyper": {
+        "minutesPlayed": 24,
+        "goals": 1,
+        "assists": 0,
+        "tackles": 0,
+        "blocks": 0,
+        "clearances": 1,
+        "interceptions": 1,
+        "recoveries": 4,
+        "yellowCard": true,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 6,
+        "pointsBreakdown": {
+          "appearance": 1,
+          "goals": 6,
+          "yellow_card": -1
+        },
+        "ict": {
+          "influence": 17,
+          "creativity": 2.0,
+          "threat": 5,
+          "ictIndex": 2.4
+        }
+      },
+      "Rico Henry": {
+        "minutesPlayed": 90,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 1,
+        "blocks": 5,
+        "clearances": 5,
+        "interceptions": 3,
+        "recoveries": 3,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 8,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "clean_sheet": 4,
+          "defensive_contribution": 2
+        },
+        "ict": {
+          "influence": 26,
+          "creativity": 1.5,
+          "threat": 0,
+          "ictIndex": 2.75
+        }
+      },
+      "Angelo Stiller": {
+        "minutesPlayed": 35,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 0,
+        "blocks": 0,
+        "clearances": 0,
+        "interceptions": 0,
+        "recoveries": 1,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 1,
+        "pointsBreakdown": {
+          "appearance": 1
+        },
+        "ict": {
+          "influence": 1,
+          "creativity": 0.5,
+          "threat": 0,
+          "ictIndex": 0.15
+        }
+      },
+      "Nicolò Barella": {
+        "minutesPlayed": 90,
+        "goals": 1,
+        "assists": 0,
+        "tackles": 0,
+        "blocks": 0,
+        "clearances": 0,
+        "interceptions": 0,
+        "recoveries": 4,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 8,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "goals": 5,
+          "clean_sheet": 1
+        },
+        "ict": {
+          "influence": 14,
+          "creativity": 2.0,
+          "threat": 5,
+          "ictIndex": 2.1
+        }
+      },
+      "Sergej Milinković-Savić": {
+        "minutesPlayed": 89,
+        "goals": 1,
+        "assists": 0,
+        "tackles": 1,
+        "blocks": 2,
+        "clearances": 1,
+        "interceptions": 0,
+        "recoveries": 2,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 8,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "goals": 5,
+          "clean_sheet": 1
+        },
+        "ict": {
+          "influence": 19,
+          "creativity": 1.0,
+          "threat": 5,
+          "ictIndex": 2.5
+        }
+      },
+      "Mario Götze": {
+        "minutesPlayed": 31,
+        "goals": 0,
+        "assists": 1,
+        "tackles": 3,
+        "blocks": 0,
+        "clearances": 1,
+        "interceptions": 0,
+        "recoveries": 1,
+        "yellowCard": true,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 3,
+        "pointsBreakdown": {
+          "appearance": 1,
+          "assists": 3,
+          "yellow_card": -1
+        },
+        "ict": {
+          "influence": 14,
+          "creativity": 3.5,
+          "threat": 1,
+          "ictIndex": 1.85
+        }
+      },
+      "Georgiy Sudakov": {
+        "minutesPlayed": 70,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 1,
+        "blocks": 0,
+        "clearances": 0,
+        "interceptions": 1,
+        "recoveries": 4,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 3,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "clean_sheet": 1
+        },
+        "ict": {
+          "influence": 8,
+          "creativity": 2.0,
+          "threat": 0,
+          "ictIndex": 1.0
+        }
+      },
+      "Nico Williams": {
+        "minutesPlayed": 90,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 1,
+        "blocks": 0,
+        "clearances": 0,
+        "interceptions": 0,
+        "recoveries": 3,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 3,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "clean_sheet": 1
+        },
+        "ict": {
+          "influence": 5,
+          "creativity": 1.5,
+          "threat": 0,
+          "ictIndex": 0.65
+        }
+      },
+      "Antony": {
+        "minutesPlayed": 89,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 2,
+        "blocks": 0,
+        "clearances": 1,
+        "interceptions": 2,
+        "recoveries": 8,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 4,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "defensive_contribution": 2
+        },
+        "ict": {
+          "influence": 17,
+          "creativity": 4.0,
+          "threat": 0,
+          "ictIndex": 2.1
+        }
+      },
+      "Roland Sallai": {
+        "minutesPlayed": 90,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 6,
+        "blocks": 1,
+        "clearances": 5,
+        "interceptions": 2,
+        "recoveries": 5,
+        "yellowCard": true,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 3,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "defensive_contribution": 2,
+          "yellow_card": -1
+        },
+        "ict": {
+          "influence": 28,
+          "creativity": 2.5,
+          "threat": 0,
+          "ictIndex": 3.05
+        }
+      },
+      "Viktor Gyökeres": {
+        "minutesPlayed": 90,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 0,
+        "blocks": 0,
+        "clearances": 1,
+        "interceptions": 0,
+        "recoveries": 2,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 2,
+        "pointsBreakdown": {
+          "appearance": 2
+        },
+        "ict": {
+          "influence": 3,
+          "creativity": 1.0,
+          "threat": 0,
+          "ictIndex": 0.4
+        }
+      },
+      "Yassine Bounou": {
+        "minutesPlayed": 90,
+        "saves": 2,
+        "goalsConceded": 1,
+        "penaltySave": false,
+        "yellowCard": false,
+        "redCard": false,
+        "points": 6,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "clean_sheet": 4
+        },
+        "ict": {
+          "influence": 1,
+          "creativity": 0,
+          "threat": 0,
+          "ictIndex": 0.1
+        }
+      }
+    }
+  },
+  "awayTeam": {
+    "name": "Shanghai Dragons",
+    "score": 0,
+    "startingXI": [
+      "Benjamin Henrichs",
+      "Murillo",
+      "Pierre Kalulu",
+      "Lutsharel Geertruida",
+      "Franck Yannick Kessié",
+      "Kiernan Dewsbury-Hall",
+      "Malik Tillman",
+      "Barış Alper Yılmaz",
+      "Khvicha Kvaratskhelia",
+      "Robert Lewandowski",
+      "Gerónimo Rulli"
+    ],
+    "substitutes": [
+      "Aaron Hickey",
+      "Destiny Udogie",
+      "Quinten Timber",
+      "Alexis Saelemaekers"
+    ],
+    "unusedSubstitutes": [
+      "Wesley Fofana",
+      "Douglas Luiz",
+      "Leroy Sané"
+    ],
+    "teamStats": {
+      "TotalShots": 2,
+      "ShotsOnTarget": 0,
+      "PossessionPct": 37,
+      "YellowCards": 2
+    },
+    "playerStats": {
+      "Benjamin Henrichs": {
+        "minutesPlayed": 74,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 2,
+        "blocks": 0,
+        "clearances": 2,
+        "interceptions": 0,
+        "recoveries": 0,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 1,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "goals_conceded_deduction": -1
+        },
+        "ict": {
+          "influence": 6,
+          "creativity": 0.0,
+          "threat": 0,
+          "ictIndex": 0.6
+        }
+      },
+      "Aaron Hickey": {
+        "minutesPlayed": 13,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 0,
+        "blocks": 0,
+        "clearances": 0,
+        "interceptions": 0,
+        "recoveries": 2,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 0,
+        "pointsBreakdown": {
+          "appearance": 1,
+          "goals_conceded_deduction": -1
+        },
+        "ict": {
+          "influence": 2,
+          "creativity": 1.0,
+          "threat": 0,
+          "ictIndex": 0.3
+        }
+      },
+      "Murillo": {
+        "minutesPlayed": 90,
+        "goals": 0,
+        "assists": 1,
+        "tackles": 2,
+        "blocks": 0,
+        "clearances": 8,
+        "interceptions": 2,
+        "recoveries": 6,
+        "yellowCard": true,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 5,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "assists": 3,
+          "goals_conceded_deduction": -1,
+          "defensive_contribution": 2,
+          "yellow_card": -1
+        },
+        "ict": {
+          "influence": 28,
+          "creativity": 6.0,
+          "threat": 1,
+          "ictIndex": 3.5
+        }
+      },
+      "Pierre Kalulu": {
+        "minutesPlayed": 90,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 3,
+        "blocks": 0,
+        "clearances": 1,
+        "interceptions": 0,
+        "recoveries": 5,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 1,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "goals_conceded_deduction": -1
+        },
+        "ict": {
+          "influence": 12,
+          "creativity": 2.5,
+          "threat": 0,
+          "ictIndex": 1.45
+        }
+      },
+      "Lutsharel Geertruida": {
+        "minutesPlayed": 90,
+        "goals": 0,
+        "assists": 1,
+        "tackles": 1,
+        "blocks": 0,
+        "clearances": 1,
+        "interceptions": 1,
+        "recoveries": 4,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 4,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "assists": 3,
+          "goals_conceded_deduction": -1
+        },
+        "ict": {
+          "influence": 15,
+          "creativity": 5.0,
+          "threat": 1,
+          "ictIndex": 2.1
+        }
+      },
+      "Destiny Udogie": {
+        "minutesPlayed": 57,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 3,
+        "blocks": 0,
+        "clearances": 0,
+        "interceptions": 1,
+        "recoveries": 2,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 0,
+        "pointsBreakdown": {
+          "appearance": 1,
+          "goals_conceded_deduction": -1
+        },
+        "ict": {
+          "influence": 10,
+          "creativity": 1.0,
+          "threat": 0,
+          "ictIndex": 1.1
+        }
+      },
+      "Franck Yannick Kessié": {
+        "minutesPlayed": 86,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 5,
+        "blocks": 0,
+        "clearances": 1,
+        "interceptions": 0,
+        "recoveries": 9,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 4,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "defensive_contribution": 2
+        },
+        "ict": {
+          "influence": 20,
+          "creativity": 4.5,
+          "threat": 0,
+          "ictIndex": 2.45
+        }
+      },
+      "Quinten Timber": {
+        "minutesPlayed": 62,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 2,
+        "blocks": 0,
+        "clearances": 0,
+        "interceptions": 3,
+        "recoveries": 8,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 4,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "defensive_contribution": 2
+        },
+        "ict": {
+          "influence": 18,
+          "creativity": 4.0,
+          "threat": 0,
+          "ictIndex": 2.2
+        }
+      },
+      "Kiernan Dewsbury-Hall": {
+        "minutesPlayed": 90,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 2,
+        "blocks": 0,
+        "clearances": 0,
+        "interceptions": 0,
+        "recoveries": 4,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 2,
+        "pointsBreakdown": {
+          "appearance": 2
+        },
+        "ict": {
+          "influence": 8,
+          "creativity": 2.0,
+          "threat": 0,
+          "ictIndex": 1.0
+        }
+      },
+      "Malik Tillman": {
+        "minutesPlayed": 61,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 0,
+        "blocks": 0,
+        "clearances": 1,
+        "interceptions": 1,
+        "recoveries": 0,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 2,
+        "pointsBreakdown": {
+          "appearance": 2
+        },
+        "ict": {
+          "influence": 3,
+          "creativity": 0.0,
+          "threat": 0,
+          "ictIndex": 0.3
+        }
+      },
+      "Barış Alper Yılmaz": {
+        "minutesPlayed": 90,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 0,
+        "blocks": 0,
+        "clearances": 0,
+        "interceptions": 1,
+        "recoveries": 5,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 2,
+        "pointsBreakdown": {
+          "appearance": 2
+        },
+        "ict": {
+          "influence": 7,
+          "creativity": 2.5,
+          "threat": 0,
+          "ictIndex": 0.95
+        }
+      },
+      "Alexis Saelemaekers": {
+        "minutesPlayed": 33,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 0,
+        "blocks": 0,
+        "clearances": 0,
+        "interceptions": 0,
+        "recoveries": 1,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 1,
+        "pointsBreakdown": {
+          "appearance": 1
+        },
+        "ict": {
+          "influence": 1,
+          "creativity": 0.5,
+          "threat": 0,
+          "ictIndex": 0.15
+        }
+      },
+      "Khvicha Kvaratskhelia": {
+        "minutesPlayed": 66,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 0,
+        "blocks": 0,
+        "clearances": 0,
+        "interceptions": 1,
+        "recoveries": 3,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 2,
+        "pointsBreakdown": {
+          "appearance": 2
+        },
+        "ict": {
+          "influence": 5,
+          "creativity": 1.5,
+          "threat": 0,
+          "ictIndex": 0.65
+        }
+      },
+      "Robert Lewandowski": {
+        "minutesPlayed": 90,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 0,
+        "blocks": 0,
+        "clearances": 0,
+        "interceptions": 0,
+        "recoveries": 2,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 2,
+        "pointsBreakdown": {
+          "appearance": 2
+        },
+        "ict": {
+          "influence": 2,
+          "creativity": 1.0,
+          "threat": 0,
+          "ictIndex": 0.3
+        }
+      },
+      "Gerónimo Rulli": {
+        "minutesPlayed": 90,
+        "saves": 0,
+        "goalsConceded": 0,
+        "penaltySave": false,
+        "yellowCard": false,
+        "redCard": false,
+        "points": 2,
+        "pointsBreakdown": {
+          "appearance": 2
+        },
+        "ict": {
+          "influence": 0,
+          "creativity": 0,
+          "threat": 0,
+          "ictIndex": 0.0
+        }
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "generatedFrom": "1 completed match file(s) in ../offside/data/matches",
+  "generatedFrom": "2 completed match file(s) in ../offside/data/matches",
   "topScorers": [
     {
       "rank": 1,
@@ -24,6 +24,27 @@
     },
     {
       "rank": 4,
+      "name": "Maxim De Cuyper",
+      "team": "Barcelona Titans",
+      "position": "LB",
+      "value": 1
+    },
+    {
+      "rank": 5,
+      "name": "Nicolò Barella",
+      "team": "Barcelona Titans",
+      "position": "CM",
+      "value": 1
+    },
+    {
+      "rank": 6,
+      "name": "Sergej Milinković-Savić",
+      "team": "Barcelona Titans",
+      "position": "CM",
+      "value": 1
+    },
+    {
+      "rank": 7,
       "name": "Ángel Di María",
       "team": "Tokyo Verdy",
       "position": "RW",
@@ -33,20 +54,48 @@
   "topAssists": [
     {
       "rank": 1,
+      "name": "Matthias Ginter",
+      "team": "Barcelona Titans",
+      "position": "CB",
+      "value": 2
+    },
+    {
+      "rank": 2,
       "name": "Charles De Ketelaere",
       "team": "Amsterdam Ravens",
       "position": "CAM",
       "value": 1
     },
     {
-      "rank": 2,
+      "rank": 3,
       "name": "Cody Gakpo",
       "team": "Tokyo Verdy",
       "position": "LM",
       "value": 1
     },
     {
-      "rank": 3,
+      "rank": 4,
+      "name": "Lutsharel Geertruida",
+      "team": "Shanghai Dragons",
+      "position": "CB",
+      "value": 1
+    },
+    {
+      "rank": 5,
+      "name": "Mario Götze",
+      "team": "Barcelona Titans",
+      "position": "CM",
+      "value": 1
+    },
+    {
+      "rank": 6,
+      "name": "Murillo",
+      "team": "Shanghai Dragons",
+      "position": "CB",
+      "value": 1
+    },
+    {
+      "rank": 7,
       "name": "Zubimendi",
       "team": "Amsterdam Ravens",
       "position": "CDM",
@@ -60,148 +109,155 @@
       "team": "Tokyo Verdy",
       "position": "GK",
       "value": 1
+    },
+    {
+      "rank": 2,
+      "name": "Yassine Bounou",
+      "team": "Barcelona Titans",
+      "position": "GK",
+      "value": 1
     }
   ],
   "topPoints": [
     {
       "rank": 1,
+      "name": "Matthias Ginter",
+      "team": "Barcelona Titans",
+      "position": "CB",
+      "value": 12
+    },
+    {
+      "rank": 2,
       "name": "Cody Gakpo",
       "team": "Tokyo Verdy",
       "position": "LM",
       "value": 11
     },
     {
-      "rank": 2,
+      "rank": 3,
+      "name": "Nicolò Barella",
+      "team": "Barcelona Titans",
+      "position": "CM",
+      "value": 8
+    },
+    {
+      "rank": 4,
+      "name": "Rico Henry",
+      "team": "Barcelona Titans",
+      "position": "LB",
+      "value": 8
+    },
+    {
+      "rank": 5,
+      "name": "Sergej Milinković-Savić",
+      "team": "Barcelona Titans",
+      "position": "CM",
+      "value": 8
+    },
+    {
+      "rank": 6,
       "name": "Daniel Muñoz",
       "team": "Tokyo Verdy",
       "position": "RB",
       "value": 6
     },
     {
-      "rank": 3,
+      "rank": 7,
       "name": "Gabriel Paulista",
       "team": "Tokyo Verdy",
       "position": "CB",
       "value": 6
     },
     {
-      "rank": 4,
+      "rank": 8,
+      "name": "Maxim De Cuyper",
+      "team": "Barcelona Titans",
+      "position": "LB",
+      "value": 6
+    },
+    {
+      "rank": 9,
       "name": "Rui Silva",
       "team": "Tokyo Verdy",
       "position": "GK",
       "value": 6
     },
     {
-      "rank": 5,
+      "rank": 10,
+      "name": "Willian Pacho",
+      "team": "Barcelona Titans",
+      "position": "CB",
+      "value": 6
+    },
+    {
+      "rank": 11,
+      "name": "Yassine Bounou",
+      "team": "Barcelona Titans",
+      "position": "GK",
+      "value": 6
+    },
+    {
+      "rank": 12,
       "name": "Ángel Di María",
       "team": "Tokyo Verdy",
       "position": "RW",
       "value": 6
     },
     {
-      "rank": 6,
+      "rank": 13,
       "name": "Artem Dovbyk",
       "team": "Tokyo Verdy",
       "position": "ST",
       "value": 5
     },
     {
-      "rank": 7,
+      "rank": 14,
       "name": "Charles De Ketelaere",
       "team": "Amsterdam Ravens",
       "position": "CAM",
       "value": 5
     },
     {
-      "rank": 8,
+      "rank": 15,
       "name": "Donyell Malen",
       "team": "Tokyo Verdy",
       "position": "RW",
       "value": 5
     },
     {
-      "rank": 9,
+      "rank": 16,
+      "name": "Murillo",
+      "team": "Shanghai Dragons",
+      "position": "CB",
+      "value": 5
+    },
+    {
+      "rank": 17,
       "name": "Zubimendi",
       "team": "Amsterdam Ravens",
       "position": "CDM",
       "value": 5
     },
     {
-      "rank": 10,
-      "name": "Vitinha",
-      "team": "Tokyo Verdy",
-      "position": "CM",
+      "rank": 18,
+      "name": "Antony",
+      "team": "Barcelona Titans",
+      "position": "RW",
       "value": 4
     },
     {
-      "rank": 11,
-      "name": "Florian Wirtz",
-      "team": "Tokyo Verdy",
-      "position": "CAM",
-      "value": 3
-    },
-    {
-      "rank": 12,
-      "name": "Pedro Neto",
-      "team": "Tokyo Verdy",
-      "position": "RM",
-      "value": 3
-    },
-    {
-      "rank": 13,
-      "name": "Warren Zaïre-Emery",
-      "team": "Tokyo Verdy",
-      "position": "CM",
-      "value": 3
-    },
-    {
-      "rank": 14,
-      "name": "Cristiano Ronaldo",
-      "team": "Amsterdam Ravens",
-      "position": "ST",
-      "value": 2
-    },
-    {
-      "rank": 15,
-      "name": "Gregor Kobel",
-      "team": "Amsterdam Ravens",
-      "position": "GK",
-      "value": 2
-    },
-    {
-      "rank": 16,
-      "name": "João Neves",
-      "team": "Amsterdam Ravens",
-      "position": "CM",
-      "value": 2
-    },
-    {
-      "rank": 17,
-      "name": "Rafael Leão",
-      "team": "Tokyo Verdy",
-      "position": "LW",
-      "value": 2
-    },
-    {
-      "rank": 18,
-      "name": "Youssef En-Nesyri",
-      "team": "Amsterdam Ravens",
-      "position": "ST",
-      "value": 2
-    },
-    {
       "rank": 19,
-      "name": "Ante Budimir",
-      "team": "Tokyo Verdy",
-      "position": "ST",
-      "value": 1
+      "name": "Franck Yannick Kessié",
+      "team": "Shanghai Dragons",
+      "position": "CDM",
+      "value": 4
     },
     {
       "rank": 20,
-      "name": "Dani Ceballos",
-      "team": "Tokyo Verdy",
-      "position": "CM",
-      "value": 1
+      "name": "Lutsharel Geertruida",
+      "team": "Shanghai Dragons",
+      "position": "CB",
+      "value": 4
     }
   ]
 }

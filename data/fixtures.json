@@ -19,9 +19,9 @@
       "homeTeam": "Barcelona Titans",
       "awayTeam": "Shanghai Dragons",
       "date": "2026-08-30",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null
+      "status": "completed",
+      "homeScore": 3,
+      "awayScore": 0
     },
     {
       "matchId": "gfl-2026-003",
