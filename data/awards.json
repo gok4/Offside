@@ -1,0 +1,24 @@
+{
+  "generatedFrom": "1 completed match(es)",
+  "playerOfTheWeek": [
+    {
+      "matchweek": 1,
+      "player": "Cody Gakpo",
+      "team": "Tokyo Verdy",
+      "points": 11,
+      "ictIndex": 3.9
+    }
+  ],
+  "coachOfTheMonth": [
+    {
+      "month": "2026-08",
+      "manager": "Sir Alex Ferguson",
+      "team": "Tokyo Verdy",
+      "leaguePoints": 3,
+      "won": 1,
+      "drawn": 0,
+      "lost": 0,
+      "goalDifference": 4
+    }
+  ]
+}

@@ -1,7 +1,207 @@
 {
-  "generatedFrom": "0 completed match file(s) in ../offside/data/matches",
-  "topScorers": [],
-  "topAssists": [],
-  "cleanSheets": [],
-  "topPoints": []
+  "generatedFrom": "1 completed match file(s) in ../offside/data/matches",
+  "topScorers": [
+    {
+      "rank": 1,
+      "name": "Artem Dovbyk",
+      "team": "Tokyo Verdy",
+      "position": "ST",
+      "value": 1
+    },
+    {
+      "rank": 2,
+      "name": "Cody Gakpo",
+      "team": "Tokyo Verdy",
+      "position": "LM",
+      "value": 1
+    },
+    {
+      "rank": 3,
+      "name": "Donyell Malen",
+      "team": "Tokyo Verdy",
+      "position": "RW",
+      "value": 1
+    },
+    {
+      "rank": 4,
+      "name": "Ángel Di María",
+      "team": "Tokyo Verdy",
+      "position": "RW",
+      "value": 1
+    }
+  ],
+  "topAssists": [
+    {
+      "rank": 1,
+      "name": "Charles De Ketelaere",
+      "team": "Amsterdam Ravens",
+      "position": "CAM",
+      "value": 1
+    },
+    {
+      "rank": 2,
+      "name": "Cody Gakpo",
+      "team": "Tokyo Verdy",
+      "position": "LM",
+      "value": 1
+    },
+    {
+      "rank": 3,
+      "name": "Zubimendi",
+      "team": "Amsterdam Ravens",
+      "position": "CDM",
+      "value": 1
+    }
+  ],
+  "cleanSheets": [
+    {
+      "rank": 1,
+      "name": "Rui Silva",
+      "team": "Tokyo Verdy",
+      "position": "GK",
+      "value": 1
+    }
+  ],
+  "topPoints": [
+    {
+      "rank": 1,
+      "name": "Cody Gakpo",
+      "team": "Tokyo Verdy",
+      "position": "LM",
+      "value": 11
+    },
+    {
+      "rank": 2,
+      "name": "Daniel Muñoz",
+      "team": "Tokyo Verdy",
+      "position": "RB",
+      "value": 6
+    },
+    {
+      "rank": 3,
+      "name": "Gabriel Paulista",
+      "team": "Tokyo Verdy",
+      "position": "CB",
+      "value": 6
+    },
+    {
+      "rank": 4,
+      "name": "Rui Silva",
+      "team": "Tokyo Verdy",
+      "position": "GK",
+      "value": 6
+    },
+    {
+      "rank": 5,
+      "name": "Ángel Di María",
+      "team": "Tokyo Verdy",
+      "position": "RW",
+      "value": 6
+    },
+    {
+      "rank": 6,
+      "name": "Artem Dovbyk",
+      "team": "Tokyo Verdy",
+      "position": "ST",
+      "value": 5
+    },
+    {
+      "rank": 7,
+      "name": "Charles De Ketelaere",
+      "team": "Amsterdam Ravens",
+      "position": "CAM",
+      "value": 5
+    },
+    {
+      "rank": 8,
+      "name": "Donyell Malen",
+      "team": "Tokyo Verdy",
+      "position": "RW",
+      "value": 5
+    },
+    {
+      "rank": 9,
+      "name": "Zubimendi",
+      "team": "Amsterdam Ravens",
+      "position": "CDM",
+      "value": 5
+    },
+    {
+      "rank": 10,
+      "name": "Vitinha",
+      "team": "Tokyo Verdy",
+      "position": "CM",
+      "value": 4
+    },
+    {
+      "rank": 11,
+      "name": "Florian Wirtz",
+      "team": "Tokyo Verdy",
+      "position": "CAM",
+      "value": 3
+    },
+    {
+      "rank": 12,
+      "name": "Pedro Neto",
+      "team": "Tokyo Verdy",
+      "position": "RM",
+      "value": 3
+    },
+    {
+      "rank": 13,
+      "name": "Warren Zaïre-Emery",
+      "team": "Tokyo Verdy",
+      "position": "CM",
+      "value": 3
+    },
+    {
+      "rank": 14,
+      "name": "Cristiano Ronaldo",
+      "team": "Amsterdam Ravens",
+      "position": "ST",
+      "value": 2
+    },
+    {
+      "rank": 15,
+      "name": "Gregor Kobel",
+      "team": "Amsterdam Ravens",
+      "position": "GK",
+      "value": 2
+    },
+    {
+      "rank": 16,
+      "name": "João Neves",
+      "team": "Amsterdam Ravens",
+      "position": "CM",
+      "value": 2
+    },
+    {
+      "rank": 17,
+      "name": "Rafael Leão",
+      "team": "Tokyo Verdy",
+      "position": "LW",
+      "value": 2
+    },
+    {
+      "rank": 18,
+      "name": "Youssef En-Nesyri",
+      "team": "Amsterdam Ravens",
+      "position": "ST",
+      "value": 2
+    },
+    {
+      "rank": 19,
+      "name": "Ante Budimir",
+      "team": "Tokyo Verdy",
+      "position": "ST",
+      "value": 1
+    },
+    {
+      "rank": 20,
+      "name": "Dani Ceballos",
+      "team": "Tokyo Verdy",
+      "position": "CM",
+      "value": 1
+    }
+  ]
 }

@@ -1,0 +1,788 @@
+{
+  "matchId": "gfl-2026-001",
+  "matchweek": 1,
+  "date": "2026-08-30",
+  "kickoff": "22:00",
+  "venue": "Johan Cruijff Arena",
+  "status": "completed",
+  "homeTeam": {
+    "name": "Amsterdam Ravens",
+    "score": 0,
+    "startingXI": [
+      "Aaron Wan-Bissaka",
+      "Nacho Fernández",
+      "Edmond Tapsoba",
+      "Reinildo",
+      "Zubimendi",
+      "João Neves",
+      "Charles De Ketelaere",
+      "Yáser Asprilla",
+      "Cristiano Ronaldo",
+      "Youssef En-Nesyri",
+      "Gregor Kobel"
+    ],
+    "substitutes": [
+      "Manuel Lazzari",
+      "Joshua Kimmich",
+      "Marten de Roon"
+    ],
+    "unusedSubstitutes": [
+      "Fran García",
+      "Bernardo Silva",
+      "Nicolas Pépé",
+      "Bukayo Saka"
+    ],
+    "teamStats": {
+      "TotalShots": 5,
+      "ShotsOnTarget": 2,
+      "PossessionPct": 53,
+      "YellowCards": 1
+    },
+    "playerStats": {
+      "Aaron Wan-Bissaka": {
+        "minutesPlayed": 90,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 2,
+        "blocks": 0,
+        "clearances": 1,
+        "interceptions": 4,
+        "recoveries": 4,
+        "yellowCard": true,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": -1,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "goals_conceded_deduction": -2,
+          "yellow_card": -1
+        },
+        "ict": {
+          "influence": 17,
+          "creativity": 2.0,
+          "threat": 0,
+          "ictIndex": 1.9
+        }
+      },
+      "Manuel Lazzari": {
+        "minutesPlayed": 6,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 0,
+        "blocks": 0,
+        "clearances": 0,
+        "interceptions": 0,
+        "recoveries": 1,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": -1,
+        "pointsBreakdown": {
+          "appearance": 1,
+          "goals_conceded_deduction": -2
+        },
+        "ict": {
+          "influence": 1,
+          "creativity": 0.5,
+          "threat": 0,
+          "ictIndex": 0.15
+        }
+      },
+      "Nacho Fernández": {
+        "minutesPlayed": 90,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 0,
+        "blocks": 0,
+        "clearances": 7,
+        "interceptions": 0,
+        "recoveries": 4,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 0,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "goals_conceded_deduction": -2
+        },
+        "ict": {
+          "influence": 11,
+          "creativity": 2.0,
+          "threat": 0,
+          "ictIndex": 1.3
+        }
+      },
+      "Edmond Tapsoba": {
+        "minutesPlayed": 90,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 2,
+        "blocks": 1,
+        "clearances": 1,
+        "interceptions": 1,
+        "recoveries": 8,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 0,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "goals_conceded_deduction": -2
+        },
+        "ict": {
+          "influence": 17,
+          "creativity": 4.0,
+          "threat": 0,
+          "ictIndex": 2.1
+        }
+      },
+      "Reinildo": {
+        "minutesPlayed": 90,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 1,
+        "blocks": 0,
+        "clearances": 1,
+        "interceptions": 1,
+        "recoveries": 2,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 0,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "goals_conceded_deduction": -2
+        },
+        "ict": {
+          "influence": 7,
+          "creativity": 1.0,
+          "threat": 0,
+          "ictIndex": 0.8
+        }
+      },
+      "Joshua Kimmich": {
+        "minutesPlayed": 25,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 0,
+        "blocks": 0,
+        "clearances": 0,
+        "interceptions": 0,
+        "recoveries": 1,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 1,
+        "pointsBreakdown": {
+          "appearance": 1
+        },
+        "ict": {
+          "influence": 1,
+          "creativity": 0.5,
+          "threat": 0,
+          "ictIndex": 0.15
+        }
+      },
+      "Zubimendi": {
+        "minutesPlayed": 85,
+        "goals": 0,
+        "assists": 1,
+        "tackles": 4,
+        "blocks": 0,
+        "clearances": 1,
+        "interceptions": 0,
+        "recoveries": 3,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 5,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "assists": 3
+        },
+        "ict": {
+          "influence": 18,
+          "creativity": 4.5,
+          "threat": 1,
+          "ictIndex": 2.35
+        }
+      },
+      "João Neves": {
+        "minutesPlayed": 90,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 3,
+        "blocks": 0,
+        "clearances": 1,
+        "interceptions": 1,
+        "recoveries": 2,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 2,
+        "pointsBreakdown": {
+          "appearance": 2
+        },
+        "ict": {
+          "influence": 11,
+          "creativity": 1.0,
+          "threat": 0,
+          "ictIndex": 1.2
+        }
+      },
+      "Marten de Roon": {
+        "minutesPlayed": 26,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 1,
+        "blocks": 0,
+        "clearances": 0,
+        "interceptions": 4,
+        "recoveries": 1,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 1,
+        "pointsBreakdown": {
+          "appearance": 1
+        },
+        "ict": {
+          "influence": 11,
+          "creativity": 0.5,
+          "threat": 0,
+          "ictIndex": 1.15
+        }
+      },
+      "Charles De Ketelaere": {
+        "minutesPlayed": 90,
+        "goals": 0,
+        "assists": 1,
+        "tackles": 0,
+        "blocks": 0,
+        "clearances": 0,
+        "interceptions": 0,
+        "recoveries": 1,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 5,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "assists": 3
+        },
+        "ict": {
+          "influence": 7,
+          "creativity": 3.5,
+          "threat": 1,
+          "ictIndex": 1.15
+        }
+      },
+      "Yáser Asprilla": {
+        "minutesPlayed": 57,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 1,
+        "blocks": 0,
+        "clearances": 1,
+        "interceptions": 0,
+        "recoveries": 1,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 1,
+        "pointsBreakdown": {
+          "appearance": 1
+        },
+        "ict": {
+          "influence": 4,
+          "creativity": 0.5,
+          "threat": 0,
+          "ictIndex": 0.45
+        }
+      },
+      "Cristiano Ronaldo": {
+        "minutesPlayed": 90,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 0,
+        "blocks": 0,
+        "clearances": 0,
+        "interceptions": 0,
+        "recoveries": 1,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 2,
+        "pointsBreakdown": {
+          "appearance": 2
+        },
+        "ict": {
+          "influence": 1,
+          "creativity": 0.5,
+          "threat": 0,
+          "ictIndex": 0.15
+        }
+      },
+      "Youssef En-Nesyri": {
+        "minutesPlayed": 64,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 0,
+        "blocks": 0,
+        "clearances": 1,
+        "interceptions": 1,
+        "recoveries": 1,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 2,
+        "pointsBreakdown": {
+          "appearance": 2
+        },
+        "ict": {
+          "influence": 4,
+          "creativity": 0.5,
+          "threat": 0,
+          "ictIndex": 0.45
+        }
+      },
+      "Gregor Kobel": {
+        "minutesPlayed": 90,
+        "saves": 0,
+        "goalsConceded": 0,
+        "penaltySave": false,
+        "yellowCard": false,
+        "redCard": false,
+        "points": 2,
+        "pointsBreakdown": {
+          "appearance": 2
+        },
+        "ict": {
+          "influence": 0,
+          "creativity": 0,
+          "threat": 0,
+          "ictIndex": 0.0
+        }
+      }
+    }
+  },
+  "awayTeam": {
+    "name": "Tokyo Verdy",
+    "score": 4,
+    "startingXI": [
+      "Daniel Muñoz",
+      "Gabriel Paulista",
+      "Vitinha",
+      "Warren Zaïre-Emery",
+      "Florian Wirtz",
+      "Pedro Neto",
+      "Cody Gakpo",
+      "Ángel Di María",
+      "Donyell Malen",
+      "Rafael Leão",
+      "Rui Silva"
+    ],
+    "substitutes": [
+      "Ismaël Bennacer",
+      "Dani Ceballos",
+      "Artem Dovbyk",
+      "Ante Budimir"
+    ],
+    "unusedSubstitutes": [
+      "Devyne Rensch",
+      "Fikayo Tomori",
+      "Ben Chilwell"
+    ],
+    "teamStats": {
+      "TotalShots": 6,
+      "ShotsOnTarget": 4,
+      "PossessionPct": 47,
+      "YellowCards": 1
+    },
+    "playerStats": {
+      "Daniel Muñoz": {
+        "minutesPlayed": 90,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 4,
+        "blocks": 0,
+        "clearances": 3,
+        "interceptions": 0,
+        "recoveries": 4,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 6,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "clean_sheet": 4
+        },
+        "ict": {
+          "influence": 15,
+          "creativity": 2.0,
+          "threat": 0,
+          "ictIndex": 1.7
+        }
+      },
+      "Gabriel Paulista": {
+        "minutesPlayed": 89,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 2,
+        "blocks": 0,
+        "clearances": 4,
+        "interceptions": 0,
+        "recoveries": 0,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 6,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "clean_sheet": 4
+        },
+        "ict": {
+          "influence": 8,
+          "creativity": 0.0,
+          "threat": 0,
+          "ictIndex": 0.8
+        }
+      },
+      "Ismaël Bennacer": {
+        "minutesPlayed": 33,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 0,
+        "blocks": 0,
+        "clearances": 0,
+        "interceptions": 0,
+        "recoveries": 0,
+        "yellowCard": false,
+        "redCard": true,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": -2,
+        "pointsBreakdown": {
+          "appearance": 1,
+          "red_card": -3
+        },
+        "ict": {
+          "influence": 0,
+          "creativity": 0.0,
+          "threat": 0,
+          "ictIndex": 0.0
+        }
+      },
+      "Vitinha": {
+        "minutesPlayed": 90,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 0,
+        "blocks": 1,
+        "clearances": 3,
+        "interceptions": 0,
+        "recoveries": 8,
+        "yellowCard": true,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 4,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "clean_sheet": 1,
+          "defensive_contribution": 2,
+          "yellow_card": -1
+        },
+        "ict": {
+          "influence": 13,
+          "creativity": 4.0,
+          "threat": 0,
+          "ictIndex": 1.7
+        }
+      },
+      "Dani Ceballos": {
+        "minutesPlayed": 29,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 0,
+        "blocks": 0,
+        "clearances": 0,
+        "interceptions": 0,
+        "recoveries": 2,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 1,
+        "pointsBreakdown": {
+          "appearance": 1
+        },
+        "ict": {
+          "influence": 2,
+          "creativity": 1.0,
+          "threat": 0,
+          "ictIndex": 0.3
+        }
+      },
+      "Warren Zaïre-Emery": {
+        "minutesPlayed": 77,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 1,
+        "blocks": 0,
+        "clearances": 0,
+        "interceptions": 0,
+        "recoveries": 4,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 3,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "clean_sheet": 1
+        },
+        "ict": {
+          "influence": 6,
+          "creativity": 2.0,
+          "threat": 0,
+          "ictIndex": 0.8
+        }
+      },
+      "Florian Wirtz": {
+        "minutesPlayed": 90,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 1,
+        "blocks": 0,
+        "clearances": 2,
+        "interceptions": 0,
+        "recoveries": 6,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 3,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "clean_sheet": 1
+        },
+        "ict": {
+          "influence": 10,
+          "creativity": 3.0,
+          "threat": 0,
+          "ictIndex": 1.3
+        }
+      },
+      "Pedro Neto": {
+        "minutesPlayed": 86,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 1,
+        "blocks": 0,
+        "clearances": 1,
+        "interceptions": 2,
+        "recoveries": 3,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 3,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "clean_sheet": 1
+        },
+        "ict": {
+          "influence": 10,
+          "creativity": 1.5,
+          "threat": 0,
+          "ictIndex": 1.15
+        }
+      },
+      "Cody Gakpo": {
+        "minutesPlayed": 90,
+        "goals": 1,
+        "assists": 1,
+        "tackles": 1,
+        "blocks": 1,
+        "clearances": 0,
+        "interceptions": 2,
+        "recoveries": 4,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 11,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "goals": 5,
+          "assists": 3,
+          "clean_sheet": 1
+        },
+        "ict": {
+          "influence": 28,
+          "creativity": 5.0,
+          "threat": 6,
+          "ictIndex": 3.9
+        }
+      },
+      "Ángel Di María": {
+        "minutesPlayed": 81,
+        "goals": 1,
+        "assists": 0,
+        "tackles": 1,
+        "blocks": 0,
+        "clearances": 0,
+        "interceptions": 0,
+        "recoveries": 0,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 6,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "goals": 4
+        },
+        "ict": {
+          "influence": 12,
+          "creativity": 0.0,
+          "threat": 5,
+          "ictIndex": 1.7
+        }
+      },
+      "Donyell Malen": {
+        "minutesPlayed": 57,
+        "goals": 1,
+        "assists": 0,
+        "tackles": 0,
+        "blocks": 0,
+        "clearances": 0,
+        "interceptions": 0,
+        "recoveries": 3,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 5,
+        "pointsBreakdown": {
+          "appearance": 1,
+          "goals": 4
+        },
+        "ict": {
+          "influence": 13,
+          "creativity": 1.5,
+          "threat": 5,
+          "ictIndex": 1.95
+        }
+      },
+      "Rafael Leão": {
+        "minutesPlayed": 86,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 0,
+        "blocks": 1,
+        "clearances": 0,
+        "interceptions": 0,
+        "recoveries": 2,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 2,
+        "pointsBreakdown": {
+          "appearance": 2
+        },
+        "ict": {
+          "influence": 4,
+          "creativity": 1.0,
+          "threat": 0,
+          "ictIndex": 0.5
+        }
+      },
+      "Artem Dovbyk": {
+        "minutesPlayed": 24,
+        "goals": 1,
+        "assists": 0,
+        "tackles": 0,
+        "blocks": 0,
+        "clearances": 0,
+        "interceptions": 0,
+        "recoveries": 0,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 5,
+        "pointsBreakdown": {
+          "appearance": 1,
+          "goals": 4
+        },
+        "ict": {
+          "influence": 10,
+          "creativity": 0.0,
+          "threat": 5,
+          "ictIndex": 1.5
+        }
+      },
+      "Ante Budimir": {
+        "minutesPlayed": 30,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 0,
+        "blocks": 1,
+        "clearances": 1,
+        "interceptions": 0,
+        "recoveries": 0,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 1,
+        "pointsBreakdown": {
+          "appearance": 1
+        },
+        "ict": {
+          "influence": 3,
+          "creativity": 0.0,
+          "threat": 0,
+          "ictIndex": 0.3
+        }
+      },
+      "Rui Silva": {
+        "minutesPlayed": 90,
+        "saves": 2,
+        "goalsConceded": 1,
+        "penaltySave": false,
+        "yellowCard": false,
+        "redCard": false,
+        "points": 6,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "clean_sheet": 4
+        },
+        "ict": {
+          "influence": 1,
+          "creativity": 0,
+          "threat": 0,
+          "ictIndex": 0.1
+        }
+      }
+    }
+  }
+}

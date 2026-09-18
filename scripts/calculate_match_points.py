@@ -1,20 +1,17 @@
 #!/usr/bin/env python3
 """
-calculate_match_points.py
+calculate_match_points.py  (SIMPLIFIED SCHEMA)
 
-Reads a filled-in match Excel template (produced by generate_match_template.py),
-looks up each player's position from teams.json, applies the Offside GFL scoring
-rulebook (fantasy points + ICT Index), and writes the final match JSON to
-data/matches/<match-id>.json.
+Reads a filled-in match template (simplified 12-outfield/6-GK column
+schema), applies the fantasy scoring rulebook, computes a simplified
+ICT Index (built only from the reduced stat set -- no shots/passes/
+touches data available), and writes the match JSON.
 
 Usage:
     python scripts/calculate_match_points.py \
         --input data/match_templates/gfl-2026-001.xlsx \
         --teams-file data/teams.json \
         --output-dir data/matches
-
-Output:
-    data/matches/<match-id>.json
 """
 
 import argparse
@@ -24,10 +21,6 @@ import sys
 
 from openpyxl import load_workbook
 
-# ---------------------------------------------------------------------------
-# Position bucket mapping — matches main.js's POSITION_GROUPS exactly.
-# ---------------------------------------------------------------------------
-
 POSITION_TO_BUCKET = {
     "GK": "GK",
     "RB": "DEF", "CB": "DEF", "LB": "DEF",
@@ -35,94 +28,65 @@ POSITION_TO_BUCKET = {
     "RW": "FWD", "LW": "FWD", "ST": "FWD",
 }
 
-# Matchday squad rules (must match generate_match_template.py)
 REQUIRED_STARTING_XI = 11
-REQUIRED_TOTAL_SUBS = 7          # "Sub (Came On)" + "Sub (Unused)" combined
-MAX_SUBSTITUTIONS_USED = 4       # max "Sub (Came On)" count
-
-# ---------------------------------------------------------------------------
-# Scoring tables (Rulebook §3)
-# ---------------------------------------------------------------------------
+REQUIRED_TOTAL_SUBS = 7
+MAX_SUBSTITUTIONS_USED = 4
 
 GOAL_POINTS = {"GK": 10, "DEF": 6, "MID": 5, "FWD": 4}
 ASSIST_POINTS = 3
 CLEAN_SHEET_POINTS = {"GK": 4, "DEF": 4, "MID": 1, "FWD": 0}
-
 YELLOW_CARD_POINTS = -1
-RED_CARD_POINTS = -3  # replaces yellow deduction, not additive
+RED_CARD_POINTS = -3
 OWN_GOAL_POINTS = -2
 PENALTY_MISS_POINTS = -2
 PENALTY_SAVE_POINTS = 5
-
-DEF_CBIT_THRESHOLD = 10        # Defenders: Clearances+Blocks+Interceptions+Tackles
-MID_FWD_CBIT_THRESHOLD = 12    # Mid/Fwd: + Recoveries
+DEF_CBIT_THRESHOLD = 10
+MID_FWD_CBIT_THRESHOLD = 12
 DEFENSIVE_CONTRIBUTION_POINTS = 2
-
-SHOT_SAVES_PER_POINT = 3       # every 3 shot saves = 1 point
-GOALS_CONCEDED_PER_DEDUCTION = 2  # every 2 goals conceded (GK/DEF) = -1
+SHOT_SAVES_PER_POINT = 3
+GOALS_CONCEDED_PER_DEDUCTION = 2
 
 
 def truthy(value):
-    """Interpret a Y/N-style Excel cell as a boolean."""
     if value is None:
         return False
-    text = str(value).strip().lower()
-    return text in ("y", "yes", "true", "1")
+    return str(value).strip().lower() in ("y", "yes", "true", "1")
 
 
 def load_team_lookup(teams_file):
-    """Build {team_name: {player_name: position}} from teams.json."""
     with open(teams_file, "r", encoding="utf-8") as f:
         data = json.load(f)
     teams = data.get("teams", data) if isinstance(data, dict) else data
-
-    lookup = {}
-    for team in teams:
-        team_name = team.get("name")
-        players = {p.get("name"): p.get("position") for p in team.get("players", [])}
-        lookup[team_name] = players
-    return lookup
+    return {t.get("name"): {p.get("name"): p.get("position") for p in t.get("players", [])} for t in teams}
 
 
 def read_match_info(wb):
     ws = wb["Match Info"]
     info = {}
     for row in ws.iter_rows(min_row=2, values_only=True):
-        field, value = row[0], row[1]
-        if field:
-            info[field] = value
+        if row[0]:
+            info[row[0]] = row[1]
     return info
 
 
 def read_team_stats(wb):
+    """Team Stats sheet is informational only (not used in scoring)."""
     ws = wb["Team Stats"]
-    home_stats, away_stats = {}, {}
-    key_map = {
-        "Total Shots": "totalShots",
-        "Shots On Target": "shotsOnTarget",
-        "Touches In Opposition Box": "touchesInOppositionBox",
-        "Accurate Passes": "accuratePasses",
-        "Yellow Cards": "yellowCards",
-    }
+    home, away = {}, {}
     for row in ws.iter_rows(min_row=2, values_only=True):
-        stat_label, home_val, away_val = row[0], row[1], row[2]
-        if stat_label in key_map:
-            home_stats[key_map[stat_label]] = home_val if home_val is not None else 0
-            away_stats[key_map[stat_label]] = away_val if away_val is not None else 0
-    return home_stats, away_stats
+        if row[0]:
+            key = row[0].replace(" ", "").replace("%", "Pct")
+            home[key] = row[1] if row[1] is not None else ""
+            away[key] = row[2] if row[2] is not None else ""
+    return home, away
 
 
 def read_roster_sheet(wb, sheet_name, is_gk):
-    """Read a roster sheet, returning:
-      - results: {player_name: {played_status, stats}} for players who took the field
-      - unused_subs: [player_name, ...] named on the bench but never came on
-    """
     ws = wb[sheet_name]
     headers = [cell.value for cell in next(ws.iter_rows(min_row=1, max_row=1))]
     header_index = {h: i for i, h in enumerate(headers)}
 
-    results = {}
-    unused_subs = []
+    results, unused_subs = {}, []
     for row in ws.iter_rows(min_row=2, values_only=True):
         name = row[header_index["Player Name"]]
         played_status = row[header_index["Played?"]]
@@ -143,18 +107,6 @@ def read_roster_sheet(wb, sheet_name, is_gk):
                 "minutesPlayed": get("Minutes Played"),
                 "saves": get("Saves"),
                 "goalsConceded": get("Goals Conceded"),
-                "accuratePasses": {"made": get("Accurate Passes (Made)"), "attempted": get("Accurate Passes (Attempted)")},
-                "accurateLongBalls": {"made": get("Accurate Long Balls (Made)"), "attempted": get("Accurate Long Balls (Attempted)")},
-                "divingSave": get("Diving Save"),
-                "savesInsideBox": get("Saves Inside Box"),
-                "actedAsSweeper": get("Acted As Sweeper"),
-                "punches": get("Punches"),
-                "throws": get("Throws"),
-                "highClaim": get("High Claim"),
-                "recoveries": get("Recoveries"),
-                "clearances": get("Clearances"),
-                "touches": get("Touches"),
-                "groundDuelsWon": {"won": get("Ground Duels Won (Won)"), "attempted": get("Ground Duels Won (Attempted)")},
                 "penaltySave": truthy(get("Penalty Save (Y/N)", "N")),
                 "yellowCard": truthy(get("Yellow Card (Y/N)", "N")),
                 "redCard": truthy(get("Red Card (Y/N)", "N")),
@@ -164,26 +116,11 @@ def read_roster_sheet(wb, sheet_name, is_gk):
                 "minutesPlayed": get("Minutes Played"),
                 "goals": get("Goals"),
                 "assists": get("Assists"),
-                "accuratePasses": {"made": get("Accurate Passes (Made)"), "attempted": get("Accurate Passes (Attempted)")},
-                "chancesCreated": get("Chances Created"),
-                "shotsOnTarget": get("Shots On Target"),
-                "shotsOffTarget": get("Shots Off Target"),
-                "blockedShots": get("Blocked Shots"),
-                "touches": get("Touches"),
-                "touchesInOppositionBox": get("Touches In Opposition Box"),
-                "successfulDribbles": {"made": get("Successful Dribbles (Made)"), "attempted": get("Successful Dribbles (Attempted)")},
-                "passesIntoFinalThird": get("Passes Into Final Third"),
-                "dispossessed": get("Dispossessed"),
                 "tackles": get("Tackles"),
                 "blocks": get("Blocks"),
                 "clearances": get("Clearances"),
                 "interceptions": get("Interceptions"),
                 "recoveries": get("Recoveries"),
-                "dribbledPast": get("Dribbled Past"),
-                "groundDuelsWon": {"won": get("Ground Duels Won (Won)"), "attempted": get("Ground Duels Won (Attempted)")},
-                "aerialDuelsWon": {"won": get("Aerial Duels Won (Won)"), "attempted": get("Aerial Duels Won (Attempted)")},
-                "wasFouled": get("Was Fouled"),
-                "foulsCommitted": get("Fouls Committed"),
                 "yellowCard": truthy(get("Yellow Card (Y/N)", "N")),
                 "redCard": truthy(get("Red Card (Y/N)", "N")),
                 "ownGoal": truthy(get("Own Goal (Y/N)", "N")),
@@ -195,32 +132,18 @@ def read_roster_sheet(wb, sheet_name, is_gk):
 
 
 def validate_squad(team_name, starting_xi, substitutes_came_on, unused_subs):
-    """Check the matchday squad against the 11 / 7 / max-4-subs rules. Returns a list of warnings."""
     warnings = []
     if len(starting_xi) != REQUIRED_STARTING_XI:
-        warnings.append(
-            f"{team_name}: expected {REQUIRED_STARTING_XI} in Starting XI, found {len(starting_xi)}."
-        )
+        warnings.append(f"{team_name}: expected {REQUIRED_STARTING_XI} in Starting XI, found {len(starting_xi)}.")
     total_subs = len(substitutes_came_on) + len(unused_subs)
     if total_subs != REQUIRED_TOTAL_SUBS:
-        warnings.append(
-            f"{team_name}: expected {REQUIRED_TOTAL_SUBS} named substitutes (used + unused), "
-            f"found {total_subs}."
-        )
+        warnings.append(f"{team_name}: expected {REQUIRED_TOTAL_SUBS} named substitutes (used + unused), found {total_subs}.")
     if len(substitutes_came_on) > MAX_SUBSTITUTIONS_USED:
-        warnings.append(
-            f"{team_name}: {len(substitutes_came_on)} substitutions used, "
-            f"exceeds the max of {MAX_SUBSTITUTIONS_USED}."
-        )
+        warnings.append(f"{team_name}: {len(substitutes_came_on)} substitutions used, exceeds the max of {MAX_SUBSTITUTIONS_USED}.")
     return warnings
 
 
-# ---------------------------------------------------------------------------
-# Fantasy points calculation (Rulebook §3)
-# ---------------------------------------------------------------------------
-
-def calculate_points(stats, bucket, is_gk, team_conceded, opponent_played_60):
-    """Calculate fantasy points for a single player for this match."""
+def calculate_points(stats, bucket, is_gk, team_conceded):
     points = 0
     breakdown = {}
 
@@ -231,61 +154,39 @@ def calculate_points(stats, bucket, is_gk, team_conceded, opponent_played_60):
             points += value
 
     minutes = stats.get("minutesPlayed", 0) or 0
-
-    # Appearance
     if minutes >= 60:
         add("appearance", 2)
     elif minutes > 0:
         add("appearance", 1)
 
-    if is_gk:
-        add("goals", stats.get("goals", 0) * GOAL_POINTS["GK"] if stats.get("goals") else 0)
-    else:
-        goals = stats.get("goals", 0) or 0
-        add("goals", goals * GOAL_POINTS.get(bucket, 0))
+    if not is_gk:
+        add("goals", (stats.get("goals", 0) or 0) * GOAL_POINTS.get(bucket, 0))
 
-    assists = stats.get("assists", 0) or 0
-    add("assists", assists * ASSIST_POINTS)
+    add("assists", (stats.get("assists", 0) or 0) * ASSIST_POINTS)
 
-    # Clean sheet: only if played 60+ minutes and team didn't concede.
-    if minutes >= 60 and team_conceded == 0:
+    if minutes >= 60 and (team_conceded or 0) == 0:
         add("clean_sheet", CLEAN_SHEET_POINTS.get(bucket, 0))
 
     if is_gk:
         saves = stats.get("saves", 0) or 0
         add("shot_saves", (saves // SHOT_SAVES_PER_POINT) * 1)
-
         if stats.get("penaltySave"):
             add("penalty_save", PENALTY_SAVE_POINTS)
-
-    # Goals conceded deduction (GK/DEF only) — every 2 goals conceded = -1 point.
-    # For GKs this uses their own "Goals Conceded" entry. For outfield defenders, there is
-    # no per-player "goals conceded" stat in the data feed, so this uses the team's total
-    # goals conceded for the match as an approximation (does not account for a defender
-    # being substituted before a late goal was conceded).
-    if bucket == "GK":
         conceded = stats.get("goalsConceded", 0) or 0
         add("goals_conceded_deduction", -(conceded // GOALS_CONCEDED_PER_DEDUCTION))
     elif bucket == "DEF":
         conceded = team_conceded or 0
         add("goals_conceded_deduction", -(conceded // GOALS_CONCEDED_PER_DEDUCTION))
 
-    # Defensive contributions (threshold-based, non-stacking)
     if not is_gk:
-        cbit = (
-            (stats.get("clearances", 0) or 0)
-            + (stats.get("blocks", 0) or 0) + (stats.get("blockedShots", 0) or 0)
-            + (stats.get("interceptions", 0) or 0)
-            + (stats.get("tackles", 0) or 0)
-        )
+        cbit = ((stats.get("clearances", 0) or 0) + (stats.get("blocks", 0) or 0)
+                + (stats.get("interceptions", 0) or 0) + (stats.get("tackles", 0) or 0))
         if bucket == "DEF" and cbit >= DEF_CBIT_THRESHOLD:
             add("defensive_contribution", DEFENSIVE_CONTRIBUTION_POINTS)
         elif bucket in ("MID", "FWD"):
-            cbit_plus_recoveries = cbit + (stats.get("recoveries", 0) or 0)
-            if cbit_plus_recoveries >= MID_FWD_CBIT_THRESHOLD:
+            if cbit + (stats.get("recoveries", 0) or 0) >= MID_FWD_CBIT_THRESHOLD:
                 add("defensive_contribution", DEFENSIVE_CONTRIBUTION_POINTS)
 
-    # Discipline
     if stats.get("redCard"):
         add("red_card", RED_CARD_POINTS)
     elif stats.get("yellowCard"):
@@ -293,82 +194,42 @@ def calculate_points(stats, bucket, is_gk, team_conceded, opponent_played_60):
 
     if stats.get("ownGoal"):
         add("own_goal", OWN_GOAL_POINTS)
-
     if stats.get("penaltyMiss"):
         add("penalty_miss", PENALTY_MISS_POINTS)
 
     return points, breakdown
 
 
-# ---------------------------------------------------------------------------
-# Offside ICT Index (Rulebook §4)
-# ---------------------------------------------------------------------------
-
-def calculate_ict(stats, is_gk):
+def calculate_ict_simplified(stats, is_gk):
+    """
+    Simplified ICT Index -- built only from the reduced stat set (no
+    shots/passes/touches data available). This is a cruder proxy than a
+    full analytics platform would produce: mostly reflects goals,
+    assists, and defensive actions rather than true underlying play.
+    """
     if is_gk:
-        influence = (
-            2 * (stats.get("saves", 0) or 0)
-            + 1 * (stats.get("divingSave", 0) or 0)
-            + 1 * (stats.get("savesInsideBox", 0) or 0)
-            + 1 * (stats.get("actedAsSweeper", 0) or 0)
-            + 1 * (stats.get("highClaim", 0) or 0)
-            + 0.5 * (stats.get("punches", 0) or 0)
-            + 1 * (stats.get("groundDuelsWon", {}).get("won", 0) or 0)
-            - 3 * (stats.get("goalsConceded", 0) or 0)
-        )
-        creativity = (
-            1 * (stats.get("accurateLongBalls", {}).get("made", 0) or 0)
-            + 0.1 * (stats.get("accuratePasses", {}).get("made", 0) or 0)
-            + 0.2 * (stats.get("throws", 0) or 0)
-        )
+        influence = (2 * (stats.get("saves", 0) or 0)
+                     - 3 * (stats.get("goalsConceded", 0) or 0)
+                     + 5 * (1 if stats.get("penaltySave") else 0))
+        creativity = 0
         threat = 0
     else:
-        influence = (
-            10 * (stats.get("goals", 0) or 0)
-            + 6 * (stats.get("assists", 0) or 0)
-            + 2 * (stats.get("tackles", 0) or 0)
-            + 2 * (stats.get("interceptions", 0) or 0)
-            + 2 * (stats.get("blocks", 0) or 0)
-            + 1 * (stats.get("clearances", 0) or 0)
-            + 1 * (stats.get("recoveries", 0) or 0)
-            + 1 * (stats.get("groundDuelsWon", {}).get("won", 0) or 0)
-            + 1 * (stats.get("aerialDuelsWon", {}).get("won", 0) or 0)
-            + 0.5 * (stats.get("wasFouled", 0) or 0)
-            - 0.5 * (stats.get("foulsCommitted", 0) or 0)
-            - 0.5 * (stats.get("dispossessed", 0) or 0)
-            - 1 * (stats.get("dribbledPast", 0) or 0)
-        )
-        creativity = (
-            3 * (stats.get("chancesCreated", 0) or 0)
-            + 2 * (stats.get("assists", 0) or 0)
-            + 1 * (stats.get("passesIntoFinalThird", 0) or 0)
-            + 1.5 * (stats.get("successfulDribbles", {}).get("made", 0) or 0)
-            + 1 * (stats.get("touchesInOppositionBox", 0) or 0)
-            + 0.1 * (stats.get("accuratePasses", {}).get("made", 0) or 0)
-        )
-        threat = (
-            5 * (stats.get("goals", 0) or 0)
-            + 2 * (stats.get("shotsOnTarget", 0) or 0)
-            + 1 * (stats.get("shotsOffTarget", 0) or 0)
-            + 1 * (stats.get("blockedShots", 0) or 0)
-            + 1 * (stats.get("successfulDribbles", {}).get("made", 0) or 0)
-            + 1 * (stats.get("touchesInOppositionBox", 0) or 0)
-        )
+        influence = (10 * (stats.get("goals", 0) or 0)
+                     + 6 * (stats.get("assists", 0) or 0)
+                     + 2 * (stats.get("tackles", 0) or 0)
+                     + 2 * (stats.get("interceptions", 0) or 0)
+                     + 2 * (stats.get("blocks", 0) or 0)
+                     + 1 * (stats.get("clearances", 0) or 0)
+                     + 1 * (stats.get("recoveries", 0) or 0))
+        creativity = 3 * (stats.get("assists", 0) or 0) + 0.5 * (stats.get("recoveries", 0) or 0)
+        threat = 5 * (stats.get("goals", 0) or 0) + 1 * (stats.get("assists", 0) or 0)
 
     ict_index = (influence + creativity + threat) / 10
-    return {
-        "influence": round(influence, 2),
-        "creativity": round(creativity, 2),
-        "threat": round(threat, 2),
-        "ictIndex": round(ict_index, 2),
-    }
+    return {"influence": round(influence, 2), "creativity": round(creativity, 2),
+            "threat": round(threat, 2), "ictIndex": round(ict_index, 2)}
 
 
 def process_team(sheet_prefix, wb, team_lookup, team_name, opponent_conceded_by_team):
-    """Process one team's Outfield + GK sheets into a playerStats dict with points/ICT.
-
-    Returns: (player_stats_out, starting_xi, substitutes_came_on, unused_subs, validation_warnings)
-    """
     outfield, outfield_unused = read_roster_sheet(wb, f"{sheet_prefix} - Outfield", is_gk=False)
     goalkeepers, gk_unused = read_roster_sheet(wb, f"{sheet_prefix} - GK", is_gk=True)
     unused_subs = outfield_unused + gk_unused
@@ -386,12 +247,8 @@ def process_team(sheet_prefix, wb, team_lookup, team_name, opponent_conceded_by_
         bucket = POSITION_TO_BUCKET.get(position, "MID")
 
         stats = entry["stats"]
-        points, breakdown = calculate_points(
-            stats, bucket, is_gk,
-            team_conceded=opponent_conceded_by_team,
-            opponent_played_60=None,
-        )
-        ict = calculate_ict(stats, is_gk)
+        points, breakdown = calculate_points(stats, bucket, is_gk, team_conceded=opponent_conceded_by_team)
+        ict = calculate_ict_simplified(stats, is_gk)
 
         stats["points"] = points
         stats["pointsBreakdown"] = breakdown
@@ -407,9 +264,39 @@ def process_team(sheet_prefix, wb, team_lookup, team_name, opponent_conceded_by_
     return player_stats_out, starting_xi, substitutes_came_on, unused_subs, warnings
 
 
+def check_score_consistency(info, home_players, away_players):
+    """Since each player's stats come from their own independent real-world
+    match, there's no 'shared event' linking a goalkeeper's Goals Conceded
+    to the opposing side's players' Goals -- those numbers come from
+    entirely different real matches and are not expected to relate to
+    each other. The one thing that IS expected to line up: the Home/Away
+    Team Score you type into Match Info is derived from summing each
+    side's players' Goals columns, so this just catches a typo in that
+    sum rather than a mismatch in either total."""
+    warnings = []
+    home_score = info.get("Home Team Score") or 0
+    away_score = info.get("Away Team Score") or 0
+
+    home_goals_entered = sum((p.get("goals", 0) or 0) for p in home_players.values())
+    away_goals_entered = sum((p.get("goals", 0) or 0) for p in away_players.values())
+
+    if home_goals_entered != home_score:
+        warnings.append(
+            f"Home Team Score is {home_score}, but home players' Goals columns sum to "
+            f"{home_goals_entered}. If the score should equal that sum, check for a typo."
+        )
+    if away_goals_entered != away_score:
+        warnings.append(
+            f"Away Team Score is {away_score}, but away players' Goals columns sum to "
+            f"{away_goals_entered}. If the score should equal that sum, check for a typo."
+        )
+
+    return warnings
+
+
 def main():
-    parser = argparse.ArgumentParser(description="Calculate fantasy points from a filled-in match template.")
-    parser.add_argument("--input", required=True, help="Path to the filled-in .xlsx match template")
+    parser = argparse.ArgumentParser(description="Calculate fantasy points from a filled-in match template (simplified schema).")
+    parser.add_argument("--input", required=True)
     parser.add_argument("--teams-file", default="data/teams.json")
     parser.add_argument("--output-dir", default="data/matches")
     args = parser.parse_args()
@@ -428,13 +315,11 @@ def main():
     away_score = info.get("Away Team Score") or 0
 
     home_players, home_xi, home_subs, home_unused, home_warnings = process_team(
-        "Home", wb, team_lookup, info.get("Home Team"), opponent_conceded_by_team=away_score
-    )
+        "Home", wb, team_lookup, info.get("Home Team"), opponent_conceded_by_team=away_score)
     away_players, away_xi, away_subs, away_unused, away_warnings = process_team(
-        "Away", wb, team_lookup, info.get("Away Team"), opponent_conceded_by_team=home_score
-    )
+        "Away", wb, team_lookup, info.get("Away Team"), opponent_conceded_by_team=home_score)
 
-    all_warnings = home_warnings + away_warnings
+    all_warnings = home_warnings + away_warnings + check_score_consistency(info, home_players, away_players)
     if all_warnings:
         print("\n--- SQUAD VALIDATION WARNINGS ---", file=sys.stderr)
         for w in all_warnings:
@@ -448,24 +333,12 @@ def main():
         "kickoff": info.get("Kickoff"),
         "venue": info.get("Venue"),
         "status": info.get("Status", "completed"),
-        "homeTeam": {
-            "name": info.get("Home Team"),
-            "score": home_score,
-            "startingXI": home_xi,
-            "substitutes": home_subs,
-            "unusedSubstitutes": home_unused,
-            "teamStats": home_team_stats,
-            "playerStats": home_players,
-        },
-        "awayTeam": {
-            "name": info.get("Away Team"),
-            "score": away_score,
-            "startingXI": away_xi,
-            "substitutes": away_subs,
-            "unusedSubstitutes": away_unused,
-            "teamStats": away_team_stats,
-            "playerStats": away_players,
-        },
+        "homeTeam": {"name": info.get("Home Team"), "score": home_score, "startingXI": home_xi,
+                     "substitutes": home_subs, "unusedSubstitutes": home_unused,
+                     "teamStats": home_team_stats, "playerStats": home_players},
+        "awayTeam": {"name": info.get("Away Team"), "score": away_score, "startingXI": away_xi,
+                     "substitutes": away_subs, "unusedSubstitutes": away_unused,
+                     "teamStats": away_team_stats, "playerStats": away_players},
     }
 
     os.makedirs(args.output_dir, exist_ok=True)

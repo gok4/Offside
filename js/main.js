@@ -5,9 +5,9 @@
      #/                -> landing home page
      #/teams            -> club badge wall
      #/team/<slug>       -> team squad page
-     #/fixtures          -> placeholder (v1.3.0)
-     #/statistics         -> placeholder (v1.5.0)
-     #/awards             -> placeholder (v1.7.0)
+     #/fixtures          -> season schedule
+     #/statistics         -> stat leaderboards
+     #/awards             -> Player of the Week / Coach of the Month
      #/icons             -> icons/legends gallery
    ============================================ */
 
@@ -227,7 +227,6 @@ async function renderIcons() {
   `;
 }
 
-
 /* ---------- Statistics ---------- */
 
 async function loadStatistics() {
@@ -301,6 +300,74 @@ function renderComingSoon(title, note) {
   `;
 }
 
+/* ---------- Awards ---------- */
+
+async function loadAwards() {
+  const res = await fetch('data/awards.json');
+  return res.json();
+}
+
+function formatMonth(monthKey) {
+  const [year, month] = monthKey.split('-');
+  const d = new Date(parseInt(year, 10), parseInt(month, 10) - 1, 1);
+  return d.toLocaleDateString(undefined, { month: 'long', year: 'numeric' });
+}
+
+async function renderAwards() {
+  let data;
+  try {
+    data = await loadAwards();
+  } catch (e) {
+    renderComingSoon('Awards', 'Awards will appear here once matches have been played.');
+    return;
+  }
+
+  const potw = data.playerOfTheWeek || [];
+  const cotm = data.coachOfTheMonth || [];
+
+  if (potw.length === 0 && cotm.length === 0) {
+    app.innerHTML = `
+      <section class="hero">
+        <span class="hero-eyebrow">Global Football League</span>
+        <h1 class="hero-title">Awards</h1>
+      </section>
+      <div class="empty-state">No completed matches yet. Check back after matchweek 1.</div>
+    `;
+    return;
+  }
+
+  app.innerHTML = `
+    <section class="hero">
+      <span class="hero-eyebrow">Global Football League</span>
+      <h1 class="hero-title">Awards</h1>
+    </section>
+
+    <p class="section-label">Player of the Week</p>
+    <div class="awards-list">
+      ${potw.length === 0 ? `<div class="empty-state">No data yet.</div>` : [...potw].reverse().map(a => `
+        <div class="award-row">
+          <span class="award-badge">MW${a.matchweek}</span>
+          <button class="award-player-btn" data-team="${escapeHtml(a.team)}" data-player="${escapeHtml(a.player)}">${escapeHtml(a.player)}</button>
+          <span class="award-team">${escapeHtml(a.team)}</span>
+          <span class="award-value">${a.points} pts</span>
+        </div>
+      `).join('')}
+    </div>
+
+    <p class="section-label" style="margin-top:36px;">Coach of the Month</p>
+    <div class="awards-list">
+      ${cotm.length === 0 ? `<div class="empty-state">No data yet.</div>` : [...cotm].reverse().map(a => `
+        <div class="award-row">
+          <span class="award-badge">${escapeHtml(formatMonth(a.month))}</span>
+          <span class="award-player-btn" style="cursor:default;">${escapeHtml(a.manager || 'Unknown')}</span>
+          <span class="award-team">${escapeHtml(a.team)}</span>
+          <span class="award-value">${a.leaguePoints} pts</span>
+        </div>
+      `).join('')}
+    </div>
+  `;
+}
+
 /* ---------- Fixtures ---------- */
 
 async function loadFixtures() {
@@ -339,8 +406,6 @@ async function renderFixtures(requestedWeek) {
 
   const { matchweeks, fixtures } = data;
 
-  // Default to the first matchweek with an unplayed fixture (i.e. "current" week),
-  // or matchweek 1 if the whole season is still unplayed / already finished.
   let week = requestedWeek;
   if (!week) {
     const nextUnplayed = fixtures.find(f => f.status !== 'completed');
@@ -430,6 +495,23 @@ function renderStatBars(homeStats, awayStats) {
   }).join('');
 }
 
+/* ---------- Fantasy points breakdown labels ---------- */
+
+const POINTS_BREAKDOWN_LABELS = {
+  appearance: 'Appearance',
+  goals: 'Goals',
+  assists: 'Assists',
+  clean_sheet: 'Clean Sheet',
+  defensive_contribution: 'Defensive Contribution',
+  shot_saves: 'Shot Saves',
+  penalty_save: 'Penalty Save',
+  goals_conceded_deduction: 'Goals Conceded',
+  yellow_card: 'Yellow Card',
+  red_card: 'Red Card',
+  own_goal: 'Own Goal',
+  penalty_miss: 'Penalty Miss',
+};
+
 function renderLineupList(teamName, names, playerStats, teams) {
   if (!names || names.length === 0) {
     return `<li class="empty-line">&mdash;</li>`;
@@ -437,35 +519,16 @@ function renderLineupList(teamName, names, playerStats, teams) {
   return names.map(name => {
     const stats = playerStats[name] || {};
     const pos = playerPosition(teams, teamName, name);
+    const breakdown = stats.pointsBreakdown ? JSON.stringify(stats.pointsBreakdown) : '{}';
     return `
       <li>
-        <button class="lineup-player" data-team="${escapeHtml(teamName)}" data-player="${escapeHtml(name)}">
+        <button class="lineup-player" data-name="${escapeHtml(name)}" data-points="${stats.points ?? 0}" data-breakdown='${escapeHtml(breakdown)}'>
           <span class="lineup-pos">${escapeHtml(pos)}</span>
           <span class="lineup-name">${escapeHtml(name)}</span>
           <span class="lineup-pts">${stats.points ?? ''}</span>
         </button>
       </li>`;
   }).join('');
-}
-
-function renderPointsTable(team, teams) {
-  const rows = Object.entries(team.playerStats)
-    .sort((a, b) => (b[1].points || 0) - (a[1].points || 0))
-    .map(([name, stats]) => {
-      const pos = playerPosition(teams, team.name, name);
-      return `
-        <tr>
-          <td>${escapeHtml(name)}</td>
-          <td>${escapeHtml(pos)}</td>
-          <td class="pts-val">${stats.points ?? 0}</td>
-        </tr>`;
-    }).join('');
-  return `
-    <p class="section-label">${escapeHtml(team.name)}</p>
-    <table class="points-table">
-      <thead><tr><th>Player</th><th>Pos</th><th>Pts</th></tr></thead>
-      <tbody>${rows}</tbody>
-    </table>`;
 }
 
 async function renderMatch(matchId) {
@@ -525,10 +588,6 @@ async function renderMatch(matchId) {
       </div>
     </div>
 
-    <p class="section-label">Fantasy Points</p>
-    ${renderPointsTable(home, teams)}
-    ${renderPointsTable(away, teams)}
-
     <a class="back-link" href="#/standings">&larr; Standings</a>
   `;
 }
@@ -572,7 +631,7 @@ async function renderStandingsPage() {
   `;
 }
 
-/* ---------- Player quick-view modal ---------- */
+/* ---------- Player quick-view modal (OVR/PAC/SHO/etc from teams.json) ---------- */
 
 const STAT_LABELS = { pac: 'PAC', sho: 'SHO', pas: 'PAS', dri: 'DRI', def: 'DEF', phy: 'PHY' };
 
@@ -625,6 +684,34 @@ async function openPlayerModal(teamName, playerName) {
   document.body.style.overflow = 'hidden';
 }
 
+/* ---------- Match points breakdown modal (from a specific match's lineup) ---------- */
+
+function openMatchPointsModal(playerName, totalPoints, breakdown) {
+  const entries = Object.entries(breakdown);
+  const rowsHtml = entries.length === 0
+    ? `<p class="empty-state" style="margin-top:12px;">No scoring events this match.</p>`
+    : entries.map(([key, value]) => {
+        const label = POINTS_BREAKDOWN_LABELS[key] || key;
+        const sign = value > 0 ? '+' : '';
+        const cls = value > 0 ? 'breakdown-pos' : 'breakdown-neg';
+        return `
+          <div class="breakdown-row">
+            <span class="breakdown-label">${escapeHtml(label)}</span>
+            <span class="breakdown-value ${cls}">${sign}${value}</span>
+          </div>`;
+      }).join('');
+
+  modalBody.innerHTML = `
+    <h2 class="modal-name">${escapeHtml(playerName)}</h2>
+    <p class="modal-sub">Points breakdown for this match</p>
+    <div class="modal-ovr">${totalPoints} <span>PTS</span></div>
+    <div class="breakdown-list">${rowsHtml}</div>
+  `;
+
+  modalOverlay.hidden = false;
+  document.body.style.overflow = 'hidden';
+}
+
 function closePlayerModal() {
   modalOverlay.hidden = true;
   document.body.style.overflow = '';
@@ -638,11 +725,21 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape' && !modalOverlay.hidden) closePlayerModal();
 });
 
-// Event delegation: catches clicks on player cards (home/team/icons views)
-// and lineup-player rows (match center), since content is re-rendered
-// dynamically by the router.
+// Event delegation: lineup-player rows (in the Match Center) open the
+// match-specific points breakdown; player cards, leaderboard rows, and
+// award rows elsewhere open the general OVR/PAC/SHO/etc. stat card.
 app.addEventListener('click', (e) => {
-  const trigger = e.target.closest('.player-card, .lineup-player, .lb-player-btn');
+  const lineupTrigger = e.target.closest('.lineup-player');
+  if (lineupTrigger) {
+    const name = lineupTrigger.dataset.name;
+    const points = parseInt(lineupTrigger.dataset.points, 10) || 0;
+    let breakdown = {};
+    try { breakdown = JSON.parse(lineupTrigger.dataset.breakdown || '{}'); } catch (e) {}
+    openMatchPointsModal(name, points, breakdown);
+    return;
+  }
+
+  const trigger = e.target.closest('.player-card, .lb-player-btn, .award-player-btn');
   if (trigger && trigger.dataset.team && trigger.dataset.player) {
     openPlayerModal(trigger.dataset.team, trigger.dataset.player);
   }
@@ -687,11 +784,9 @@ async function router() {
     const week = parseInt(route.replace('#/fixtures/', ''), 10);
     await renderFixtures(week);
   } else if (route === '#/statistics') {
-
     await renderStatistics();
-    
   } else if (route === '#/awards') {
-    renderComingSoon('Awards', 'Player of the Week and Coach of the Month are coming in a future release.');
+    await renderAwards();
   } else {
     app.innerHTML = `<div class="empty-state">Page not found. <a href="#/">Back home</a>.</div>`;
   }

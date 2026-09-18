@@ -1,30 +1,21 @@
 #!/usr/bin/env python3
 """
-generate_match_template.py
+generate_match_template.py  (SIMPLIFIED SCHEMA)
 
-Generates an Excel data-entry template for a single fixture (home team vs away team).
-Pulls both teams' rosters from teams.json so you only ever see the ~50 players
-relevant to this match, split into Outfield / Goalkeeper sheets per team, plus a
-Match Info sheet and a Team Stats sheet.
-
-Teams and players are identified by their exact "name" field (there is no "slug"
-field in teams.json) — team names are matched exactly, and player identification is
-always scoped within the team roster being loaded.
+Generates an Excel data-entry template for a single fixture. This version
+uses a reduced stat set -- only the columns that actually drive fantasy
+points and the simplified ICT Index -- instead of the full ~30-column
+schema. This cuts per-player data entry by roughly 60%.
 
 Usage:
     python scripts/generate_match_template.py \
         --match-id gfl-2026-001 \
         --matchweek 1 \
         --date 2026-08-30 \
-        --kickoff 20:00 \
-        --venue "Floodlight Arena" \
         --home "Amsterdam Ravens" \
         --away "Steel Hawks" \
         --teams-file data/teams.json \
         --output-dir data/match_templates
-
-Output:
-    data/match_templates/<match-id>.xlsx
 """
 
 import argparse
@@ -38,37 +29,20 @@ from openpyxl.utils import get_column_letter
 from openpyxl.worksheet.datavalidation import DataValidation
 
 # ---------------------------------------------------------------------------
-# Column definitions (must match the rulebook's §2.1 / §2.2 data schema)
+# Reduced column set: only what feeds fantasy points + simplified ICT.
+# "Blocks" covers both pass-blocks and shot-blocks (the full schema's
+# separate "Blocked Shots" column was folded in here to simplify entry).
 # ---------------------------------------------------------------------------
 
 OUTFIELD_STAT_COLUMNS = [
     "Minutes Played",
     "Goals",
     "Assists",
-    "Accurate Passes (Made)",
-    "Accurate Passes (Attempted)",
-    "Chances Created",
-    "Shots On Target",
-    "Shots Off Target",
-    "Blocked Shots",
-    "Touches",
-    "Touches In Opposition Box",
-    "Successful Dribbles (Made)",
-    "Successful Dribbles (Attempted)",
-    "Passes Into Final Third",
-    "Dispossessed",
     "Tackles",
     "Blocks",
     "Clearances",
     "Interceptions",
     "Recoveries",
-    "Dribbled Past",
-    "Ground Duels Won (Won)",
-    "Ground Duels Won (Attempted)",
-    "Aerial Duels Won (Won)",
-    "Aerial Duels Won (Attempted)",
-    "Was Fouled",
-    "Fouls Committed",
     "Yellow Card (Y/N)",
     "Red Card (Y/N)",
     "Own Goal (Y/N)",
@@ -79,60 +53,34 @@ GK_STAT_COLUMNS = [
     "Minutes Played",
     "Saves",
     "Goals Conceded",
-    "Accurate Passes (Made)",
-    "Accurate Passes (Attempted)",
-    "Accurate Long Balls (Made)",
-    "Accurate Long Balls (Attempted)",
-    "Diving Save",
-    "Saves Inside Box",
-    "Acted As Sweeper",
-    "Punches",
-    "Throws",
-    "High Claim",
-    "Recoveries",
-    "Clearances",
-    "Touches",
-    "Ground Duels Won (Won)",
-    "Ground Duels Won (Attempted)",
-    "Penalty Save (Y/N)",
     "Yellow Card (Y/N)",
     "Red Card (Y/N)",
+    "Penalty Save (Y/N)",
 ]
 
 PLAYED_STATUS_OPTIONS = ["Starting XI", "Sub (Came On)", "Sub (Unused)", "Did Not Play"]
 
-# Matchday squad rules (Rulebook reference)
 REQUIRED_STARTING_XI = 11
-REQUIRED_TOTAL_SUBS = 7          # "Sub (Came On)" + "Sub (Unused)" combined
-MAX_SUBSTITUTIONS_USED = 4       # max "Sub (Came On)" count
+REQUIRED_TOTAL_SUBS = 7
+MAX_SUBSTITUTIONS_USED = 4
 
-# Styling constants
-HEADER_FILL = PatternFill(start_color="0B1F3A", end_color="0B1F3A", fill_type="solid")  # navy
-HEADER_FONT = Font(color="D4AF37", bold=True)  # gold on navy, matches site theme
+HEADER_FILL = PatternFill(start_color="0B1F3A", end_color="0B1F3A", fill_type="solid")
+HEADER_FONT = Font(color="D4AF37", bold=True)
 LOCKED_FILL = PatternFill(start_color="E8E8E8", end_color="E8E8E8", fill_type="solid")
-TITLE_FONT = Font(bold=True, size=14)
 
 
 def load_team_roster(teams_file, team_name):
-    """Load a single team's player roster from teams.json, matched by exact team name."""
     with open(teams_file, "r", encoding="utf-8") as f:
         data = json.load(f)
-
-    # Support both {"teams": [...]} and a flat list at the top level.
     teams = data.get("teams", data) if isinstance(data, dict) else data
-
     for team in teams:
         if team.get("name") == team_name:
             return team
-
     available = ", ".join(t.get("name", "?") for t in teams)
-    raise ValueError(
-        f"Team '{team_name}' not found in {teams_file}.\nAvailable teams: {available}"
-    )
+    raise ValueError(f"Team '{team_name}' not found in {teams_file}.\nAvailable teams: {available}")
 
 
 def split_roster(team):
-    """Split a team's players into outfield vs goalkeeper lists based on position."""
     outfield, goalkeepers = [], []
     for player in team.get("players", []):
         position = (player.get("position") or "").strip().upper()
@@ -160,28 +108,18 @@ def autosize_columns(ws, min_width=10, max_width=32):
 
 def build_roster_sheet(wb, sheet_name, players, stat_columns):
     ws = wb.create_sheet(sheet_name)
-
-    # Locked reference column (Player Name) first, then "Played?" status, then stats.
     headers = ["Player Name", "Position", "Played?"] + stat_columns
     ws.append(headers)
     style_header_row(ws, 1, len(headers))
-    ws.freeze_panes = "D2"  # keep name/position/played columns visible while scrolling stats
+    ws.freeze_panes = "D2"
 
-    played_col_letter = get_column_letter(3)  # "Played?" is column C
+    played_col_letter = get_column_letter(3)
 
     for row_idx, player in enumerate(players, start=2):
-        name = player.get("name", "")
-        position = player.get("position", "")
-        ws.cell(row=row_idx, column=1, value=name).fill = LOCKED_FILL
-        ws.cell(row=row_idx, column=2, value=position).fill = LOCKED_FILL
-        # Leave "Played?" and all stat columns blank for manual entry.
+        ws.cell(row=row_idx, column=1, value=player.get("name", "")).fill = LOCKED_FILL
+        ws.cell(row=row_idx, column=2, value=player.get("position", "")).fill = LOCKED_FILL
 
-    # Dropdown validation for the "Played?" column.
-    dv = DataValidation(
-        type="list",
-        formula1=f'"{",".join(PLAYED_STATUS_OPTIONS)}"',
-        allow_blank=True,
-    )
+    dv = DataValidation(type="list", formula1=f'"{",".join(PLAYED_STATUS_OPTIONS)}"', allow_blank=True)
     ws.add_data_validation(dv)
     last_row = len(players) + 1
     dv.add(f"{played_col_letter}2:{played_col_letter}{last_row}")
@@ -191,51 +129,30 @@ def build_roster_sheet(wb, sheet_name, players, stat_columns):
 
 
 def build_match_info_sheet(wb, args):
-    ws = wb.create_sheet("Match Info", 0)  # first sheet
+    ws = wb.create_sheet("Match Info", 0)
     ws.append(["Field", "Value"])
     style_header_row(ws, 1, 2)
-
-    rows = [
-        ("Match ID", args.match_id),
-        ("Matchweek", args.matchweek),
-        ("Date", args.date),
-        ("Kickoff", args.kickoff or ""),
-        ("Venue", args.venue or ""),
-        ("Home Team", args.home),
-        ("Away Team", args.away),
-        ("Home Team Score", ""),   # fill in after the match
-        ("Away Team Score", ""),   # fill in after the match
-        ("Status", "completed"),  # scheduled / live / completed
-    ]
-    for r in rows:
+    for r in [("Match ID", args.match_id), ("Matchweek", args.matchweek), ("Date", args.date),
+              ("Kickoff", args.kickoff or ""), ("Venue", args.venue or ""),
+              ("Home Team", args.home), ("Away Team", args.away),
+              ("Home Team Score", ""), ("Away Team Score", ""), ("Status", "completed")]:
         ws.append(r)
-
     autosize_columns(ws)
     return ws
 
 
 def build_team_stats_sheet(wb, args):
+    """Optional team-level stats -- purely informational, not used in scoring."""
     ws = wb.create_sheet("Team Stats")
-    headers = ["Stat", "Home Team", "Away Team"]
-    ws.append(headers)
-    style_header_row(ws, 1, len(headers))
-
-    stat_rows = [
-        "Total Shots",
-        "Shots On Target",
-        "Touches In Opposition Box",
-        "Accurate Passes",
-        "Yellow Cards",
-    ]
-    for stat in stat_rows:
+    ws.append(["Stat", "Home Team", "Away Team"])
+    style_header_row(ws, 1, 3)
+    for stat in ["Total Shots", "Shots On Target", "Possession %", "Yellow Cards"]:
         ws.append([stat, "", ""])
-
     autosize_columns(ws)
     return ws
 
 
 def load_all_team_names(teams_file):
-    """Return the full list of team names in teams.json, in file order."""
     with open(teams_file, "r", encoding="utf-8") as f:
         data = json.load(f)
     teams = data.get("teams", data) if isinstance(data, dict) else data
@@ -243,7 +160,6 @@ def load_all_team_names(teams_file):
 
 
 def pick_team_interactively(team_names, role_label):
-    """Print a numbered list of teams and prompt the user to pick one."""
     print(f"\nSelect the {role_label} team:")
     for i, name in enumerate(team_names, start=1):
         print(f"  {i:>2}. {name}")
@@ -269,17 +185,14 @@ def prompt_if_missing(value, prompt_text, required=True, cast=str):
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="Generate a match data-entry Excel template. "
-        "Run with no arguments for an interactive team picker."
-    )
+    parser = argparse.ArgumentParser(description="Generate a match data-entry Excel template (simplified schema).")
     parser.add_argument("--match-id")
     parser.add_argument("--matchweek", type=int)
-    parser.add_argument("--date", help="YYYY-MM-DD")
-    parser.add_argument("--kickoff", default="", help="HH:MM (optional)")
-    parser.add_argument("--venue", default="", help="Venue name (optional)")
-    parser.add_argument("--home", help="Home team name (exact match, e.g. 'Amsterdam Ravens')")
-    parser.add_argument("--away", help="Away team name (exact match, e.g. 'Steel Hawks')")
+    parser.add_argument("--date")
+    parser.add_argument("--kickoff", default="")
+    parser.add_argument("--venue", default="")
+    parser.add_argument("--home")
+    parser.add_argument("--away")
     parser.add_argument("--teams-file", default="data/teams.json")
     parser.add_argument("--output-dir", default="data/match_templates")
     args = parser.parse_args()
@@ -289,8 +202,6 @@ def main():
         sys.exit(1)
 
     team_names = load_all_team_names(args.teams_file)
-
-    # Interactive fallback: if --home/--away weren't passed, show a numbered picker.
     if not args.home:
         args.home = pick_team_interactively(team_names, "HOME")
     if not args.away:
@@ -306,12 +217,11 @@ def main():
 
     home_team = load_team_roster(args.teams_file, args.home)
     away_team = load_team_roster(args.teams_file, args.away)
-
     home_outfield, home_gk = split_roster(home_team)
     away_outfield, away_gk = split_roster(away_team)
 
     wb = Workbook()
-    wb.remove(wb.active)  # drop the default blank sheet
+    wb.remove(wb.active)
 
     build_match_info_sheet(wb, args)
     build_roster_sheet(wb, "Home - Outfield", home_outfield, OUTFIELD_STAT_COLUMNS)
@@ -327,11 +237,8 @@ def main():
     print(f"\nTemplate created: {output_path}")
     print(f"  Home ({args.home}): {len(home_outfield)} outfield, {len(home_gk)} GK")
     print(f"  Away ({args.away}): {len(away_outfield)} outfield, {len(away_gk)} GK")
-    print(
-        f"Matchday squad rules: {REQUIRED_STARTING_XI} Starting XI + "
-        f"{REQUIRED_TOTAL_SUBS} substitutes (max {MAX_SUBSTITUTIONS_USED} used) per team."
-    )
-    print("Fill in 'Played?', stats for players who featured, and the Team Stats sheet.")
+    print(f"Matchday squad rules: {REQUIRED_STARTING_XI} Starting XI + {REQUIRED_TOTAL_SUBS} substitutes (max {MAX_SUBSTITUTIONS_USED} used) per team.")
+    print("Simplified schema: 12 outfield stats, 6 GK stats per player (down from the original ~30/~21).")
 
 
 if __name__ == "__main__":

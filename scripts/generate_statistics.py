@@ -6,13 +6,9 @@ Aggregates season-wide player statistics (goals, assists, clean sheets,
 total fantasy points) from every completed match file in data/matches/,
 and writes ranked leaderboards to data/statistics.json.
 
-Clean sheets are counted for Goalkeepers and Defenders only (the
-conventional definition on most stats pages), even though the scoring
-rulebook also awards a smaller clean-sheet bonus to Midfielders -- that's
-a scoring detail, not a "clean sheet" stat in the traditional sense.
-
-Player identification: exact "name" string, matched against the position
-in teams.json (names are globally unique within the roster).
+Clean sheets are counted for Goalkeepers ONLY (not Defenders) -- this
+is specifically how this league defines the stat, even though the
+scoring rulebook awards clean-sheet fantasy points more broadly.
 
 Usage:
     python3 generate_statistics.py \
@@ -38,7 +34,6 @@ TOP_N = 20
 
 
 def load_player_lookup(teams_file):
-    """Build {player_name: {"team": team_name, "position": position}}."""
     with open(teams_file, "r", encoding="utf-8") as f:
         data = json.load(f)
     teams = data.get("teams", data) if isinstance(data, dict) else data
@@ -53,21 +48,13 @@ def load_player_lookup(teams_file):
 
 def init_player_record(name, team, position):
     return {
-        "name": name,
-        "team": team,
-        "position": position,
-        "appearances": 0,
-        "goals": 0,
-        "assists": 0,
-        "cleanSheets": 0,
-        "yellowCards": 0,
-        "redCards": 0,
-        "totalPoints": 0,
+        "name": name, "team": team, "position": position,
+        "appearances": 0, "goals": 0, "assists": 0, "cleanSheets": 0,
+        "yellowCards": 0, "redCards": 0, "totalPoints": 0,
     }
 
 
 def process_side(side, team_conceded, records, player_lookup):
-    """Accumulate stats for every player on one side (home or away) of a match."""
     team_name = side.get("name")
     for player_name, stats in side.get("playerStats", {}).items():
         info = player_lookup.get(player_name)
@@ -91,20 +78,18 @@ def process_side(side, team_conceded, records, player_lookup):
         if stats.get("redCard"):
             record["redCards"] += 1
 
-        if bucket in ("GK", "DEF") and minutes >= 60 and (team_conceded or 0) == 0:
+        # Clean sheets: Goalkeepers only.
+        if bucket == "GK" and minutes >= 60 and (team_conceded or 0) == 0:
             record["cleanSheets"] += 1
 
 
 def process_match_file(path, records, player_lookup):
     with open(path, "r", encoding="utf-8") as f:
         match = json.load(f)
-
     if match.get("status") != "completed":
         return False
-
     home = match.get("homeTeam", {})
     away = match.get("awayTeam", {})
-
     process_side(home, away.get("score", 0), records, player_lookup)
     process_side(away, home.get("score", 0), records, player_lookup)
     return True
@@ -152,8 +137,8 @@ def main():
         json.dump(output, f, indent=2, ensure_ascii=False)
 
     print(f"Statistics generated from {completed_count} completed match(es).")
-    print(f"  Top scorer:      {output['topScorers'][0] if output['topScorers'] else '(none yet)'}")
-    print(f"  Top assist:      {output['topAssists'][0] if output['topAssists'] else '(none yet)'}")
+    print(f"  Top scorer:        {output['topScorers'][0] if output['topScorers'] else '(none yet)'}")
+    print(f"  Top assist:        {output['topAssists'][0] if output['topAssists'] else '(none yet)'}")
     print(f"  Most clean sheets: {output['cleanSheets'][0] if output['cleanSheets'] else '(none yet)'}")
     print(f"Written: {args.output}")
 
