@@ -1,0 +1,762 @@
+{
+  "matchId": "gfl-2026-003",
+  "matchweek": 1,
+  "date": "2026-08-30",
+  "kickoff": "22:30",
+  "venue": "Sree Kanteerava Stadium",
+  "status": "completed",
+  "homeTeam": {
+    "name": "Bengaluru Rising FC",
+    "score": 3,
+    "startingXI": [
+      "James Justin",
+      "Marquinhos",
+      "Mario Hermoso",
+      "Leandro Paredes",
+      "Jamal Musiala",
+      "Christian Pulisic",
+      "Timothy Weah",
+      "Leandro Trossard",
+      "Victor Osimhen",
+      "Ademola Lookman",
+      "Giorgi Mamardashvili"
+    ],
+    "substitutes": [
+      "Aleksandar Pavlović",
+      "Orkun Kökçü",
+      "Franck Honorat"
+    ],
+    "unusedSubstitutes": [
+      "Lukas Klostermann",
+      "Miguel Gutiérrez",
+      "Christian Günter",
+      "Ricardo Horta"
+    ],
+    "teamStats": {
+      "TotalShots": "",
+      "ShotsOnTarget": "",
+      "PossessionPct": 70,
+      "YellowCards": 2
+    },
+    "playerStats": {
+      "James Justin": {
+        "minutesPlayed": 90,
+        "goals": 0,
+        "assists": 1,
+        "tackles": 2,
+        "blocks": 0,
+        "clearances": 3,
+        "interceptions": 0,
+        "recoveries": 1,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 5,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "assists": 3
+        },
+        "ict": {
+          "influence": 14,
+          "creativity": 3.5,
+          "threat": 1,
+          "ictIndex": 1.85
+        }
+      },
+      "Marquinhos": {
+        "minutesPlayed": 90,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 1,
+        "blocks": 1,
+        "clearances": 3,
+        "interceptions": 0,
+        "recoveries": 5,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 2,
+        "pointsBreakdown": {
+          "appearance": 2
+        },
+        "ict": {
+          "influence": 12,
+          "creativity": 2.5,
+          "threat": 0,
+          "ictIndex": 1.45
+        }
+      },
+      "Mario Hermoso": {
+        "minutesPlayed": 90,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 1,
+        "blocks": 0,
+        "clearances": 4,
+        "interceptions": 2,
+        "recoveries": 1,
+        "yellowCard": true,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 1,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "yellow_card": -1
+        },
+        "ict": {
+          "influence": 11,
+          "creativity": 0.5,
+          "threat": 0,
+          "ictIndex": 1.15
+        }
+      },
+      "Aleksandar Pavlović": {
+        "minutesPlayed": 63,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 1,
+        "blocks": 0,
+        "clearances": 1,
+        "interceptions": 2,
+        "recoveries": 9,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 4,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "defensive_contribution": 2
+        },
+        "ict": {
+          "influence": 16,
+          "creativity": 4.5,
+          "threat": 0,
+          "ictIndex": 2.05
+        }
+      },
+      "Orkun Kökçü": {
+        "minutesPlayed": 71,
+        "goals": 0,
+        "assists": 2,
+        "tackles": 1,
+        "blocks": 0,
+        "clearances": 1,
+        "interceptions": 0,
+        "recoveries": 1,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 8,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "assists": 6
+        },
+        "ict": {
+          "influence": 16,
+          "creativity": 6.5,
+          "threat": 2,
+          "ictIndex": 2.45
+        }
+      },
+      "Leandro Paredes": {
+        "minutesPlayed": 90,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 3,
+        "blocks": 2,
+        "clearances": 1,
+        "interceptions": 2,
+        "recoveries": 4,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 4,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "defensive_contribution": 2
+        },
+        "ict": {
+          "influence": 19,
+          "creativity": 2.0,
+          "threat": 0,
+          "ictIndex": 2.1
+        }
+      },
+      "Jamal Musiala": {
+        "minutesPlayed": 90,
+        "goals": 1,
+        "assists": 1,
+        "tackles": 1,
+        "blocks": 0,
+        "clearances": 0,
+        "interceptions": 1,
+        "recoveries": 2,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 10,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "goals": 5,
+          "assists": 3
+        },
+        "ict": {
+          "influence": 22,
+          "creativity": 4.0,
+          "threat": 6,
+          "ictIndex": 3.2
+        }
+      },
+      "Franck Honorat": {
+        "minutesPlayed": 67,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 1,
+        "blocks": 0,
+        "clearances": 1,
+        "interceptions": 1,
+        "recoveries": 2,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 2,
+        "pointsBreakdown": {
+          "appearance": 2
+        },
+        "ict": {
+          "influence": 7,
+          "creativity": 1.0,
+          "threat": 0,
+          "ictIndex": 0.8
+        }
+      },
+      "Christian Pulisic": {
+        "minutesPlayed": 45,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 0,
+        "blocks": 0,
+        "clearances": 0,
+        "interceptions": 0,
+        "recoveries": 3,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 1,
+        "pointsBreakdown": {
+          "appearance": 1
+        },
+        "ict": {
+          "influence": 3,
+          "creativity": 1.5,
+          "threat": 0,
+          "ictIndex": 0.45
+        }
+      },
+      "Timothy Weah": {
+        "minutesPlayed": 90,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 4,
+        "blocks": 0,
+        "clearances": 1,
+        "interceptions": 2,
+        "recoveries": 4,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 2,
+        "pointsBreakdown": {
+          "appearance": 2
+        },
+        "ict": {
+          "influence": 17,
+          "creativity": 2.0,
+          "threat": 0,
+          "ictIndex": 1.9
+        }
+      },
+      "Leandro Trossard": {
+        "minutesPlayed": 83,
+        "goals": 1,
+        "assists": 0,
+        "tackles": 0,
+        "blocks": 0,
+        "clearances": 0,
+        "interceptions": 0,
+        "recoveries": 0,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 6,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "goals": 4
+        },
+        "ict": {
+          "influence": 10,
+          "creativity": 0.0,
+          "threat": 5,
+          "ictIndex": 1.5
+        }
+      },
+      "Victor Osimhen": {
+        "minutesPlayed": 33,
+        "goals": 1,
+        "assists": 0,
+        "tackles": 0,
+        "blocks": 0,
+        "clearances": 1,
+        "interceptions": 1,
+        "recoveries": 1,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 5,
+        "pointsBreakdown": {
+          "appearance": 1,
+          "goals": 4
+        },
+        "ict": {
+          "influence": 14,
+          "creativity": 0.5,
+          "threat": 5,
+          "ictIndex": 1.95
+        }
+      },
+      "Ademola Lookman": {
+        "minutesPlayed": 68,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 1,
+        "blocks": 0,
+        "clearances": 0,
+        "interceptions": 0,
+        "recoveries": 1,
+        "yellowCard": true,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 1,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "yellow_card": -1
+        },
+        "ict": {
+          "influence": 3,
+          "creativity": 0.5,
+          "threat": 0,
+          "ictIndex": 0.35
+        }
+      },
+      "Giorgi Mamardashvili": {
+        "minutesPlayed": 90,
+        "saves": 5,
+        "goalsConceded": 1,
+        "penaltySave": false,
+        "yellowCard": false,
+        "redCard": false,
+        "points": 3,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "shot_saves": 1
+        },
+        "ict": {
+          "influence": 7,
+          "creativity": 0,
+          "threat": 0,
+          "ictIndex": 0.7
+        }
+      }
+    }
+  },
+  "awayTeam": {
+    "name": "Seoul Phoenix City",
+    "score": 1,
+    "startingXI": [
+      "Trent Alexander-Arnold",
+      "Illia Zabarnyi",
+      "Malick Thiaw",
+      "David Raum",
+      "Aurélien Tchouaméni",
+      "Robert Andrich",
+      "Weston McKennie",
+      "Malcom",
+      "Grimaldo",
+      "Morata",
+      "Emiliano Martínez"
+    ],
+    "substitutes": [
+      "Ezri Konsa",
+      "Balde",
+      "Rayan Cherki"
+    ],
+    "unusedSubstitutes": [
+      "Trevoh Chalobah",
+      "Thomas Lemar",
+      "Arda Güler",
+      "Luis Henrique"
+    ],
+    "teamStats": {
+      "TotalShots": 3,
+      "ShotsOnTarget": 2,
+      "PossessionPct": 30,
+      "YellowCards": 0
+    },
+    "playerStats": {
+      "Trent Alexander-Arnold": {
+        "minutesPlayed": 87,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 1,
+        "blocks": 0,
+        "clearances": 3,
+        "interceptions": 3,
+        "recoveries": 5,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 1,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "goals_conceded_deduction": -1
+        },
+        "ict": {
+          "influence": 16,
+          "creativity": 2.5,
+          "threat": 0,
+          "ictIndex": 1.85
+        }
+      },
+      "Ezri Konsa": {
+        "minutesPlayed": 45,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 1,
+        "blocks": 0,
+        "clearances": 1,
+        "interceptions": 0,
+        "recoveries": 0,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 0,
+        "pointsBreakdown": {
+          "appearance": 1,
+          "goals_conceded_deduction": -1
+        },
+        "ict": {
+          "influence": 3,
+          "creativity": 0.0,
+          "threat": 0,
+          "ictIndex": 0.3
+        }
+      },
+      "Illia Zabarnyi": {
+        "minutesPlayed": 90,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 0,
+        "blocks": 1,
+        "clearances": 3,
+        "interceptions": 1,
+        "recoveries": 4,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 1,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "goals_conceded_deduction": -1
+        },
+        "ict": {
+          "influence": 11,
+          "creativity": 2.0,
+          "threat": 0,
+          "ictIndex": 1.3
+        }
+      },
+      "Malick Thiaw": {
+        "minutesPlayed": 90,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 0,
+        "blocks": 1,
+        "clearances": 9,
+        "interceptions": 1,
+        "recoveries": 1,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 3,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "goals_conceded_deduction": -1,
+          "defensive_contribution": 2
+        },
+        "ict": {
+          "influence": 14,
+          "creativity": 0.5,
+          "threat": 0,
+          "ictIndex": 1.45
+        }
+      },
+      "Balde": {
+        "minutesPlayed": 12,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 2,
+        "blocks": 0,
+        "clearances": 0,
+        "interceptions": 0,
+        "recoveries": 1,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 0,
+        "pointsBreakdown": {
+          "appearance": 1,
+          "goals_conceded_deduction": -1
+        },
+        "ict": {
+          "influence": 5,
+          "creativity": 0.5,
+          "threat": 0,
+          "ictIndex": 0.55
+        }
+      },
+      "David Raum": {
+        "minutesPlayed": 90,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 0,
+        "blocks": 0,
+        "clearances": 3,
+        "interceptions": 1,
+        "recoveries": 3,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 1,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "goals_conceded_deduction": -1
+        },
+        "ict": {
+          "influence": 8,
+          "creativity": 1.5,
+          "threat": 0,
+          "ictIndex": 0.95
+        }
+      },
+      "Aurélien Tchouaméni": {
+        "minutesPlayed": 86,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 2,
+        "blocks": 0,
+        "clearances": 2,
+        "interceptions": 2,
+        "recoveries": 4,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 2,
+        "pointsBreakdown": {
+          "appearance": 2
+        },
+        "ict": {
+          "influence": 14,
+          "creativity": 2.0,
+          "threat": 0,
+          "ictIndex": 1.6
+        }
+      },
+      "Robert Andrich": {
+        "minutesPlayed": 90,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 0,
+        "blocks": 0,
+        "clearances": 0,
+        "interceptions": 1,
+        "recoveries": 4,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 2,
+        "pointsBreakdown": {
+          "appearance": 2
+        },
+        "ict": {
+          "influence": 6,
+          "creativity": 2.0,
+          "threat": 0,
+          "ictIndex": 0.8
+        }
+      },
+      "Weston McKennie": {
+        "minutesPlayed": 60,
+        "goals": 0,
+        "assists": 1,
+        "tackles": 4,
+        "blocks": 0,
+        "clearances": 2,
+        "interceptions": 0,
+        "recoveries": 3,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 5,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "assists": 3
+        },
+        "ict": {
+          "influence": 19,
+          "creativity": 4.5,
+          "threat": 1,
+          "ictIndex": 2.45
+        }
+      },
+      "Malcom": {
+        "minutesPlayed": 90,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 1,
+        "blocks": 0,
+        "clearances": 0,
+        "interceptions": 1,
+        "recoveries": 3,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 2,
+        "pointsBreakdown": {
+          "appearance": 2
+        },
+        "ict": {
+          "influence": 7,
+          "creativity": 1.5,
+          "threat": 0,
+          "ictIndex": 0.85
+        }
+      },
+      "Grimaldo": {
+        "minutesPlayed": 85,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 2,
+        "blocks": 0,
+        "clearances": 0,
+        "interceptions": 1,
+        "recoveries": 6,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 2,
+        "pointsBreakdown": {
+          "appearance": 2
+        },
+        "ict": {
+          "influence": 12,
+          "creativity": 3.0,
+          "threat": 0,
+          "ictIndex": 1.5
+        }
+      },
+      "Rayan Cherki": {
+        "minutesPlayed": 45,
+        "goals": 1,
+        "assists": 0,
+        "tackles": 1,
+        "blocks": 0,
+        "clearances": 0,
+        "interceptions": 0,
+        "recoveries": 2,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 5,
+        "pointsBreakdown": {
+          "appearance": 1,
+          "goals": 4
+        },
+        "ict": {
+          "influence": 14,
+          "creativity": 1.0,
+          "threat": 5,
+          "ictIndex": 2.0
+        }
+      },
+      "Morata": {
+        "minutesPlayed": 72,
+        "goals": 0,
+        "assists": 0,
+        "tackles": 2,
+        "blocks": 0,
+        "clearances": 0,
+        "interceptions": 0,
+        "recoveries": 2,
+        "yellowCard": false,
+        "redCard": false,
+        "ownGoal": false,
+        "penaltyMiss": false,
+        "points": 2,
+        "pointsBreakdown": {
+          "appearance": 2
+        },
+        "ict": {
+          "influence": 6,
+          "creativity": 1.0,
+          "threat": 0,
+          "ictIndex": 0.7
+        }
+      },
+      "Emiliano Martínez": {
+        "minutesPlayed": 90,
+        "saves": 3,
+        "goalsConceded": 3,
+        "penaltySave": false,
+        "yellowCard": false,
+        "redCard": false,
+        "points": 2,
+        "pointsBreakdown": {
+          "appearance": 2,
+          "shot_saves": 1,
+          "goals_conceded_deduction": -1
+        },
+        "ict": {
+          "influence": -3,
+          "creativity": 0,
+          "threat": 0,
+          "ictIndex": -0.3
+        }
+      }
+    }
+  }
+}

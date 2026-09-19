@@ -1,5 +1,5 @@
 {
-  "generatedFrom": "2 match file(s) in ../offside/data/matches",
+  "generatedFrom": "3 match file(s) in ../offside/data/matches",
   "standings": [
     {
       "team": "Tokyo Verdy",
@@ -27,14 +27,14 @@
     },
     {
       "team": "Bengaluru Rising FC",
-      "played": 0,
-      "won": 0,
+      "played": 1,
+      "won": 1,
       "drawn": 0,
       "lost": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0,
-      "goalDifference": 0,
-      "points": 0,
+      "goalsFor": 3,
+      "goalsAgainst": 1,
+      "goalDifference": 2,
+      "points": 3,
       "rank": 3
     },
     {
@@ -255,13 +255,13 @@
     },
     {
       "team": "Seoul Phoenix City",
-      "played": 0,
+      "played": 1,
       "won": 0,
       "drawn": 0,
-      "lost": 0,
-      "goalsFor": 0,
-      "goalsAgainst": 0,
-      "goalDifference": 0,
+      "lost": 1,
+      "goalsFor": 1,
+      "goalsAgainst": 3,
+      "goalDifference": -2,
       "points": 0,
       "rank": 22
     },

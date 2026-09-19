@@ -29,9 +29,9 @@
       "homeTeam": "Bengaluru Rising FC",
       "awayTeam": "Seoul Phoenix City",
       "date": "2026-08-30",
-      "status": "scheduled",
-      "homeScore": null,
-      "awayScore": null
+      "status": "completed",
+      "homeScore": 3,
+      "awayScore": 1
     },
     {
       "matchId": "gfl-2026-004",
